@@ -182,9 +182,8 @@ export default function Home() {
           </motion.div>
         </div>
       </section>
-    </Layout>
+     </Layout>
   );
 }
-```
 
-Prossimo file giusto: `src/data/index.ts`.
+
