@@ -161,7 +161,7 @@ export default function Contact() {
                   </a>
 
                   <a
-                    href="tel:+393278185828"
+                   href="https://wa.me/393278185828"
                     className="inline-flex items-center justify-center px-8 py-4 rounded-2xl bg-accent text-accent-foreground font-semibold hover:scale-[1.02] active:scale-[0.97] transition-all duration-200 shadow-lg"
                   >
                     <Phone className="w-5 h-5 mr-2" />
