@@ -1,6 +1,10 @@
 import { Layout } from "@/components/Layout";
 import { motion } from "framer-motion";
-import { springPresets, fadeInUp, staggerContainer, staggerItem } from "@/lib/motion";
+import {
+  springPresets,
+  staggerContainer,
+  staggerItem,
+} from "@/lib/motion";
 import { IMAGES } from "@/assets/images";
 import { Target, Users, Shield, Award, Zap, Heart } from "lucide-react";
 
@@ -9,38 +13,45 @@ export default function About() {
     {
       icon: Shield,
       title: "Trasparenza e Affidabilità",
-      description: "Garantiamo la massima trasparenza nei processi decisionali dell'IA, con controllo umano costante e tracciabilità completa."
+      description:
+        "Garantiamo tracciabilità delle attività, controllo umano sui passaggi critici e piena verificabilità dei processi supportati dalla piattaforma.",
     },
     {
       icon: Zap,
       title: "Innovazione Responsabile",
-      description: "Sviluppiamo tecnologie all'avanguardia nel rispetto delle normative europee e dei principi etici dell'intelligenza artificiale."
+      description:
+        "Sviluppiamo architetture orientate all’integrazione, all’auditabilità e alla conformità normativa, con un approccio pragmatico e controllato.",
     },
     {
       icon: Heart,
-      title: "Servizio al Cittadino",
-      description: "La nostra missione è semplificare l'accesso ai servizi pubblici, rendendo la PA più efficiente e vicina ai cittadini."
+      title: "Supporto al lavoro pubblico",
+      description:
+        "Progettiamo sistemi che affiancano operatori ed enti nella gestione di processi complessi, migliorando chiarezza, continuità operativa e qualità del lavoro.",
     },
     {
       icon: Award,
       title: "Eccellenza Tecnologica",
-      description: "Utilizziamo le migliori tecnologie di elaborazione del linguaggio naturale per garantire precisione e affidabilità."
-    }
+      description:
+        "Costruiamo soluzioni basate su orchestrazione deterministica, knowledge engineering e strutture progettate per contesti pubblici ad alta responsabilità.",
+    },
   ];
 
   const team = [
     {
       role: "Leadership",
-      description: "Un team di esperti in intelligenza artificiale, diritto amministrativo e trasformazione digitale della pubblica amministrazione."
+      description:
+        "Un team con competenze integrate in architetture AI deterministiche, diritto amministrativo e integrazione di sistemi complessi, orientato alla realizzazione di soluzioni scalabili e interoperabili per la pubblica amministrazione.",
     },
     {
       role: "Ricerca e Sviluppo",
-      description: "Ricercatori specializzati in NLP, machine learning e sistemi di governance dell'IA per il settore pubblico."
+      description:
+        "Ricercatori specializzati in architetture AI deterministiche, sistemi di orchestrazione e knowledge engineering, progettati per essere integrabili, auditabili e scalabili nei contesti della pubblica amministrazione.",
     },
     {
       role: "Compliance e Qualità",
-      description: "Esperti legali e di conformità che garantiscono l'aderenza all'AI Act europeo e alle normative italiane."
-    }
+      description:
+        "Esperti in conformità normativa, audit dei sistemi digitali e governance dei processi, con l’obiettivo di garantire riduzione del rischio operativo, tracciabilità delle decisioni e allineamento normativo.",
+    },
   ];
 
   return (
@@ -48,9 +59,9 @@ export default function About() {
       <div className="min-h-screen">
         <section className="relative py-24 overflow-hidden">
           <div className="absolute inset-0 z-0">
-            <img 
-              src={IMAGES.AI_GOVERNMENT_9} 
-              alt="Caelo AI Technology" 
+            <img
+              src={IMAGES.AI_GOVERNMENT_9}
+              alt="Caelo AI Technology"
               className="w-full h-full object-cover opacity-30"
             />
             <div className="absolute inset-0 bg-gradient-to-b from-background/50 via-transparent to-background/70" />
@@ -67,7 +78,8 @@ export default function About() {
                 Chi Siamo
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed">
-                Caelo è l'intelligenza artificiale progettata per rivoluzionare la gestione dei procedimenti amministrativi nella pubblica amministrazione italiana.
+                Progettiamo sistemi decisionali auditabili e conformi per la
+                Pubblica Amministrazione.
               </p>
             </motion.div>
           </div>
@@ -90,9 +102,14 @@ export default function About() {
                     </div>
                   </div>
                   <div>
-                    <h2 className="text-3xl font-bold mb-4">La Nostra Missione</h2>
+                    <h2 className="text-3xl font-bold mb-4">
+                      La Nostra Missione
+                    </h2>
                     <p className="text-lg text-muted-foreground leading-relaxed">
-                      Rendere i procedimenti amministrativi più veloci, trasparenti e accessibili. Caelo automatizza l'analisi di documenti complessi, semplifica il linguaggio giuridico e accelera i tempi di risposta, mantenendo sempre il controllo umano nelle decisioni critiche.
+                      Rendere i processi amministrativi più leggibili,
+                      controllabili e sostenibili, attraverso una piattaforma che
+                      supporta operatori ed enti nella gestione di casi complessi,
+                      mantenendo sempre il controllo umano sulle decisioni.
                     </p>
                   </div>
                 </div>
@@ -106,11 +123,16 @@ export default function About() {
                     </div>
                   </div>
                   <div>
-                    <h2 className="text-3xl font-bold mb-4">La Nostra Visione</h2>
+                    <h2 className="text-3xl font-bold mb-4">
+                      La Nostra Visione
+                    </h2>
                     <p className="text-lg text-muted-foreground leading-relaxed">
-L’intelligenza artificiale al servizio dell’amministrazione, con l’essere umano sempre al centro delle decisioni.
-CAELO è progettato secondo il principio Human-in-the-Loop: la tecnologia supporta l’analisi dei procedimenti e le attività ripetitive, mentre la responsabilità e la decisione finale restano sempre nelle mani dell’operatore pubblico.
-La nostra visione è quella di una Pubblica Amministrazione in cui l’intelligenza artificiale affianca il lavoro degli operatori senza sostituirlo, migliorando l’efficienza dei processi e mantenendo sempre centrale il ruolo umano nella valutazione e nelle decisioni.                    </p>
+                      Una Pubblica Amministrazione in cui la tecnologia affianca i
+                      processi esistenti senza sostituirli, migliora
+                      l’operatività senza introdurre opacità e rende ogni
+                      passaggio più tracciabile, verificabile e integrabile nei
+                      contesti reali di lavoro.
+                    </p>
                   </div>
                 </div>
               </motion.div>
@@ -129,7 +151,8 @@ La nostra visione è quella di una Pubblica Amministrazione in cui l’intellige
             >
               <h2 className="text-4xl font-bold mb-4">I Nostri Valori</h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Principi fondamentali che guidano lo sviluppo e l'implementazione di Caelo
+                Principi che guidano la progettazione e l’evoluzione della
+                piattaforma.
               </p>
             </motion.div>
 
@@ -151,7 +174,9 @@ La nostra visione è quella di una Pubblica Amministrazione in cui l’intellige
                     <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-6">
                       <Icon className="w-7 h-7 text-primary" />
                     </div>
-                    <h3 className="text-2xl font-semibold mb-3">{value.title}</h3>
+                    <h3 className="text-2xl font-semibold mb-3">
+                      {value.title}
+                    </h3>
                     <p className="text-muted-foreground leading-relaxed">
                       {value.description}
                     </p>
@@ -174,7 +199,8 @@ La nostra visione è quella di una Pubblica Amministrazione in cui l’intellige
               >
                 <h2 className="text-4xl font-bold mb-4">Il Nostro Team</h2>
                 <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                  Esperti multidisciplinari dedicati all'innovazione della pubblica amministrazione
+                  Competenze integrate per la progettazione di sistemi
+                  decisionali auditabili nella Pubblica Amministrazione.
                 </p>
               </motion.div>
 
@@ -186,9 +212,9 @@ La nostra visione è quella di una Pubblica Amministrazione in cui l’intellige
                   transition={springPresets.gentle}
                   className="relative rounded-2xl overflow-hidden"
                 >
-                  <img 
-                    src={IMAGES.OFFICE_TECH_2} 
-                    alt="Caelo Team" 
+                  <img
+                    src={IMAGES.OFFICE_TECH_2}
+                    alt="Caelo Team"
                     className="w-full h-80 object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/40 to-transparent" />
@@ -207,8 +233,12 @@ La nostra visione è quella di una Pubblica Amministrazione in cui l’intellige
                       variants={staggerItem}
                       className="bg-card rounded-xl p-6 border border-border"
                     >
-                      <h3 className="text-xl font-semibold mb-2">{member.role}</h3>
-                      <p className="text-muted-foreground">{member.description}</p>
+                      <h3 className="text-xl font-semibold mb-2">
+                        {member.role}
+                      </h3>
+                      <p className="text-muted-foreground">
+                        {member.description}
+                      </p>
                     </motion.div>
                   ))}
                 </motion.div>
@@ -226,23 +256,42 @@ La nostra visione è quella di una Pubblica Amministrazione in cui l’intellige
               transition={springPresets.gentle}
               className="max-w-4xl mx-auto text-center"
             >
-              <h2 className="text-4xl font-bold mb-6">Conformità e Certificazioni</h2>
+              <h2 className="text-4xl font-bold mb-6">
+                Conformità e Governance
+              </h2>
               <div className="bg-card rounded-2xl p-8 border border-border">
                 <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                  Caelo è sviluppato in piena conformità con l'AI Act europeo e le normative italiane sulla trasformazione digitale della pubblica amministrazione. Il nostro sistema garantisce:
+                  Caelo è progettato per supportare requisiti di trasparenza,
+                  controllo umano e tracciabilità nei contesti pubblici ad alta
+                  responsabilità, con un approccio orientato alla verificabilità
+                  dei processi e all’allineamento normativo.
                 </p>
                 <div className="grid md:grid-cols-3 gap-6 text-left">
                   <div>
-                    <h4 className="font-semibold mb-2 text-primary">Trasparenza Algoritmica</h4>
-                    <p className="text-sm text-muted-foreground">Documentazione completa dei processi decisionali dell'IA</p>
+                    <h4 className="font-semibold mb-2 text-primary">
+                      Tracciabilità
+                    </h4>
+                    <p className="text-sm text-muted-foreground">
+                      Supporto alla registrazione e alla verificabilità dei
+                      passaggi operativi.
+                    </p>
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-2 text-primary">Controllo Umano</h4>
-                    <p className="text-sm text-muted-foreground">Supervisione costante nelle decisioni amministrative</p>
+                    <h4 className="font-semibold mb-2 text-primary">
+                      Controllo umano
+                    </h4>
+                    <p className="text-sm text-muted-foreground">
+                      Supervisione dell’operatore nei punti critici del processo.
+                    </p>
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-2 text-primary">Privacy e Sicurezza</h4>
-                    <p className="text-sm text-muted-foreground">Protezione dei dati conforme al GDPR</p>
+                    <h4 className="font-semibold mb-2 text-primary">
+                      Sicurezza e conformità
+                    </h4>
+                    <p className="text-sm text-muted-foreground">
+                      Progettazione orientata alla protezione dei dati e
+                      all’allineamento ai requisiti applicabili.
+                    </p>
                   </div>
                 </div>
               </div>
