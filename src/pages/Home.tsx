@@ -1,3 +1,8 @@
+```powershell
+code .\src\pages\Home.tsx
+```
+
+```tsx
 import { motion } from "framer-motion";
 import { ArrowRight, CheckCircle2, Sparkles } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -32,14 +37,14 @@ export default function Home() {
             <motion.div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-8">
               <Sparkles className="w-4 h-4 text-primary" />
               <span className="text-sm font-medium text-primary">
-                Conforme AI Act 2026
+                Trasparenza, controllo umano e auditabilità
               </span>
             </motion.div>
 
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-6 text-white">
               CAELO
               <span className="block text-white mt-2 text-2xl md:text-3xl">
-                Intelligenza Artificiale per la Pubblica Amministrazione
+                Supporto decisionale auditabile per la Pubblica Amministrazione
               </span>
             </h1>
 
@@ -47,10 +52,11 @@ export default function Home() {
               className="text-xl md:text-2xl text-black mb-12 max-w-4xl mx-auto"
               style={{ textAlign: "justify", textJustify: "inter-word" }}
             >
-              Caelo è una piattaforma di intelligenza artificiale progettata per supportare la
-              Pubblica Amministrazione nella gestione dei procedimenti complessi,
-              nell’interpretazione delle norme, nell’automazione delle attività ripetitive e
-              nella produzione di output chiari, tracciabili e verificabili.
+              Caelo è una piattaforma di orchestrazione e supporto decisionale
+              auditabile progettata per affiancare la Pubblica Amministrazione
+              nella gestione di procedimenti complessi, nell’interpretazione
+              delle informazioni e nell’individuazione del corretto percorso
+              operativo, senza sostituire i sistemi esistenti.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -61,8 +67,13 @@ export default function Home() {
                 </Link>
               </Button>
 
-              <Button size="lg" variant="outline" className="text-lg px-8 py-6" asChild>
-                <Link to="/contatti">Prova la tua Demo</Link>
+              <Button
+                size="lg"
+                variant="outline"
+                className="text-lg px-8 py-6"
+                asChild
+              >
+                <Link to="/contatti">Contattaci</Link>
               </Button>
             </div>
           </motion.div>
@@ -83,10 +94,10 @@ export default function Home() {
             </h2>
 
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Caelo offre un ecosistema completo di strumenti di intelligenza artificiale per
-              supportare i processi amministrativi, semplificare il lavoro degli operatori pubblici
-              in procedimenti complessi e accompagnare l’evoluzione digitale della Pubblica
-              Amministrazione.
+              Caelo è una piattaforma di orchestrazione e supporto decisionale
+              auditabile progettata per la Pubblica Amministrazione, in grado di
+              affiancare i sistemi esistenti e supportare gli operatori nella
+              gestione di procedimenti complessi.
             </p>
           </motion.div>
 
@@ -131,9 +142,9 @@ export default function Home() {
                 </h2>
 
                 <p className="text-xl text-muted-foreground">
-                  Scopri come Caelo può supportare i processi della tua amministrazione,
-                  adattarsi ai flussi operativi esistenti e affiancare la gestione documentale,
-                  procedimentale e normativa.
+                  Scopri come Caelo può integrarsi nei tuoi processi, supportare
+                  gli operatori e migliorare la gestione delle pratiche
+                  amministrative, senza modificare i sistemi esistenti.
                 </p>
               </div>
 
@@ -144,7 +155,8 @@ export default function Home() {
                   <CheckCircle2 className="w-8 h-8 text-primary mb-3" />
                   <h3 className="font-semibold mb-2">Adattabilità Operativa</h3>
                   <p className="text-sm text-muted-foreground">
-                    Caelo si adatta alle procedure esistenti senza irrigidire l’organizzazione.
+                    Caelo si integra nei flussi esistenti senza alterare
+                    l’organizzazione.
                   </p>
                 </div>
 
@@ -152,7 +164,8 @@ export default function Home() {
                   <CheckCircle2 className="w-8 h-8 text-primary mb-3" />
                   <h3 className="font-semibold mb-2">Supporto Evolutivo</h3>
                   <p className="text-sm text-muted-foreground">
-                    La piattaforma cresce insieme all’ente.
+                    La piattaforma si adatta ai contesti operativi e cresce con
+                    le esigenze dell’ente.
                   </p>
                 </div>
 
@@ -160,7 +173,8 @@ export default function Home() {
                   <CheckCircle2 className="w-8 h-8 text-primary mb-3" />
                   <h3 className="font-semibold mb-2">Scalabilità Multiente</h3>
                   <p className="text-sm text-muted-foreground">
-                    Modello adattabile a scuole, enti e amministrazioni pubbliche.
+                    Architettura progettata per essere estesa a più enti e
+                    contesti amministrativi.
                   </p>
                 </div>
               </div>
@@ -171,3 +185,6 @@ export default function Home() {
     </Layout>
   );
 }
+```
+
+Prossimo file giusto: `src/data/index.ts`.
