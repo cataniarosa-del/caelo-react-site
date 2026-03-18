@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap");
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+==========================================================================
+【AI HANDOVER NOTE】
+1. DESIGN PHILOSOPHY:
+   - Institutional Trust Architecture: Il design riflette l'autorevolezza e la trasparenza richieste dalla pubblica amministrazione italiana, combinando professionalità istituzionale con modernità tecnologica.
+   - Neo-minimalism con Physicality: Superfici pulite e ordinate che trasmettono chiarezza e affidabilità, arricchite da sottili effetti di profondità (rim-light, soft shadows) per dare tangibilità al sistema IA.
+   - Accessibility-First: Contrasti elevati, tipografia leggibile, e palette cromatica conforme WCAG 2.1 AAA per garantire accessibilità a tutti i cittadini e operatori PA.
+   - Questo approccio bilancia la serietà istituzionale con l'innovazione tecnologica, creando fiducia nell'automazione dei procedimenti amministrativi.
+
+2. TYPOGRAPHY:
+   - Inter (Sans): Scelto per la sua eccellente leggibilità su schermi digitali e il carattere neutro ma moderno. Perfetto per interfacce PA che richiedono chiarezza e professionalità. Le sue proporzioni geometriche trasmettono precisione e affidabilità.
+   - IBM Plex Mono: Utilizzato per codici procedurali, riferimenti normativi, e dati tecnici. Il suo design razionale e la spaziatura ottimale facilitano la lettura di contenuti giuridici e amministrativi complessi.
+
+3. COLOR SYSTEM:
+   - Brand Primary (Blu Istituzionale): Hue 230° - Un blu profondo e autorevole che richiama i colori della bandiera italiana e delle istituzioni europee. Trasmette fiducia, stabilità e competenza governativa.
+   - Mapping semantico: --brand → --primary (azioni principali), --accent (elementi interattivi), --ring (focus states per accessibilità)
+   - Blu Secondario (Hue 210°): Variante più chiara per superfici secondarie e stati hover, mantenendo coerenza cromatica
+   - Success (Verde Istituzionale, Hue 145°): Per conferme di procedimenti completati e validazioni positive
+   - Warning (Ambra, Hue 45°): Per notifiche e richieste di attenzione dell'utente
+   - Destructive (Rosso Sobrio, Hue 10°): Per errori critici e azioni irreversibili, con saturazione contenuta per mantenere professionalità
+   - Grigi Neutri: Palette estesa di grigi per gerarchie informative chiare e leggibilità ottimale di testi lunghi
+
+4. USAGE GUIDE:
+   - Layout: Dashboard full-width con sidebar per navigazione tra procedimenti. Utilizzare card con bordi sottili e ombre morbide per separare sezioni funzionali.
+   - Effetti consigliati: Evitare glassmorphism eccessivo; preferire superfici solide con subtle rim-light (1px border-top più chiaro) per dare profondità senza compromettere leggibilità.
+   - Componenti chiave: Utilizzare --muted per background di sezioni informative, --card per contenitori di procedimenti, --accent per CTA e stati interattivi.
+   - Accessibilità: Tutti i testi devono avere contrasto minimo 7:1 (AAA). Utilizzare --ring con offset di 2px per focus states visibili.
+   - Compliance visivo: Includere badge/indicatori per conformità AI Act usando --success con icone appropriate.
+   - Tipografia procedurale: Usare --mono per riferimenti normativi, codici procedimento, e timestamp per distinguerli dal testo narrativo.
+==========================================================================
+*/
+
+:root {
+  /* Typography */
+  --font-sans: Inter, system-ui, -apple-system, sans-serif;
+  --font-mono: IBM Plex Mono, Consolas, monospace;
+  
+  /* Radius */
+  --radius: 0.5rem;
+
+  /* Core UI Tokens */
+  --background: oklch(0.99 0.002 230);
+  --foreground: oklch(0.15 0.01 230);
+  --card: oklch(0.98 0.003 230);
+  --card-foreground: oklch(0.15 0.01 230);
+  --popover: oklch(0.99 0.002 230);
+  --popover-foreground: oklch(0.15 0.01 230);
+  --primary: oklch(0.42 0.15 230);
+  --primary-foreground: oklch(0.98 0.003 230);
+  --secondary: oklch(0.92 0.01 230);
+  --secondary-foreground: oklch(0.22 0.02 230);
+  --muted: oklch(0.95 0.005 230);
+  --muted-foreground: oklch(0.48 0.02 230);
+  --accent: oklch(0.55 0.12 210);
+  --accent-foreground: oklch(0.98 0.003 230);
+  --destructive: oklch(0.52 0.18 10);
+  --destructive-foreground: oklch(0.98 0.003 10);
+  --border: oklch(0.88 0.008 230);
+  --input: oklch(0.88 0.008 230);
+  --ring: oklch(0.42 0.15 230);
+  
+  /* Chart Tokens */
+  --chart-1: oklch(0.42 0.15 230);
+  --chart-2: oklch(0.55 0.12 210);
+  --chart-3: oklch(0.58 0.16 145);
+  --chart-4: oklch(0.65 0.14 45);
+  --chart-5: oklch(0.48 0.08 280);
+  
+  /* Sidebar Tokens */
+  --sidebar: oklch(0.97 0.003 230);
+  --sidebar-foreground: oklch(0.22 0.02 230);
+  --sidebar-primary: oklch(0.42 0.15 230);
+  --sidebar-primary-foreground: oklch(0.98 0.003 230);
+  --sidebar-accent: oklch(0.92 0.01 230);
+  --sidebar-accent-foreground: oklch(0.22 0.02 230);
+  --sidebar-border: oklch(0.90 0.006 230);
+  --sidebar-ring: oklch(0.42 0.15 230);
+}
+
+.dark {
+  --background: oklch(0.12 0.01 230);
+  --foreground: oklch(0.92 0.005 230);
+  --card: oklch(0.15 0.012 230);
+  --card-foreground: oklch(0.92 0.005 230);
+  --popover: oklch(0.13 0.011 230);
+  --popover-foreground: oklch(0.92 0.005 230);
+  --primary: oklch(0.58 0.18 230);
+  --primary-foreground: oklch(0.12 0.01 230);
+  --secondary: oklch(0.22 0.02 230);
+  --secondary-foreground: oklch(0.92 0.005 230);
+  --muted: oklch(0.20 0.015 230);
+  --muted-foreground: oklch(0.65 0.01 230);
+  --accent: oklch(0.62 0.15 210);
+  --accent-foreground: oklch(0.12 0.01 230);
+  --destructive: oklch(0.58 0.20 10);
+  --destructive-foreground: oklch(0.95 0.005 10);
+  --border: oklch(0.28 0.02 230);
+  --input: oklch(0.28 0.02 230);
+  --ring: oklch(0.58 0.18 230);
+  
+  /* Chart Tokens */
+  --chart-1: oklch(0.58 0.18 230);
+  --chart-2: oklch(0.62 0.15 210);
+  --chart-3: oklch(0.65 0.18 145);
+  --chart-4: oklch(0.72 0.16 45);
+  --chart-5: oklch(0.60 0.12 280);
+  
+  /* Sidebar Tokens */
+  --sidebar: oklch(0.14 0.012 230);
+  --sidebar-foreground: oklch(0.88 0.008 230);
+  --sidebar-primary: oklch(0.58 0.18 230);
+  --sidebar-primary-foreground: oklch(0.12 0.01 230);
+  --sidebar-accent: oklch(0.22 0.02 230);
+  --sidebar-accent-foreground: oklch(0.92 0.005 230);
+  --sidebar-border: oklch(0.25 0.018 230);
+  --sidebar-ring: oklch(0.58 0.18 230);
+}
+
+@theme inline {
+  /* Shadcn Core Mapping */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  /* Charts Mapping */
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+
+  /* Sidebar Mapping */
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+
+  /* Typography */
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+
+  /* Radius */
+  --radius-lg: var(--radius);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  html {
+    @apply scroll-smooth antialiased;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans min-h-screen;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold tracking-tight;
+  }
+
+  code, pre {
+    @apply font-mono;
+  }
+
+  ::selection {
+    @apply bg-primary/20 text-primary;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-muted-foreground/20 rounded-full hover:bg-muted-foreground/40;
+  }
+}
