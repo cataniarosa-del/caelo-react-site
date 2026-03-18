@@ -29,7 +29,7 @@ export default function Solutions() {
   return (
     <Layout>
 
-      {/* 🔴 TEST VISIVO */}
+      {
       <h1 style={{ color: "red", fontSize: "48px", textAlign: "center" }}>
         TEST SOLUZIONI
       </h1>
