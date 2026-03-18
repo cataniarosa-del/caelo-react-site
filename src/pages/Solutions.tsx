@@ -27,19 +27,14 @@ export default function Solutions() {
   } as const;
 
   return (
-    <Layout>
+  <Layout>
 
-      {
-      <h1 style={{ color: "red", fontSize: "48px", textAlign: "center" }}>
-        TEST SOLUZIONI
-      </h1>
-
-      <section
-        className="py-24 bg-cover bg-center relative"
-        style={{
-          backgroundImage: "url('/2.jpg')",
-        }}
-      >
+    <section
+      className="py-24 bg-cover bg-center relative"
+      style={{
+        backgroundImage: "url('/2.jpg')",
+      }}
+    >
         {/* overlay scuro */}
         <div className="absolute inset-0 bg-black/50"></div>
 
