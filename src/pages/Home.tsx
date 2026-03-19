@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight, CheckCircle2, Sparkles } from "lucide-react";
+import { ArrowRight, CheckCircle2 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Layout } from "@/components/Layout";
 import { FeatureCard } from "@/components/Cards";
@@ -19,7 +19,7 @@ export default function Home() {
             alt="CAELO"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-black/40"></div>
+          <div className="absolute inset-0 bg-black/40" />
         </div>
 
         <div className="container mx-auto px-4 relative z-10">
@@ -29,7 +29,6 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={springPresets.gentle}
           >
-            
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-6 text-white">
               CAELO
               <span className="block text-white mt-2 text-2xl md:text-3xl">
@@ -37,17 +36,19 @@ export default function Home() {
               </span>
             </h1>
 
-           <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto leading-relaxed">
-  Caelo è una piattaforma basata su intelligenza artificiale progettata per
-  affiancare gli operatori nella gestione dei procedimenti amministrativi,
-  garantendo coerenza operativa, tracciabilità e controllo.
-  <br /><br />
-  Il modello è scalabile su diversi ambiti, adattandosi ai contesti senza
-  sostituire i sistemi esistenti.
-  <br /><br />
-  Il modello è scalabile su diversi ambiti, adattandosi ai contesti senza
-  sostituire i sistemi esistenti.
-</p>
+            <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto leading-relaxed">
+              Caelo è una piattaforma basata su intelligenza artificiale progettata per
+              affiancare gli operatori nella gestione dei procedimenti amministrativi,
+              riducendo errori, rilavorazioni e pratiche respinte.
+              <br />
+              <br />
+              Il sistema supporta le attività operative, mantenendo coerenza,
+              tracciabilità e controllo lungo tutto il processo.
+              <br />
+              <br />
+              Il modello è scalabile su diversi ambiti, adattandosi ai contesti senza
+              sostituire i sistemi esistenti.
+            </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="text-lg px-8 py-6 group" asChild>
@@ -63,7 +64,7 @@ export default function Home() {
                 className="text-lg px-8 py-6"
                 asChild
               >
-               <Link to="/contatti">Parla con il team</Link>
+                <Link to="/contatti">Parla con il team</Link>
               </Button>
             </div>
           </motion.div>

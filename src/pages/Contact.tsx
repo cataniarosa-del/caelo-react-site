@@ -1,21 +1,27 @@
 import { Layout } from "@/components/Layout";
 import { ContactForm, DemoRequestForm } from "@/components/Forms";
-import { Mail, Phone, MapPin, Clock } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
 import { motion } from "framer-motion";
-import { springPresets, fadeInUp, staggerContainer, staggerItem } from "@/lib/motion";
+import {
+  springPresets,
+  fadeInUp,
+  staggerContainer,
+  staggerItem,
+} from "@/lib/motion";
 
 export default function Contact() {
   return (
     <Layout>
       <div className="relative min-h-screen">
-        <div className="absolute inset-0 z-0 opacity-30">
+        <div className="absolute inset-0 z-0 opacity-80">
           <img
             src="/3.jpg"
             alt="Caelo"
             className="w-full h-full object-cover"
           />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-b from-background/50 via-transparent to-background/70" />
+
+        <div className="absolute inset-0 bg-black/40" />
 
         <div className="relative z-10">
           <motion.section
@@ -35,9 +41,10 @@ export default function Contact() {
                 <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
                   Contattaci
                 </h1>
+
                 <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                  Siamo a disposizione per richieste istituzionali, informazioni sul progetto
-                  CAELO e richieste di demo della piattaforma.
+                  Siamo a disposizione per richieste istituzionali, informazioni
+                  sul progetto CAELO e richieste di demo della piattaforma.
                 </p>
               </motion.div>
 
@@ -49,7 +56,19 @@ export default function Contact() {
                   transition={{ ...springPresets.gentle, delay: 0.1 }}
                 >
                   <div className="bg-card/80 backdrop-blur-sm rounded-3xl p-8 border border-border shadow-lg">
-                    <h2 className="text-3xl font-semibold mb-8">Richiedi una Demo</h2>
+                    <div className="border-l-4 border-primary pl-5 mb-6">
+                      <p className="text-muted-foreground text-sm leading-relaxed">
+                        Caelo supporta la gestione delle pratiche amministrative
+                        riducendo errori, rilavorazioni e pratiche respinte da
+                        parte di INPS, alleggerendo il carico operativo sugli
+                        uffici.
+                      </p>
+                    </div>
+
+                    <h2 className="text-3xl font-semibold mb-8">
+                      Richiedi una Demo
+                    </h2>
+
                     <DemoRequestForm />
                   </div>
                 </motion.div>
@@ -61,7 +80,10 @@ export default function Contact() {
                   transition={{ ...springPresets.gentle, delay: 0.2 }}
                 >
                   <div className="bg-card/80 backdrop-blur-sm rounded-3xl p-8 border border-border shadow-lg">
-                    <h2 className="text-3xl font-semibold mb-8">Invia un Messaggio</h2>
+                    <h2 className="text-3xl font-semibold mb-8">
+                      Invia un Messaggio
+                    </h2>
+
                     <ContactForm variant="compact" />
                   </div>
                 </motion.div>
@@ -71,7 +93,7 @@ export default function Contact() {
                 variants={staggerContainer}
                 initial="hidden"
                 animate="visible"
-                className="grid md:grid-cols-2 lg:grid-cols-4 gap-8"
+                className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
               >
                 <motion.div
                   variants={staggerItem}
@@ -80,10 +102,14 @@ export default function Contact() {
                   <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
                     <Mail className="w-6 h-6 text-primary" />
                   </div>
+
                   <h3 className="text-lg font-semibold mb-2">Email</h3>
-                  <p className="text-muted-foreground mb-2">Scrivici per informazioni</p>
+                  <p className="text-muted-foreground mb-2">
+                    Scrivici per informazioni
+                  </p>
+
                   <a
-                    href="mailto:info@caelo.it,ccatania.cpi@gmail.com?subject=Richiesta%20informazioni%20CAELO"
+                    href="mailto:info@caelo.it,ccatania.cpi@gmail.com"
                     className="text-primary hover:text-accent transition-colors"
                   >
                     info@caelo.it
@@ -97,8 +123,12 @@ export default function Contact() {
                   <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
                     <Phone className="w-6 h-6 text-primary" />
                   </div>
+
                   <h3 className="text-lg font-semibold mb-2">Telefono</h3>
-                  <p className="text-muted-foreground mb-2">Chiamaci direttamente</p>
+                  <p className="text-muted-foreground mb-2">
+                    Chiamaci direttamente
+                  </p>
+
                   <a
                     href="tel:+393278185828"
                     className="text-primary hover:text-accent transition-colors"
@@ -114,21 +144,13 @@ export default function Contact() {
                   <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
                     <MapPin className="w-6 h-6 text-primary" />
                   </div>
-                  <h3 className="text-lg font-semibold mb-2">Sede</h3>
-                  <p className="text-muted-foreground mb-2">Riferimento operativo</p>
-                  <p className="text-sm">
-                    Roma, Italia
-                  </p>
-                </motion.div>
 
-                <motion.div
-                  variants={staggerItem}
-                  className="bg-card/60 backdrop-blur-sm rounded-2xl p-6 border border-border"
-                >
-                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
-                    <Clock className="w-6 h-6 text-primary" />
-                  </div>
-                 </p>
+                  <h3 className="text-lg font-semibold mb-2">Sede</h3>
+                  <p className="text-muted-foreground mb-2">
+                    Riferimento operativo
+                  </p>
+
+                  <p className="text-sm">Roma, Italia</p>
                 </motion.div>
               </motion.div>
 
@@ -139,10 +161,14 @@ export default function Contact() {
                 animate="animate"
                 transition={{ ...springPresets.gentle, delay: 0.3 }}
               >
-                <h2 className="text-3xl font-bold mb-4">Hai bisogno di una demo o di un contatto diretto?</h2>
+                <h2 className="text-3xl font-bold mb-4">
+                  Hai bisogno di una demo o di un contatto diretto?
+                </h2>
+
                 <p className="text-lg text-muted-foreground mb-6 max-w-2xl mx-auto">
-                  È possibile richiedere una dimostrazione della piattaforma CAELO oppure
-                  contattare direttamente il riferimento per informazioni istituzionali e operative.
+                  È possibile richiedere una dimostrazione della piattaforma
+                  CAELO oppure contattare direttamente il riferimento per
+                  informazioni istituzionali e operative.
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">

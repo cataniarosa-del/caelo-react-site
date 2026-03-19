@@ -15,9 +15,9 @@ export default function Features() {
             <img
               src="/3.jpg"
               alt="Piattaforma Caelo per la Pubblica Amministrazione"
-              className="w-full h-full object-cover opacity-30"
+              className="w-full h-full object-cover opacity-70"
             />
-            <div className="absolute inset-0 bg-gradient-to-b from-background/50 via-transparent to-background/70" />
+            <div className="absolute inset-0 bg-black/30" />
           </div>
 
           <div className="container mx-auto px-4 relative z-10">
@@ -33,7 +33,9 @@ export default function Features() {
               </h1>
 
               <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto leading-relaxed">
-                Caelo è progettato per supportare e scalare su diversi procedimenti amministrativi della Pubblica Amministrazione, adattandosi ai contesti operativi e mantenendo coerenza, tracciabilità e controllo.
+                Caelo è progettato per supportare e scalare su diversi procedimenti
+                amministrativi della Pubblica Amministrazione, adattandosi ai
+                contesti operativi e mantenendo coerenza, tracciabilità e controllo.
               </p>
             </motion.div>
           </div>
@@ -53,7 +55,9 @@ export default function Features() {
                 Capacità operative per la PA
               </h2>
               <p className="text-lg text-muted-foreground">
-                Caelo combina orchestrazione deterministica, supporto decisionale auditabile e integrazione con i sistemi esistenti, per accompagnare operatori e strutture amministrative nei procedimenti più complessi.
+                Caelo combina orchestrazione deterministica, supporto decisionale
+                auditabile e integrazione con i sistemi esistenti, per accompagnare
+                operatori e strutture amministrative nei procedimenti più complessi.
               </p>
             </motion.div>
 
@@ -79,9 +83,9 @@ export default function Features() {
             <img
               src="/3.jpg"
               alt="Infrastruttura digitale per la Pubblica Amministrazione"
-              className="w-full h-full object-cover opacity-30"
+              className="w-full h-full object-cover opacity-70"
             />
-            <div className="absolute inset-0 bg-gradient-to-b from-background via-background/95 to-background" />
+            <div className="absolute inset-0 bg-black/40" />
           </div>
 
           <div className="container mx-auto px-4 relative z-10">
@@ -96,8 +100,9 @@ export default function Features() {
                 <h2 className="text-4xl md:text-5xl font-bold mb-6">
                   Perché scegliere Caelo
                 </h2>
-                <p className="text-lg text-muted-foreground">
-                  Una piattaforma progettata per contesti amministrativi complessi, con attenzione a controllo operativo, tracciabilità e adozione progressiva.
+                <p className="text-lg text-white/85">
+                  Una piattaforma progettata per contesti amministrativi complessi,
+                  con attenzione a controllo operativo, tracciabilità e adozione progressiva.
                 </p>
               </div>
 
@@ -108,7 +113,7 @@ export default function Features() {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={springPresets.gentle}
-                  className="bg-card rounded-2xl p-8 border border-border shadow-lg"
+                  className="bg-card/90 backdrop-blur-sm rounded-2xl p-8 border border-border shadow-lg"
                 >
                   <h3 className="text-2xl font-semibold mb-6 flex items-center gap-3">
                     <CheckCircle2 className="w-6 h-6 text-primary" />
@@ -140,7 +145,7 @@ export default function Features() {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={springPresets.gentle}
-                  className="bg-card rounded-2xl p-8 border border-border shadow-lg"
+                  className="bg-card/90 backdrop-blur-sm rounded-2xl p-8 border border-border shadow-lg"
                 >
                   <h3 className="text-2xl font-semibold mb-6 flex items-center gap-3">
                     <CheckCircle2 className="w-6 h-6 text-primary" />
