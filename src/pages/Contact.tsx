@@ -12,25 +12,24 @@ import {
 export default function Contact() {
   return (
     <Layout>
-      <div className="relative min-h-screen">
-        <div className="absolute inset-0 z-0 opacity-80">
+      <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0 z-0">
           <img
             src="/3.jpg"
             alt="Caelo"
             className="w-full h-full object-cover"
           />
+          <div className="absolute inset-0 bg-black/40" />
         </div>
 
-        <div className="absolute inset-0 bg-black/40" />
-
-        <div className="relative z-10">
+        <div className="container mx-auto px-4 relative z-10">
           <motion.section
-            className="py-24 px-4"
+            className="py-24"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={springPresets.gentle}
           >
-            <div className="container mx-auto max-w-6xl">
+            <div className="max-w-6xl mx-auto">
               <motion.div
                 className="text-center mb-16"
                 variants={fadeInUp}
@@ -42,7 +41,7 @@ export default function Contact() {
                   Contattaci
                 </h1>
 
-                <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+                <p className="text-xl text-white/90 max-w-3xl mx-auto">
                   Siamo a disposizione per richieste istituzionali, informazioni
                   sul progetto CAELO e richieste di demo della piattaforma.
                 </p>
@@ -191,7 +190,7 @@ export default function Contact() {
             </div>
           </motion.section>
         </div>
-      </div>
+      </section>
     </Layout>
   );
 }
