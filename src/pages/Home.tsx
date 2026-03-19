@@ -38,9 +38,12 @@ export default function Home() {
             </h1>
 
            <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto leading-relaxed">
-  Caelo è una piattaforma di orchestrazione deterministica progettata per
-  supportare i procedimenti amministrativi della Pubblica Amministrazione,
+  Caelo è una piattaforma basata su intelligenza artificiale progettata per
+  affiancare gli operatori nella gestione dei procedimenti amministrativi,
   garantendo coerenza operativa, tracciabilità e controllo.
+  <br /><br />
+  Il modello è scalabile su diversi ambiti, adattandosi ai contesti senza
+  sostituire i sistemi esistenti.
   <br /><br />
   Il modello è scalabile su diversi ambiti, adattandosi ai contesti senza
   sostituire i sistemi esistenti.
@@ -81,10 +84,9 @@ export default function Home() {
             </h2>
 
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Caelo è una piattaforma di orchestrazione e supporto decisionale
-              auditabile progettata per la Pubblica Amministrazione, in grado di
-              affiancare i sistemi esistenti e supportare gli operatori nella
-              gestione di procedimenti complessi.
+              Caelo affianca gli operatori nella gestione dei procedimenti amministrativi,
+              supportando le attività operative, evidenziando criticità e garantendo
+              coerenza, tracciabilità e controllo lungo tutto il processo.
             </p>
           </motion.div>
 
