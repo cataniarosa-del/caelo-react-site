@@ -26,7 +26,7 @@ export default function Features() {
               animate={{ opacity: 1, y: 0 }}
               transition={springPresets.gentle}
               className="max-w-4xl mx-auto text-center"
-            
+            >
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 tracking-tight">
                 Funzionalità
                 <span className="block text-primary mt-2">Caelo</span>
@@ -74,11 +74,11 @@ export default function Features() {
 
         <section className="py-24 relative overflow-hidden">
           <div className="absolute inset-0 z-0">
-           <img
-  src="/3.jpg"
-  alt="Piattaforma Caelo per la Pubblica Amministrazione"
-  className="w-full h-full object-cover opacity-30"
-/>
+            <img
+              src="/3.jpg"
+              alt="Piattaforma Caelo per la Pubblica Amministrazione"
+              className="w-full h-full object-cover opacity-30"
+            />
             <div className="absolute inset-0 bg-gradient-to-b from-background via-background/95 to-background" />
           </div>
 
@@ -100,7 +100,6 @@ export default function Features() {
               </div>
 
               <div className="grid md:grid-cols-2 gap-8">
-                {/* CARD 1 */}
                 <motion.div
                   initial={{ opacity: 0, x: -24 }}
                   whileInView={{ opacity: 1, x: 0 }}
@@ -113,14 +112,25 @@ export default function Features() {
                     Governance e auditabilità
                   </h3>
                   <ul className="space-y-4">
-                    <li className="flex gap-3"><CheckCircle2 className="w-5 h-5 text-primary mt-1" />Supporto decisionale con evidenze</li>
-                    <li className="flex gap-3"><CheckCircle2 className="w-5 h-5 text-primary mt-1" />Controllo umano nei punti critici</li>
-                    <li className="flex gap-3"><CheckCircle2 className="w-5 h-5 text-primary mt-1" />Coerenza tra istruttoria e risultato</li>
-                    <li className="flex gap-3"><CheckCircle2 className="w-5 h-5 text-primary mt-1" />Tracciabilità completa</li>
+                    <li className="flex gap-3">
+                      <CheckCircle2 className="w-5 h-5 text-primary mt-1" />
+                      Supporto decisionale con evidenze
+                    </li>
+                    <li className="flex gap-3">
+                      <CheckCircle2 className="w-5 h-5 text-primary mt-1" />
+                      Controllo umano nei punti critici
+                    </li>
+                    <li className="flex gap-3">
+                      <CheckCircle2 className="w-5 h-5 text-primary mt-1" />
+                      Coerenza tra istruttoria e risultato
+                    </li>
+                    <li className="flex gap-3">
+                      <CheckCircle2 className="w-5 h-5 text-primary mt-1" />
+                      Tracciabilità completa
+                    </li>
                   </ul>
                 </motion.div>
 
-                {/* CARD 2 */}
                 <motion.div
                   initial={{ opacity: 0, x: 24 }}
                   whileInView={{ opacity: 1, x: 0 }}
@@ -133,14 +143,25 @@ export default function Features() {
                     Sicurezza e adozione controllata
                   </h3>
                   <ul className="space-y-4">
-                    <li className="flex gap-3"><CheckCircle2 className="w-5 h-5 text-primary mt-1" />Protezione dei dati</li>
-                    <li className="flex gap-3"><CheckCircle2 className="w-5 h-5 text-primary mt-1" />Inserimento progressivo</li>
-                    <li className="flex gap-3"><CheckCircle2 className="w-5 h-5 text-primary mt-1" />Configurabile per ente</li>
-                    <li className="flex gap-3"><CheckCircle2 className="w-5 h-5 text-primary mt-1" />Presidio operativo elevato</li>
+                    <li className="flex gap-3">
+                      <CheckCircle2 className="w-5 h-5 text-primary mt-1" />
+                      Protezione dei dati
+                    </li>
+                    <li className="flex gap-3">
+                      <CheckCircle2 className="w-5 h-5 text-primary mt-1" />
+                      Inserimento progressivo
+                    </li>
+                    <li className="flex gap-3">
+                      <CheckCircle2 className="w-5 h-5 text-primary mt-1" />
+                      Configurabile per ente
+                    </li>
+                    <li className="flex gap-3">
+                      <CheckCircle2 className="w-5 h-5 text-primary mt-1" />
+                      Presidio operativo elevato
+                    </li>
                   </ul>
                 </motion.div>
 
-                {/* CTA */}
                 <div className="col-span-2 flex justify-center mt-8">
                   <motion.a
                     href="/contatti"
@@ -151,12 +172,10 @@ export default function Features() {
                     Richiedi una demo
                   </motion.a>
                 </div>
-
               </div>
             </motion.div>
           </div>
         </section>
-
       </div>
     </Layout>
   );
