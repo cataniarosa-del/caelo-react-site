@@ -2,18 +2,18 @@ import { motion } from 'framer-motion';
 import { Layout } from '@/components/Layout';
 import { FeatureCard } from '@/components/Cards';
 import { features } from '@/data/index';
-import { IMAGES } from '@/assets/images';
 import { springPresets, staggerContainer, staggerItem } from '@/lib/motion';
-import { CheckCircle2, Sparkles } from 'lucide-react';
+import { CheckCircle2 } from 'lucide-react';
 
 export default function Features() {
   return (
     <Layout>
       <div className="relative">
+        {/* HERO */}
         <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden">
           <div className="absolute inset-0 z-0">
             <img
-              src={IMAGES.AI_GOVERNMENT_5}
+              src="/3.jpg"
               alt="Piattaforma Caelo per la Pubblica Amministrazione"
               className="w-full h-full object-cover opacity-30"
             />
@@ -39,6 +39,7 @@ export default function Features() {
           </div>
         </section>
 
+        {/* GRID FEATURES */}
         <section className="py-24 bg-muted/30">
           <div className="container mx-auto px-4">
             <motion.div
@@ -72,11 +73,12 @@ export default function Features() {
           </div>
         </section>
 
+        {/* WHY CAELO */}
         <section className="py-24 relative overflow-hidden">
           <div className="absolute inset-0 z-0">
             <img
               src="/3.jpg"
-              alt="Piattaforma Caelo per la Pubblica Amministrazione"
+              alt="Infrastruttura digitale per la Pubblica Amministrazione"
               className="w-full h-full object-cover opacity-30"
             />
             <div className="absolute inset-0 bg-gradient-to-b from-background via-background/95 to-background" />
@@ -100,6 +102,7 @@ export default function Features() {
               </div>
 
               <div className="grid md:grid-cols-2 gap-8">
+                {/* CARD 1 */}
                 <motion.div
                   initial={{ opacity: 0, x: -24 }}
                   whileInView={{ opacity: 1, x: 0 }}
@@ -131,6 +134,7 @@ export default function Features() {
                   </ul>
                 </motion.div>
 
+                {/* CARD 2 */}
                 <motion.div
                   initial={{ opacity: 0, x: 24 }}
                   whileInView={{ opacity: 1, x: 0 }}
@@ -162,6 +166,7 @@ export default function Features() {
                   </ul>
                 </motion.div>
 
+                {/* CTA */}
                 <div className="col-span-2 flex justify-center mt-8">
                   <motion.a
                     href="/contatti"
