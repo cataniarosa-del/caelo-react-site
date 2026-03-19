@@ -47,7 +47,7 @@ export default function Solutions() {
             Caelo Passweb è una soluzione progettata per supportare gli operatori
             della Pubblica Amministrazione nella gestione delle pratiche relative
             alla Posizione Assicurativa, con particolare riferimento all’ambiente
-            Passweb.
+            Passweb INPS.
           </p>
 
           <div style={blockquote}>
@@ -94,6 +94,20 @@ export default function Solutions() {
             uso e garantendo continuità dei processi.
           </p>
         </div>
+        <div className="border-l-4 border-primary pl-6 mt-8">
+  <h3 className="text-xl font-semibold mb-4">
+    Impatto operativo per l’amministrazione
+  </h3>
+
+  <ul className="space-y-3 text-muted-foreground">
+    <li>• Riduzione delle pratiche respinte o rientrate da parte di INPS</li>
+    <li>• Minore necessità di rilavorazione delle pratiche già istruite</li>
+    <li>• Diminuzione degli errori nelle fasi operative più critiche</li>
+    <li>• Riduzione del carico di lavoro manuale sugli operatori</li>
+    <li>• Maggiore continuità nella gestione delle pratiche senza interruzioni</li>
+    <li>• Migliore controllo delle informazioni prima dell’invio</li>
+  </ul>
+</div>
       </section>
     </Layout>
   );
