@@ -44,7 +44,7 @@ export default function Features() {
                 <span className="block text-primary mt-2">Caelo</span>
               </h1>
 
-              <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+              <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto leading-relaxed">
                 Caelo è progettato per supportare e scalare su diversi procedimenti amministrativi della Pubblica Amministrazione, adattandosi ai contesti operativi e mantenendo coerenza, tracciabilità e controllo.
               </p>
             </motion.div>
@@ -112,6 +112,7 @@ export default function Features() {
               </div>
 
               <div className="grid md:grid-cols-2 gap-8">
+                {/* CARD 1 */}
                 <motion.div
                   initial={{ opacity: 0, x: -24 }}
                   whileInView={{ opacity: 1, x: 0 }}
@@ -124,33 +125,14 @@ export default function Features() {
                     Governance e auditabilità
                   </h3>
                   <ul className="space-y-4">
-                    <li className="flex items-start gap-3">
-                      <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">
-                        Supporto decisionale con evidenze, passaggi tracciabili e restituzione verificabile
-                      </span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">
-                        Controllo umano mantenuto nei punti critici del procedimento
-                      </span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">
-                        Logica coerente tra istruttoria, guida operativa e risultato finale
-                      </span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">
-                        Tracciabilità utile per verifiche interne, accountability e gestione del rischio
-                      </span>
-                    </li>
+                    <li className="flex gap-3"><CheckCircle2 className="w-5 h-5 text-primary mt-1" />Supporto decisionale con evidenze</li>
+                    <li className="flex gap-3"><CheckCircle2 className="w-5 h-5 text-primary mt-1" />Controllo umano nei punti critici</li>
+                    <li className="flex gap-3"><CheckCircle2 className="w-5 h-5 text-primary mt-1" />Coerenza tra istruttoria e risultato</li>
+                    <li className="flex gap-3"><CheckCircle2 className="w-5 h-5 text-primary mt-1" />Tracciabilità completa</li>
                   </ul>
                 </motion.div>
 
+                {/* CARD 2 */}
                 <motion.div
                   initial={{ opacity: 0, x: 24 }}
                   whileInView={{ opacity: 1, x: 0 }}
@@ -163,151 +145,30 @@ export default function Features() {
                     Sicurezza e adozione controllata
                   </h3>
                   <ul className="space-y-4">
-                    <li className="flex items-start gap-3">
-                      <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">
-                        Progettazione orientata alla protezione dei dati e alla gestione controllata degli accessi
-                      </span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">
-                        Inserimento progressivo nei processi, senza imporre sostituzioni traumatiche ai sistemi esistenti
-                      </span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">
-                        Possibilità di configurazione in base ai vincoli organizzativi e infrastrutturali dell’ente
-                      </span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">
-                        Approccio adatto a contesti con requisiti elevati di presidio operativo
-                      </span>
-                    </li>
+                    <li className="flex gap-3"><CheckCircle2 className="w-5 h-5 text-primary mt-1" />Protezione dei dati</li>
+                    <li className="flex gap-3"><CheckCircle2 className="w-5 h-5 text-primary mt-1" />Inserimento progressivo</li>
+                    <li className="flex gap-3"><CheckCircle2 className="w-5 h-5 text-primary mt-1" />Configurabile per ente</li>
+                    <li className="flex gap-3"><CheckCircle2 className="w-5 h-5 text-primary mt-1" />Presidio operativo elevato</li>
                   </ul>
                 </motion.div>
 
-                <motion.div
-                  initial={{ opacity: 0, x: -24 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ ...springPresets.gentle, delay: 0.1 }}
-                  className="bg-card rounded-2xl p-8 border border-border shadow-lg"
-                >
-                  <h3 className="text-2xl font-semibold mb-6 flex items-center gap-3">
-                    <CheckCircle2 className="w-6 h-6 text-primary" />
-                    Integrazione con l’operatività reale
-                  </h3>
-                  <ul className="space-y-4">
-                    <li className="flex items-start gap-3">
-                      <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">
-                        Integrazione come layer operativo sopra sistemi e procedure già in uso
-                      </span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">
-                        Compatibilità progettuale con ecosistemi applicativi eterogenei e processi legacy
-                      </span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">
-                        Supporto agli operatori lungo il procedimento, non semplice output isolato
-                      </span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">
-                        Architettura pensata per estendere il modello ad altri ambiti amministrativi
-                      </span>
-                    </li>
-                  </ul>
-                </motion.div>
+                {/* CTA */}
+                <div className="col-span-2 flex justify-center mt-8">
+                  <motion.a
+                    href="/contatti"
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.98 }}
+                    className="inline-flex items-center justify-center px-8 py-4 rounded-xl bg-primary text-primary-foreground font-semibold shadow-lg hover:shadow-xl transition-all"
+                  >
+                    Richiedi una demo
+                  </motion.a>
+                </div>
 
-                <motion.div
-                  initial={{ opacity: 0, x: 24 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ ...springPresets.gentle, delay: 0.1 }}
-                  className="bg-card rounded-2xl p-8 border border-border shadow-lg"
-                >
-                  <h3 className="text-2xl font-semibold mb-6 flex items-center gap-3">
-                    <CheckCircle2 className="w-6 h-6 text-primary" />
-                    Scalabilità dei procedimenti
-                  </h3>
-                  <ul className="space-y-4">
-                    <li className="flex items-start gap-3">
-                      <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">
-                        Caelo è progettato per supportare diversi procedimenti amministrativi della PA
-                      </span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">
-                        Il modello è adattabile a domini operativi differenti mantenendo coerenza metodologica
-                      </span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">
-                        La crescita avviene per estensione controllata dei casi d’uso, non per promesse generiche di automazione totale
-                      </span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">
-                        Questo approccio rende Caelo riutilizzabile su contesti amministrativi più ampi nel tempo
-                      </span>
-                    </li>
-                  </ul>
-                </motion.div>
               </div>
             </motion.div>
           </div>
         </section>
 
-        <section className="py-24 bg-primary/5">
-          <div className="container mx-auto px-4">
-            <motion.div
-              initial={{ opacity: 0, y: 24 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={springPresets.gentle}
-              className="max-w-4xl mx-auto text-center"
-            >
-              <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                Pronto a valutare Caelo nel tuo contesto operativo?
-              </h2>
-              <p className="text-lg text-muted-foreground mb-8">
-                Scopri come Caelo può supportare i tuoi procedimenti amministrativi con un approccio integrabile, tracciabile e orientato al controllo.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <motion.a
-                  href="/contact"
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
-                  className="inline-flex items-center justify-center px-8 py-4 rounded-xl bg-primary text-primary-foreground font-semibold shadow-lg hover:shadow-xl transition-all"
-                >
-                  Richiedi una demo
-                </motion.a>
-                <motion.a
-                  href="/solutions"
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
-                  className="inline-flex items-center justify-center px-8 py-4 rounded-xl bg-secondary text-secondary-foreground font-semibold shadow-lg hover:shadow-xl transition-all"
-                >
-                  Esplora i casi d’uso
-                </motion.a>
-              </div>
-            </motion.div>
-          </div>
-        </section>
       </div>
     </Layout>
   );
