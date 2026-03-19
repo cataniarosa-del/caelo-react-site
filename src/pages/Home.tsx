@@ -29,13 +29,7 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={springPresets.gentle}
           >
-            <motion.div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-8">
-              <Sparkles className="w-4 h-4 text-primary" />
-              <span className="text-sm font-medium text-primary">
-                Trasparenza, controllo umano e auditabilità
-              </span>
-            </motion.div>
-
+            
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-6 text-white">
               CAELO
               <span className="block text-white mt-2 text-2xl md:text-3xl">

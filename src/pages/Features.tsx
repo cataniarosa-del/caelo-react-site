@@ -74,11 +74,11 @@ export default function Features() {
 
         <section className="py-24 relative overflow-hidden">
           <div className="absolute inset-0 z-0">
-            <img
-              src={IMAGES.AI_GOVERNMENT_8}
-              alt="Infrastruttura digitale per la Pubblica Amministrazione"
-              className="w-full h-full object-cover opacity-20"
-            />
+           <img
+  src="/3.jpg"
+  alt="Piattaforma Caelo per la Pubblica Amministrazione"
+  className="w-full h-full object-cover opacity-30"
+/>
             <div className="absolute inset-0 bg-gradient-to-b from-background via-background/95 to-background" />
           </div>
 

@@ -1,6 +1,5 @@
 import { Layout } from "@/components/Layout";
 import { ContactForm, DemoRequestForm } from "@/components/Forms";
-import { IMAGES } from "@/assets/images";
 import { Mail, Phone, MapPin, Clock } from "lucide-react";
 import { motion } from "framer-motion";
 import { springPresets, fadeInUp, staggerContainer, staggerItem } from "@/lib/motion";
