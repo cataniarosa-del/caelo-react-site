@@ -160,20 +160,21 @@ export default function Contact() {
                 transition={{ ...springPresets.gentle, delay: 0.3 }}
               >
                 <h2 className="text-3xl font-bold mb-4">
-                  Hai bisogno di una demo o di un contatto diretto?
+                  Hai bisogno di una demo o di un contatto diretto? Per richieste di demo è possibile
+                  inviare una mail oppure contattare direttamente il team.
                 </h2>
 
                 <p className="text-lg text-muted-foreground mb-6 max-w-2xl mx-auto">
                   È possibile richiedere una dimostrazione della piattaforma
                   CAELO oppure contattare direttamente il riferimento per
-                  informazioni istituzionali e operative.
+                  informazioni istituzionali e operative. 
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <a
-                    href="mailto:info@caelo.it,ccatania.cpi@gmail.com?subject=Richiesta%20Demo%20CAELO"
+                    href="mailto:info@caelo.it?cc=ccatania.cpi@gmail.com&subject=Richiesta%20Demo%20CAELO"
                     className="inline-flex items-center justify-center px-8 py-4 rounded-2xl bg-primary text-primary-foreground font-semibold hover:scale-[1.02] active:scale-[0.97] transition-all duration-200 shadow-lg"
-                  >
+> 
                     <Mail className="w-5 h-5 mr-2" />
                     Supporto Demo
                   </a>
