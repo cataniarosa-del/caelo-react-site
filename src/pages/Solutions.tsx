@@ -1,4 +1,4 @@
-import { Layout } from '@/components/Layout';
+import { Layout } from "@/components/Layout";
 
 export default function Solutions() {
   const paragraph = {
@@ -27,20 +27,16 @@ export default function Solutions() {
   } as const;
 
   return (
-  <Layout>
-
-    <section
-      className="py-24 bg-cover bg-center relative"
-      style={{
-        backgroundImage: "url('/2.jpg')",
-      }}
-    >
-        {/* overlay scuro */}
+    <Layout>
+      <section
+        className="py-24 bg-cover bg-center relative"
+        style={{
+          backgroundImage: "url('/2.jpg')",
+        }}
+      >
         <div className="absolute inset-0 bg-black/50"></div>
 
-        {/* contenuto */}
         <div className="relative z-10 container mx-auto px-4 max-w-4xl">
-
           <h1 className="text-4xl md:text-5xl font-bold mb-10 text-center text-white">
             Soluzioni CAELO
           </h1>
@@ -55,36 +51,48 @@ export default function Solutions() {
           </p>
 
           <div style={blockquote}>
-            Caelo non si limita a fornire informazioni, ma interpreta la situazione
-            amministrativa e guida l’operatore nella corretta lavorazione della pratica.
+            Caelo non si limita a fornire informazioni: struttura, interpreta e
+            rende auditabile la lavorazione delle pratiche, guidando l’operatore
+            nel rispetto dei vincoli procedurali e normativi.
           </div>
 
           <p style={paragraph}>
-            L’operatore si trova spesso ad affrontare comunicazioni non strutturate,
-            anomalie contributive e situazioni che richiedono una ricostruzione
-            completa del caso. Caelo Passweb interviene in questo contesto
-            supportando l’analisi, l’interpretazione e l’individuazione del percorso
-            procedurale corretto.
+            Gli operatori si trovano spesso a gestire comunicazioni non
+            strutturate, anomalie contributive e casi complessi che richiedono
+            una ricostruzione completa. Caelo Passweb interviene come livello di
+            supporto integrato, abilitando analisi strutturata, interpretazione
+            coerente e individuazione del percorso procedurale corretto, senza
+            alterare i sistemi esistenti.
           </p>
 
           <h3 style={sectionTitle}>Funzioni principali</h3>
 
           <ul style={{ ...paragraph, paddingLeft: "20px" }}>
-            <li>interpretazione delle comunicazioni ricevute;</li>
-            <li>ricostruzione della posizione assicurativa;</li>
-            <li>individuazione delle anomalie contributive;</li>
-            <li>orientamento nelle procedure Passweb;</li>
-            <li>supporto operativo passo–passo.</li>
+            <li>interpretazione strutturata delle comunicazioni ricevute;</li>
+            <li>supporto alla ricostruzione della posizione assicurativa;</li>
+            <li>individuazione e gestione delle anomalie contributive;</li>
+            <li>orientamento guidato nelle procedure Passweb;</li>
+            <li>supporto operativo passo-passo auditabile.</li>
           </ul>
 
           <h3 style={sectionTitle}>Valore operativo</h3>
 
           <p style={paragraph}>
-            La soluzione consente di ridurre i tempi di lavorazione, migliorare la
-            qualità delle ricostruzioni e supportare gli operatori anche nei casi
-            più complessi, mantenendo sempre il controllo umano sulle decisioni.
+            La soluzione consente di migliorare la qualità delle lavorazioni,
+            ridurre il rischio operativo e supportare gli operatori anche nei
+            casi più complessi, mantenendo sempre il controllo umano sulle
+            decisioni e garantendo la tracciabilità completa del processo.
           </p>
 
+          <h3 style={sectionTitle}>Integrazione e scalabilità</h3>
+
+          <p style={paragraph}>
+            Caelo è progettato come layer applicativo integrabile nei sistemi
+            esistenti della Pubblica Amministrazione, senza necessità di
+            sostituzione o modifica dei software legacy. L’architettura consente
+            un’integrazione progressiva, adattandosi ai contesti operativi già in
+            uso e garantendo continuità dei processi.
+          </p>
         </div>
       </section>
     </Layout>
