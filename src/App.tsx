@@ -10,6 +10,7 @@ import Features from "@/pages/Features";
 import Solutions from "@/pages/Solutions";
 import About from "@/pages/About";
 import Contact from "@/pages/Contact";
+import ScrollToTop from "./ScrollToTop";
 
 const queryClient = new QueryClient();
 
@@ -20,6 +21,7 @@ const App = () => (
         <Toaster />
         <Sonner />
         <BrowserRouter>
+          <ScrollToTop />
           <Routes>
             <Route path={ROUTE_PATHS.HOME} element={<Home />} />
             <Route path={ROUTE_PATHS.FEATURES} element={<Features />} />
