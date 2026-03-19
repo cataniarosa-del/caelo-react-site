@@ -43,7 +43,7 @@ export default function Home() {
               </span>
             </h1>
 
-            <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+           <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto leading-relaxed">
   Caelo è una piattaforma di orchestrazione deterministica progettata per
   supportare i procedimenti amministrativi della Pubblica Amministrazione,
   garantendo coerenza operativa, tracciabilità e controllo.
