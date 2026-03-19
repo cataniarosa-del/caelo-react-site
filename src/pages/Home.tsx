@@ -1,8 +1,3 @@
-```powershell
-code .\src\pages\Home.tsx
-```
-
-```tsx
 import { motion } from "framer-motion";
 import { ArrowRight, CheckCircle2, Sparkles } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -182,8 +177,6 @@ export default function Home() {
           </motion.div>
         </div>
       </section>
-     </Layout>
+    </Layout>
   );
 }
-
-
