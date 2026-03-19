@@ -66,7 +66,7 @@ export default function Home() {
                 className="text-lg px-8 py-6"
                 asChild
               >
-                <Link to="/contatti">Contattaci</Link>
+               <Link to="/contatti">Parla con il team</Link>
               </Button>
             </div>
           </motion.div>
