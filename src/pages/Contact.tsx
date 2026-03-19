@@ -11,8 +11,8 @@ export default function Contact() {
       <div className="relative min-h-screen">
         <div className="absolute inset-0 z-0 opacity-30">
           <img
-            src={IMAGES.DIGITAL_ADMIN_3}
-            alt=""
+            src="/3.jpg"
+            alt="Caelo"
             className="w-full h-full object-cover"
           />
         </div>
@@ -161,7 +161,7 @@ export default function Contact() {
                   </a>
 
                   <a
-                   href="https://wa.me/393278185828"
+                    href="https://wa.me/393278185828"
                     className="inline-flex items-center justify-center px-8 py-4 rounded-2xl bg-accent text-accent-foreground font-semibold hover:scale-[1.02] active:scale-[0.97] transition-all duration-200 shadow-lg"
                   >
                     <Phone className="w-5 h-5 mr-2" />
