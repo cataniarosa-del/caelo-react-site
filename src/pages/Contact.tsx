@@ -128,12 +128,7 @@ export default function Contact() {
                   <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
                     <Clock className="w-6 h-6 text-primary" />
                   </div>
-                  <h3 className="text-lg font-semibold mb-2">Disponibilità</h3>
-                  <p className="text-muted-foreground mb-2">Contatti e demo</p>
-                  <p className="text-sm">
-                    Lun-Ven: 9:00 - 18:00<br />
-                    Sab-Dom: su richiesta
-                  </p>
+                 </p>
                 </motion.div>
               </motion.div>
 
