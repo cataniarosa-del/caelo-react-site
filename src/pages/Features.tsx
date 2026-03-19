@@ -14,7 +14,7 @@ export default function Features() {
           <div className="absolute inset-0 z-0">
             <img
               src={IMAGES.AI_GOVERNMENT_5}
-              alt="Caelo AI Technology"
+              alt="Piattaforma Caelo per la Pubblica Amministrazione"
               className="w-full h-full object-cover opacity-30"
             />
             <div className="absolute inset-0 bg-gradient-to-b from-background/50 via-transparent to-background/70" />
@@ -34,16 +34,18 @@ export default function Features() {
                 className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6"
               >
                 <Sparkles className="w-4 h-4 text-primary" />
-                <span className="text-sm font-medium text-primary">Tecnologia AI di Nuova Generazione</span>
+                <span className="text-sm font-medium text-primary">
+                  Piattaforma auditabile per la PA
+                </span>
               </motion.div>
 
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 tracking-tight">
                 Funzionalità
-                <span className="block text-primary mt-2">Caelo AI</span>
+                <span className="block text-primary mt-2">Caelo</span>
               </h1>
 
               <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-                Un sistema completo di intelligenza artificiale progettato specificamente per la pubblica amministrazione italiana, conforme AI Act 2026
+                Caelo è progettato per supportare e scalare su diversi procedimenti amministrativi della Pubblica Amministrazione, adattandosi ai contesti operativi e mantenendo coerenza, tracciabilità e controllo.
               </p>
             </motion.div>
           </div>
@@ -59,10 +61,10 @@ export default function Features() {
               className="max-w-3xl mx-auto text-center mb-16"
             >
               <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                Capacità Avanzate per la PA
+                Capacità operative per la PA
               </h2>
               <p className="text-lg text-muted-foreground">
-                Caelo integra le tecnologie più avanzate di intelligenza artificiale con la profonda conoscenza dei processi amministrativi italiani
+                Caelo combina orchestrazione deterministica, supporto decisionale auditabile e integrazione con i sistemi esistenti, per accompagnare operatori e strutture amministrative nei procedimenti più complessi.
               </p>
             </motion.div>
 
@@ -86,7 +88,7 @@ export default function Features() {
           <div className="absolute inset-0 z-0">
             <img
               src={IMAGES.AI_GOVERNMENT_8}
-              alt="AI Infrastructure"
+              alt="Infrastruttura digitale per la Pubblica Amministrazione"
               className="w-full h-full object-cover opacity-20"
             />
             <div className="absolute inset-0 bg-gradient-to-b from-background via-background/95 to-background" />
@@ -102,10 +104,10 @@ export default function Features() {
             >
               <div className="text-center mb-16">
                 <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                  Perché Scegliere Caelo
+                  Perché scegliere Caelo
                 </h2>
                 <p className="text-lg text-muted-foreground">
-                  Un sistema progettato con i massimi standard di sicurezza, trasparenza e conformità normativa
+                  Una piattaforma progettata per contesti amministrativi complessi, con attenzione a controllo operativo, tracciabilità e adozione progressiva.
                 </p>
               </div>
 
@@ -119,24 +121,32 @@ export default function Features() {
                 >
                   <h3 className="text-2xl font-semibold mb-6 flex items-center gap-3">
                     <CheckCircle2 className="w-6 h-6 text-primary" />
-                    Conformità Normativa
+                    Governance e auditabilità
                   </h3>
                   <ul className="space-y-4">
                     <li className="flex items-start gap-3">
                       <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Piena conformità AI Act europeo 2026</span>
+                      <span className="text-muted-foreground">
+                        Supporto decisionale con evidenze, passaggi tracciabili e restituzione verificabile
+                      </span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Compliance GDPR e normative italiane</span>
+                      <span className="text-muted-foreground">
+                        Controllo umano mantenuto nei punti critici del procedimento
+                      </span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Certificazioni ISO 27001 e AgID</span>
+                      <span className="text-muted-foreground">
+                        Logica coerente tra istruttoria, guida operativa e risultato finale
+                      </span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Audit trail completo per verifiche</span>
+                      <span className="text-muted-foreground">
+                        Tracciabilità utile per verifiche interne, accountability e gestione del rischio
+                      </span>
                     </li>
                   </ul>
                 </motion.div>
@@ -150,24 +160,32 @@ export default function Features() {
                 >
                   <h3 className="text-2xl font-semibold mb-6 flex items-center gap-3">
                     <CheckCircle2 className="w-6 h-6 text-primary" />
-                    Sicurezza e Privacy
+                    Sicurezza e adozione controllata
                   </h3>
                   <ul className="space-y-4">
                     <li className="flex items-start gap-3">
                       <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Crittografia end-to-end dei dati sensibili</span>
+                      <span className="text-muted-foreground">
+                        Progettazione orientata alla protezione dei dati e alla gestione controllata degli accessi
+                      </span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Hosting su infrastrutture certificate PA</span>
+                      <span className="text-muted-foreground">
+                        Inserimento progressivo nei processi, senza imporre sostituzioni traumatiche ai sistemi esistenti
+                      </span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Backup automatici e disaster recovery</span>
+                      <span className="text-muted-foreground">
+                        Possibilità di configurazione in base ai vincoli organizzativi e infrastrutturali dell’ente
+                      </span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Controllo accessi granulare e MFA</span>
+                      <span className="text-muted-foreground">
+                        Approccio adatto a contesti con requisiti elevati di presidio operativo
+                      </span>
                     </li>
                   </ul>
                 </motion.div>
@@ -181,24 +199,32 @@ export default function Features() {
                 >
                   <h3 className="text-2xl font-semibold mb-6 flex items-center gap-3">
                     <CheckCircle2 className="w-6 h-6 text-primary" />
-                    Trasparenza e Controllo
+                    Integrazione con l’operatività reale
                   </h3>
                   <ul className="space-y-4">
                     <li className="flex items-start gap-3">
                       <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Spiegabilità delle decisioni automatizzate</span>
+                      <span className="text-muted-foreground">
+                        Integrazione come layer operativo sopra sistemi e procedure già in uso
+                      </span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Controllo umano su decisioni critiche</span>
+                      <span className="text-muted-foreground">
+                        Compatibilità progettuale con ecosistemi applicativi eterogenei e processi legacy
+                      </span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Dashboard di monitoraggio in tempo reale</span>
+                      <span className="text-muted-foreground">
+                        Supporto agli operatori lungo il procedimento, non semplice output isolato
+                      </span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Report dettagliati per accountability</span>
+                      <span className="text-muted-foreground">
+                        Architettura pensata per estendere il modello ad altri ambiti amministrativi
+                      </span>
                     </li>
                   </ul>
                 </motion.div>
@@ -212,24 +238,32 @@ export default function Features() {
                 >
                   <h3 className="text-2xl font-semibold mb-6 flex items-center gap-3">
                     <CheckCircle2 className="w-6 h-6 text-primary" />
-                    Integrazione e Scalabilità
+                    Scalabilità dei procedimenti
                   </h3>
                   <ul className="space-y-4">
                     <li className="flex items-start gap-3">
                       <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">API REST e SOAP per integrazione universale</span>
+                      <span className="text-muted-foreground">
+                        Caelo è progettato per supportare diversi procedimenti amministrativi della PA
+                      </span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Compatibilità con sistemi legacy PA</span>
+                      <span className="text-muted-foreground">
+                        Il modello è adattabile a domini operativi differenti mantenendo coerenza metodologica
+                      </span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Architettura cloud-native scalabile</span>
+                      <span className="text-muted-foreground">
+                        La crescita avviene per estensione controllata dei casi d’uso, non per promesse generiche di automazione totale
+                      </span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">Deployment on-premise o cloud ibrido</span>
+                      <span className="text-muted-foreground">
+                        Questo approccio rende Caelo riutilizzabile su contesti amministrativi più ampi nel tempo
+                      </span>
                     </li>
                   </ul>
                 </motion.div>
@@ -248,10 +282,10 @@ export default function Features() {
               className="max-w-4xl mx-auto text-center"
             >
               <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                Pronto a Trasformare la Tua Amministrazione?
+                Pronto a valutare Caelo nel tuo contesto operativo?
               </h2>
               <p className="text-lg text-muted-foreground mb-8">
-                Scopri come Caelo può ottimizzare i tuoi procedimenti amministrativi e migliorare il servizio ai cittadini
+                Scopri come Caelo può supportare i tuoi procedimenti amministrativi con un approccio integrabile, tracciabile e orientato al controllo.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <motion.a
@@ -260,7 +294,7 @@ export default function Features() {
                   whileTap={{ scale: 0.98 }}
                   className="inline-flex items-center justify-center px-8 py-4 rounded-xl bg-primary text-primary-foreground font-semibold shadow-lg hover:shadow-xl transition-all"
                 >
-                  Richiedi una Demo
+                  Richiedi una demo
                 </motion.a>
                 <motion.a
                   href="/solutions"
@@ -268,7 +302,7 @@ export default function Features() {
                   whileTap={{ scale: 0.98 }}
                   className="inline-flex items-center justify-center px-8 py-4 rounded-xl bg-secondary text-secondary-foreground font-semibold shadow-lg hover:shadow-xl transition-all"
                 >
-                  Vedi Casi d'Uso
+                  Esplora i casi d’uso
                 </motion.a>
               </div>
             </motion.div>

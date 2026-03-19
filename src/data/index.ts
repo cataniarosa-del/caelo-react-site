@@ -9,7 +9,7 @@ export const features: Feature[] = [
     icon: 'FileText',
     benefits: [
       'supporto alla gestione dei procedimenti complessi',
-      'riduzione degli errori operativi',
+      'maggiore coerenza operativa',
       'tracciabilità delle attività svolte',
       'allineamento alle regole procedurali',
     ],
@@ -24,7 +24,7 @@ export const features: Feature[] = [
       'lettura strutturata delle comunicazioni',
       'miglioramento della comprensione operativa',
       'supporto alla redazione di contenuti chiari',
-      'aumento della trasparenza amministrativa',
+      'maggiore trasparenza nel lavoro amministrativo',
     ],
   },
   {
@@ -44,12 +44,12 @@ export const features: Feature[] = [
     id: 'audit-controllo',
     title: 'Auditabilità e controllo',
     description:
-      'Ogni attività è tracciata e verificabile, garantendo trasparenza e controllo.',
+      'Ogni attività è tracciata e verificabile, a supporto di trasparenza, controllo e accountability.',
     icon: 'Shield',
     benefits: [
       'tracciabilità completa delle operazioni',
       'audit trail strutturato',
-      'spiegabilità delle indicazioni fornite',
+      'restituzione motivata delle indicazioni',
       'supporto a verifiche e controlli',
     ],
   },
@@ -62,21 +62,34 @@ export const features: Feature[] = [
     benefits: [
       'integrazione con sistemi legacy',
       'compatibilità con flussi operativi esistenti',
-      'nessuna modifica ai sistemi core',
+      'nessuna sostituzione dei sistemi core',
       'introduzione progressiva nei processi',
+    ],
+  },
+  {
+    id: 'scalabilita-procedimenti',
+    title: 'Scalabilità su più procedimenti',
+    description:
+      'Caelo è progettato per supportare diversi procedimenti amministrativi della Pubblica Amministrazione, adattandosi ai contesti operativi e mantenendo coerenza metodologica.',
+    icon: 'GitBranch',
+    benefits: [
+      'adattabilità a domini amministrativi differenti',
+      'riuso del modello operativo su più contesti',
+      'estensione progressiva dei casi d’uso',
+      'coerenza, tracciabilità e controllo anche nella crescita',
     ],
   },
   {
     id: 'sicurezza-dati',
     title: 'Sicurezza e protezione dei dati',
     description:
-      'Architettura progettata nel rispetto dei requisiti di sicurezza e protezione dati.',
+      'Architettura progettata nel rispetto dei requisiti di sicurezza, protezione dei dati e presidio degli accessi.',
     icon: 'Lock',
     benefits: [
       'controllo degli accessi',
       'gestione sicura dei dati',
       'tracciamento delle operazioni',
-      'progettazione conforme alle normative vigenti',
+      'progettazione orientata ai vincoli normativi vigenti',
     ],
   },
 ];
@@ -84,9 +97,9 @@ export const features: Feature[] = [
 export const benefits: Benefit[] = [
   {
     id: 'efficienza-operativa',
-    title: 'Efficienza Operativa',
+    title: 'Efficienza operativa',
     description:
-      'Ottimizzazione dei processi amministrativi attraverso supporto strutturato e riduzione delle attività manuali.',
+      'Ottimizzazione dei processi amministrativi attraverso supporto strutturato e maggiore continuità operativa.',
     metric: '',
     impact: 'Miglioramento della gestione operativa',
   },
@@ -94,7 +107,7 @@ export const benefits: Benefit[] = [
     id: 'riduzione-rischio',
     title: 'Riduzione del rischio operativo',
     description:
-      'Supporto nella gestione delle pratiche con maggiore controllo e minore esposizione a errori procedurali.',
+      'Supporto nella gestione delle pratiche con maggiore controllo e minore esposizione a incoerenze procedurali.',
     metric: '',
     impact: 'Maggiore affidabilità dei processi',
   },
@@ -102,7 +115,7 @@ export const benefits: Benefit[] = [
     id: 'trasparenza',
     title: 'Trasparenza e accountability',
     description:
-      'Tracciabilità completa delle attività e supporto alla verificabilità delle decisioni.',
+      'Tracciabilità delle attività e supporto alla verificabilità delle indicazioni e dei passaggi operativi.',
     metric: '',
     impact: 'Controllo e auditabilità',
   },
