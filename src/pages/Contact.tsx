@@ -149,7 +149,6 @@ export default function Contact() {
                   <p className="text-muted-foreground mb-2">
                     Riferimento operativo
                   </p>
-
                   <p className="text-sm">Roma, Italia</p>
                 </motion.div>
               </motion.div>
