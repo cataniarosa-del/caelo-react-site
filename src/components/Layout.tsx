@@ -3,12 +3,15 @@ import { Menu, X } from 'lucide-react';
 import { useState, useEffect, useRef } from 'react';
 import { ROUTE_PATHS } from '@/lib/index';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useLanguage } from '@/LanguageContext';
 
 interface LayoutProps {
   children: React.ReactNode;
 }
 
 export function Layout({ children }: LayoutProps) {
+  const { t, lang, setLang } = useLanguage();
+
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [headerHeight, setHeaderHeight] = useState(0);
   const headerRef = useRef<HTMLElement>(null);
@@ -33,12 +36,27 @@ export function Layout({ children }: LayoutProps) {
   }, []);
 
   const navigationItems = [
-    { path: ROUTE_PATHS.HOME, label: 'Home' },
-    { path: ROUTE_PATHS.FEATURES, label: 'Funzionalità' },
-    { path: ROUTE_PATHS.SOLUTIONS, label: 'Soluzioni' },
-    { path: ROUTE_PATHS.ABOUT, label: 'Chi Siamo' },
-    { path: ROUTE_PATHS.CONTACT, label: 'Contatti' },
+    { path: ROUTE_PATHS.HOME, label: t.nav.home },
+    { path: ROUTE_PATHS.FEATURES, label: t.nav.features },
+    { path: ROUTE_PATHS.SOLUTIONS, label: t.nav.solutions },
+    { path: ROUTE_PATHS.ABOUT, label: t.nav.about },
+    { path: ROUTE_PATHS.CONTACT, label: t.nav.contact },
   ];
+
+  const languageSelector = (
+    <select
+      value={lang}
+      onChange={(e) => setLang(e.target.value as any)}
+      className="px-3 py-2 rounded-md text-sm border border-border bg-background text-foreground"
+      aria-label="Select language"
+    >
+      <option value="it">IT</option>
+      <option value="en">EN</option>
+      <option value="fr">FR</option>
+      <option value="de">DE</option>
+      <option value="es">ES</option>
+    </select>
+  );
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -59,23 +77,27 @@ export function Layout({ children }: LayoutProps) {
               <span className="text-xl font-semibold text-foreground">Caelo</span>
             </Link>
 
-            <nav className="hidden md:flex items-center space-x-1">
-              {navigationItems.map((item) => (
-                <NavLink
-                  key={item.path}
-                  to={item.path}
-                  className={({ isActive }) =>
-                    `px-4 py-2 rounded-md text-sm font-medium transition-all duration-200 ${
-                      isActive
-                        ? 'bg-primary text-primary-foreground shadow-md'
-                        : 'text-muted-foreground hover:text-foreground hover:bg-muted'
-                    }`
-                  }
-                >
-                  {item.label}
-                </NavLink>
-              ))}
-            </nav>
+            <div className="hidden md:flex items-center space-x-3">
+              <nav className="flex items-center space-x-1">
+                {navigationItems.map((item) => (
+                  <NavLink
+                    key={item.path}
+                    to={item.path}
+                    className={({ isActive }) =>
+                      `px-4 py-2 rounded-md text-sm font-medium transition-all duration-200 ${
+                        isActive
+                          ? 'bg-primary text-primary-foreground shadow-md'
+                          : 'text-muted-foreground hover:text-foreground hover:bg-muted'
+                      }`
+                    }
+                  >
+                    {item.label}
+                  </NavLink>
+                ))}
+              </nav>
+
+              {languageSelector}
+            </div>
 
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -113,6 +135,8 @@ export function Layout({ children }: LayoutProps) {
                     {item.label}
                   </NavLink>
                 ))}
+
+                <div className="pt-2">{languageSelector}</div>
               </nav>
             </motion.div>
           )}
@@ -146,19 +170,13 @@ export function Layout({ children }: LayoutProps) {
               <h3 className="font-semibold text-foreground mb-4">Prodotto</h3>
               <ul className="space-y-2">
                 <li>
-                  <Link
-                    to={ROUTE_PATHS.FEATURES}
-                    className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-                  >
-                    Funzionalità
+                  <Link to={ROUTE_PATHS.FEATURES} className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                    {t.nav.features}
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    to={ROUTE_PATHS.SOLUTIONS}
-                    className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-                  >
-                    Soluzioni
+                  <Link to={ROUTE_PATHS.SOLUTIONS} className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                    {t.nav.solutions}
                   </Link>
                 </li>
               </ul>
@@ -168,19 +186,13 @@ export function Layout({ children }: LayoutProps) {
               <h3 className="font-semibold text-foreground mb-4">Azienda</h3>
               <ul className="space-y-2">
                 <li>
-                  <Link
-                    to={ROUTE_PATHS.ABOUT}
-                    className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-                  >
-                    Chi Siamo
+                  <Link to={ROUTE_PATHS.ABOUT} className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                    {t.nav.about}
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    to={ROUTE_PATHS.CONTACT}
-                    className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-                  >
-                    Contatti
+                  <Link to={ROUTE_PATHS.CONTACT} className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                    {t.nav.contact}
                   </Link>
                 </li>
               </ul>
@@ -189,30 +201,9 @@ export function Layout({ children }: LayoutProps) {
             <div>
               <h3 className="font-semibold text-foreground mb-4">Legale</h3>
               <ul className="space-y-2">
-                <li>
-                  <a
-                    href="#"
-                    className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-                  >
-                    Privacy Policy
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-                  >
-                    Termini di Servizio
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-                  >
-                    Conformità AI Act
-                  </a>
-                </li>
+                <li><a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Privacy Policy</a></li>
+                <li><a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Termini di Servizio</a></li>
+                <li><a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Conformità AI Act</a></li>
               </ul>
             </div>
           </div>
