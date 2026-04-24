@@ -4,14 +4,15 @@ import { Link } from "react-router-dom";
 import { Layout } from "@/components/Layout";
 import { FeatureCard } from "@/components/Cards";
 import { DemoRequestForm } from "@/components/Forms";
-import { features } from "@/data/index";
+import { getFeatures } from "@/data/index";
 import { IMAGES } from "@/assets/images";
 import { Button } from "@/components/ui/button";
 import { springPresets, staggerContainer, staggerItem } from "@/lib/motion";
 import { useLanguage } from "@/LanguageContext";
 
 export default function Home() {
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
+  const features = getFeatures(lang);
 
   return (
     <Layout>
@@ -65,13 +66,13 @@ export default function Home() {
             transition={springPresets.gentle}
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Funzionalità Principali
+              {lang === "it" ? "Funzionalità Principali" : "Key Features"}
             </h2>
 
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Caelo affianca gli operatori nella gestione dei procedimenti amministrativi,
-              supportando le attività operative, evidenziando criticità e garantendo
-              coerenza, tracciabilità e controllo lungo tutto il processo.
+              {lang === "it"
+                ? "Caelo affianca gli operatori nella gestione dei procedimenti amministrativi, supportando le attività operative, evidenziando criticità e garantendo coerenza, tracciabilità e controllo lungo tutto il processo."
+                : "Caelo supports operators in managing administrative procedures, assisting operational activities, highlighting critical issues and ensuring consistency, traceability and control throughout the process."}
             </p>
           </motion.div>
 
@@ -108,13 +109,13 @@ export default function Home() {
             <div className="bg-card/80 backdrop-blur-sm border border-border rounded-3xl p-12 shadow-lg">
               <div className="text-center mb-12">
                 <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                  Richiedi una Demo Personalizzata
+                  {lang === "it" ? "Richiedi una Demo Personalizzata" : "Request a Personalized Demo"}
                 </h2>
 
                 <p className="text-xl text-muted-foreground">
-                  Scopri come Caelo può integrarsi nei tuoi processi, supportare
-                  gli operatori e migliorare la gestione delle pratiche
-                  amministrative, senza modificare i sistemi esistenti.
+                  {lang === "it"
+                    ? "Scopri come Caelo può integrarsi nei tuoi processi, supportare gli operatori e migliorare la gestione delle pratiche amministrative, senza modificare i sistemi esistenti."
+                    : "Discover how Caelo can integrate into your processes, support operators and improve administrative case management without changing existing systems."}
                 </p>
               </div>
 
@@ -123,25 +124,37 @@ export default function Home() {
               <div className="mt-12 grid md:grid-cols-3 gap-8 text-center">
                 <div className="flex flex-col items-center">
                   <CheckCircle2 className="w-8 h-8 text-primary mb-3" />
-                  <h3 className="font-semibold mb-2">Adattabilità Operativa</h3>
+                  <h3 className="font-semibold mb-2">
+                    {lang === "it" ? "Adattabilità Operativa" : "Operational Adaptability"}
+                  </h3>
                   <p className="text-sm text-muted-foreground">
-                    Caelo si integra nei flussi esistenti senza alterare l’organizzazione.
+                    {lang === "it"
+                      ? "Caelo si integra nei flussi esistenti senza alterare l’organizzazione."
+                      : "Caelo integrates into existing workflows without disrupting the organization."}
                   </p>
                 </div>
 
                 <div className="flex flex-col items-center">
                   <CheckCircle2 className="w-8 h-8 text-primary mb-3" />
-                  <h3 className="font-semibold mb-2">Supporto Evolutivo</h3>
+                  <h3 className="font-semibold mb-2">
+                    {lang === "it" ? "Supporto Evolutivo" : "Evolutionary Support"}
+                  </h3>
                   <p className="text-sm text-muted-foreground">
-                    La piattaforma si adatta ai contesti operativi e cresce con le esigenze dell’ente.
+                    {lang === "it"
+                      ? "La piattaforma si adatta ai contesti operativi e cresce con le esigenze dell’ente."
+                      : "The platform adapts to operational contexts and grows with the organization’s needs."}
                   </p>
                 </div>
 
                 <div className="flex flex-col items-center">
                   <CheckCircle2 className="w-8 h-8 text-primary mb-3" />
-                  <h3 className="font-semibold mb-2">Scalabilità Multiente</h3>
+                  <h3 className="font-semibold mb-2">
+                    {lang === "it" ? "Scalabilità Multiente" : "Multi-entity Scalability"}
+                  </h3>
                   <p className="text-sm text-muted-foreground">
-                    Architettura progettata per essere estesa a più enti e contesti amministrativi.
+                    {lang === "it"
+                      ? "Architettura progettata per essere estesa a più enti e contesti amministrativi."
+                      : "Architecture designed to be extended across multiple public bodies and administrative contexts."}
                   </p>
                 </div>
               </div>
