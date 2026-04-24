@@ -8,17 +8,16 @@ import { features } from "@/data/index";
 import { IMAGES } from "@/assets/images";
 import { Button } from "@/components/ui/button";
 import { springPresets, staggerContainer, staggerItem } from "@/lib/motion";
+import { useLanguage } from "@/LanguageContext";
 
 export default function Home() {
+  const { t } = useLanguage();
+
   return (
     <Layout>
       <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img
-            src="/1.jpg"
-            alt="CAELO"
-            className="w-full h-full object-cover"
-          />
+          <img src="/1.jpg" alt="CAELO" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-black/40" />
         </div>
 
@@ -32,39 +31,24 @@ export default function Home() {
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-6 text-white">
               CAELO
               <span className="block text-white mt-2 text-2xl md:text-3xl">
-                Supporto decisionale auditabile per la Pubblica Amministrazione
+                {t.home.title}
               </span>
             </h1>
 
             <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto leading-relaxed">
-              Caelo è una piattaforma basata su intelligenza artificiale progettata per
-              affiancare gli operatori nella gestione dei procedimenti amministrativi,
-              riducendo errori, rilavorazioni e pratiche respinte.
-              <br />
-              <br />
-              Il sistema supporta le attività operative, mantenendo coerenza,
-              tracciabilità e controllo lungo tutto il processo.
-              <br />
-              <br />
-              Il modello è scalabile su diversi ambiti, adattandosi ai contesti senza
-              sostituire i sistemi esistenti.
+              {t.home.description}
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="text-lg px-8 py-6 group" asChild>
                 <Link to="/contatti">
-                  Richiedi una Demo
+                  {t.common.demo}
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Link>
               </Button>
 
-              <Button
-                size="lg"
-                variant="outline"
-                className="text-lg px-8 py-6"
-                asChild
-              >
-                <Link to="/contatti">Parla con il team</Link>
+              <Button size="lg" variant="outline" className="text-lg px-8 py-6" asChild>
+                <Link to="/contatti">{t.common.talk}</Link>
               </Button>
             </div>
           </motion.div>
@@ -109,11 +93,7 @@ export default function Home() {
 
       <section className="py-24 relative overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img
-            src={IMAGES.DIGITAL_ADMIN_1}
-            alt="Sfondo CTA"
-            className="w-full h-full object-cover"
-          />
+          <img src={IMAGES.DIGITAL_ADMIN_1} alt="Sfondo CTA" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/90 to-background" />
         </div>
 
@@ -145,8 +125,7 @@ export default function Home() {
                   <CheckCircle2 className="w-8 h-8 text-primary mb-3" />
                   <h3 className="font-semibold mb-2">Adattabilità Operativa</h3>
                   <p className="text-sm text-muted-foreground">
-                    Caelo si integra nei flussi esistenti senza alterare
-                    l’organizzazione.
+                    Caelo si integra nei flussi esistenti senza alterare l’organizzazione.
                   </p>
                 </div>
 
@@ -154,8 +133,7 @@ export default function Home() {
                   <CheckCircle2 className="w-8 h-8 text-primary mb-3" />
                   <h3 className="font-semibold mb-2">Supporto Evolutivo</h3>
                   <p className="text-sm text-muted-foreground">
-                    La piattaforma si adatta ai contesti operativi e cresce con
-                    le esigenze dell’ente.
+                    La piattaforma si adatta ai contesti operativi e cresce con le esigenze dell’ente.
                   </p>
                 </div>
 
@@ -163,8 +141,7 @@ export default function Home() {
                   <CheckCircle2 className="w-8 h-8 text-primary mb-3" />
                   <h3 className="font-semibold mb-2">Scalabilità Multiente</h3>
                   <p className="text-sm text-muted-foreground">
-                    Architettura progettata per essere estesa a più enti e
-                    contesti amministrativi.
+                    Architettura progettata per essere estesa a più enti e contesti amministrativi.
                   </p>
                 </div>
               </div>
