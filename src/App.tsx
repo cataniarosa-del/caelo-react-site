@@ -15,32 +15,34 @@ import Solutions from "@/pages/Solutions";
 import About from "@/pages/About";
 import Contact from "@/pages/Contact";
 
-import ScrollToTop from "./ScrollToTop";
 import { LanguageProvider } from "@/LanguageContext";
 
 const queryClient = new QueryClient();
 
-const App = () => (
-  <LanguageProvider>
-    <QueryClientProvider client={queryClient}>
-      <TooltipProvider>
-        <MotionConfig reducedMotion="user">
-          <Toaster />
-          <Sonner />
-          <BrowserRouter>
-            <ScrollToTop />
-            <Routes>
-              <Route path={ROUTE_PATHS.HOME} element={<Home />} />
-              <Route path={ROUTE_PATHS.FEATURES} element={<Features />} />
-              <Route path={ROUTE_PATHS.SOLUTIONS} element={<Solutions />} />
-              <Route path={ROUTE_PATHS.ABOUT} element={<About />} />
-              <Route path={ROUTE_PATHS.CONTACT} element={<Contact />} />
-            </Routes>
-          </BrowserRouter>
-        </MotionConfig>
-      </TooltipProvider>
-    </QueryClientProvider>
-  </LanguageProvider>
-);
+const App = () => {
+  return (
+    <LanguageProvider>
+      <QueryClientProvider client={queryClient}>
+        <TooltipProvider>
+          <MotionConfig reducedMotion="user">
+            <Toaster />
+            <Sonner />
+
+            <BrowserRouter>
+              <Routes>
+                <Route path={ROUTE_PATHS.HOME} element={<Home />} />
+                <Route path={ROUTE_PATHS.FEATURES} element={<Features />} />
+                <Route path={ROUTE_PATHS.SOLUTIONS} element={<Solutions />} />
+                <Route path={ROUTE_PATHS.ABOUT} element={<About />} />
+                <Route path={ROUTE_PATHS.CONTACT} element={<Contact />} />
+              </Routes>
+            </BrowserRouter>
+
+          </MotionConfig>
+        </TooltipProvider>
+      </QueryClientProvider>
+    </LanguageProvider>
+  );
+};
 
 export default App;
