@@ -39,6 +39,10 @@ export function Layout({ children }: LayoutProps) {
     { path: ROUTE_PATHS.HOME, label: t.nav.home },
     { path: ROUTE_PATHS.FEATURES, label: t.nav.features },
     { path: ROUTE_PATHS.SOLUTIONS, label: t.nav.solutions },
+    {
+      path: '/aziende',
+      label: lang === 'it' ? 'Aziende' : 'Companies',
+    },
     { path: ROUTE_PATHS.ABOUT, label: t.nav.about },
     { path: ROUTE_PATHS.CONTACT, label: t.nav.contact },
   ];
@@ -177,6 +181,11 @@ export function Layout({ children }: LayoutProps) {
                 <li>
                   <Link to={ROUTE_PATHS.SOLUTIONS} className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                     {t.nav.solutions}
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/aziende" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                    {lang === 'it' ? 'Aziende' : 'Companies'}
                   </Link>
                 </li>
               </ul>
