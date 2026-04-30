@@ -88,11 +88,9 @@ export function Layout({ children }: LayoutProps) {
                     key={item.path}
                     to={item.path}
                     className={({ isActive }) =>
-                      `px-4 py-2 rounded-md text-sm font-medium transition-all duration-200 ${
-                        isActive
-                          ? 'bg-primary text-primary-foreground shadow-md'
-                          : 'text-muted-foreground hover:text-foreground hover:bg-muted'
-                      }`
+                      isActive
+                        ? 'px-4 py-2 rounded-md text-sm font-medium transition-all duration-200 bg-primary text-primary-foreground shadow-md'
+                        : 'px-4 py-2 rounded-md text-sm font-medium transition-all duration-200 text-muted-foreground hover:text-foreground hover:bg-muted'
                     }
                   >
                     {item.label}
@@ -129,11 +127,9 @@ export function Layout({ children }: LayoutProps) {
                     to={item.path}
                     onClick={() => setMobileMenuOpen(false)}
                     className={({ isActive }) =>
-                      `px-4 py-3 rounded-md text-sm font-medium transition-all duration-200 ${
-                        isActive
-                          ? 'bg-primary text-primary-foreground shadow-md'
-                          : 'text-muted-foreground hover:text-foreground hover:bg-muted'
-                      }`
+                      isActive
+                        ? 'px-4 py-3 rounded-md text-sm font-medium transition-all duration-200 bg-primary text-primary-foreground shadow-md'
+                        : 'px-4 py-3 rounded-md text-sm font-medium transition-all duration-200 text-muted-foreground hover:text-foreground hover:bg-muted'
                     }
                   >
                     {item.label}
@@ -166,7 +162,7 @@ export function Layout({ children }: LayoutProps) {
                 <span className="text-xl font-semibold text-foreground">Caelo</span>
               </div>
               <p className="text-sm text-muted-foreground">
-                Intelligenza artificiale per la pubblica amministrazione italiana
+                AI operativa per governare procedimenti, pratiche e processi complessi.
               </p>
             </div>
 
@@ -174,17 +170,26 @@ export function Layout({ children }: LayoutProps) {
               <h3 className="font-semibold text-foreground mb-4">Prodotto</h3>
               <ul className="space-y-2">
                 <li>
-                  <Link to={ROUTE_PATHS.FEATURES} className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                  <Link
+                    to={ROUTE_PATHS.FEATURES}
+                    className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                  >
                     {t.nav.features}
                   </Link>
                 </li>
                 <li>
-                  <Link to={ROUTE_PATHS.SOLUTIONS} className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                  <Link
+                    to={ROUTE_PATHS.SOLUTIONS}
+                    className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                  >
                     {t.nav.solutions}
                   </Link>
                 </li>
                 <li>
-                  <Link to="/aziende" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                  <Link
+                    to="/aziende"
+                    className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                  >
                     {lang === 'it' ? 'Aziende' : 'Companies'}
                   </Link>
                 </li>
@@ -195,12 +200,18 @@ export function Layout({ children }: LayoutProps) {
               <h3 className="font-semibold text-foreground mb-4">Azienda</h3>
               <ul className="space-y-2">
                 <li>
-                  <Link to={ROUTE_PATHS.ABOUT} className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                  <Link
+                    to={ROUTE_PATHS.ABOUT}
+                    className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                  >
                     {t.nav.about}
                   </Link>
                 </li>
                 <li>
-                  <Link to={ROUTE_PATHS.CONTACT} className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                  <Link
+                    to={ROUTE_PATHS.CONTACT}
+                    className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                  >
                     {t.nav.contact}
                   </Link>
                 </li>
@@ -210,9 +221,21 @@ export function Layout({ children }: LayoutProps) {
             <div>
               <h3 className="font-semibold text-foreground mb-4">Legale</h3>
               <ul className="space-y-2">
-                <li><a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Privacy Policy</a></li>
-                <li><a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Termini di Servizio</a></li>
-                <li><a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Conformità AI Act</a></li>
+                <li>
+                  <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                    Privacy Policy
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                    Termini di Servizio
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                    Conformità AI Act
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
