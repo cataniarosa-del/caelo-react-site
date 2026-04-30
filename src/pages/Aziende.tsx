@@ -54,10 +54,17 @@ export default function Aziende() {
 
   return (
     <Layout>
-      <section className="relative min-h-[75vh] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 z-0 bg-gradient-to-br from-background via-background to-muted" />
+     <section className="relative min-h-[75vh] flex items-center justify-center overflow-hidden">
+  <div className="absolute inset-0 z-0">
+    <img
+      src="/2.jpg"
+      alt="Caelo per aziende private"
+      className="w-full h-full object-cover"
+    />
+    <div className="absolute inset-0 bg-black/50" />
+  </div>
 
-        <div className="container mx-auto px-4 relative z-10">
+  <div className="container mx-auto px-4 relative z-10">
           <motion.div
             className="max-w-5xl mx-auto text-center"
             initial={{ opacity: 0, y: 40 }}
