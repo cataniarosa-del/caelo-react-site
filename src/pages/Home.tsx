@@ -60,8 +60,7 @@ export default function Home() {
 >
   {lang === "it" ? "Soluzioni per Aziende" : "Enterprise Solutions"}
 </Link>
-              </Button>
-            </div>
+              </div>
           </motion.div>
         </div>
       </section>
