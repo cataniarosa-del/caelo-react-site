@@ -43,7 +43,7 @@ export default function Aziende() {
         "Monitoraggio pratiche e reclami",
         "Classificazione documenti e comunicazioni",
         "Cruscotti operativi per responsabili e team",
-        "Formazione, editoria e contenuti didattici: un assistente digitale che guida utenti, operatori o studenti dentro percorsi, materiali e risposte controllate.",
+        "Percorsi formativi e contenuti didattici assistiti: guide strutturate per utenti, operatori o studenti, con materiali organizzati e risposte controllate.",
       ]
     : [
         "Ticket and internal request management",
@@ -51,7 +51,7 @@ export default function Aziende() {
         "Case and claim monitoring",
         "Document and communication classification",
         "Operational dashboards for managers and teams",
-        "Training, publishing and educational content: a digital assistant that guides users, operators or students through structured paths, materials and controlled answers.",
+        "Assisted training paths and educational content: structured guidance for users, operators or students, with organized materials and controlled answers.",
       ];
 
   return (
