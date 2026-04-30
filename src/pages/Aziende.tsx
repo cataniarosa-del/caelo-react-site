@@ -43,6 +43,7 @@ export default function Aziende() {
         "Monitoraggio pratiche e reclami",
         "Classificazione documenti e comunicazioni",
         "Cruscotti operativi per responsabili e team",
+        "Formazione, editoria e contenuti didattici: un assistente digitale che guida utenti, operatori o studenti dentro percorsi, materiali e risposte controllate.",
       ]
     : [
         "Ticket and internal request management",
@@ -50,37 +51,37 @@ export default function Aziende() {
         "Case and claim monitoring",
         "Document and communication classification",
         "Operational dashboards for managers and teams",
+        "Training, publishing and educational content: a digital assistant that guides users, operators or students through structured paths, materials and controlled answers.",
       ];
 
   return (
     <Layout>
-     <section className="relative min-h-[75vh] flex items-center justify-center overflow-hidden">
-  <div className="absolute inset-0 z-0">
-    <img
-      src="/2.jpg"
-      alt="Caelo per aziende private"
-      className="w-full h-full object-cover"
-    />
-    <div className="absolute inset-0 bg-black/50" />
-  </div>
+      <section className="relative min-h-[75vh] flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img
+            src="/2.jpg"
+            alt="Caelo per aziende private"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-black/35" />
+        </div>
 
-  <motion.div
-  className="max-w-5xl mx-auto text-center rounded-3xl bg-white/80 backdrop-blur-sm border border-white/40 px-6 py-10 md:px-12 shadow-2xl"
-  initial={{ opacity: 0, y: 40 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={springPresets.gentle}
->
-            <div className="inline-flex items-center rounded-full border border-border bg-card px-4 py-2 text-sm text-muted-foreground mb-8">
+        <div className="container mx-auto px-4 relative z-10">
+          <motion.div
+            className="max-w-5xl mx-auto text-center rounded-3xl bg-white/85 backdrop-blur-sm border border-white/40 px-6 py-10 md:px-12 shadow-2xl"
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={springPresets.gentle}
+          >
+            <div className="inline-flex items-center rounded-full border border-border bg-white px-4 py-2 text-sm text-muted-foreground mb-8">
               {isIt ? "Soluzioni per aziende private" : "Solutions for private companies"}
             </div>
 
-            <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6">
-              {isIt
-                ? "Caelo per le aziende"
-                : "Caelo for companies"}
+            <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6 text-black">
+              {isIt ? "Caelo per le aziende" : "Caelo for companies"}
             </h1>
 
-            <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl md:text-2xl text-black/80 max-w-3xl mx-auto leading-relaxed">
               {isIt
                 ? "Un agente digitale per supportare team, processi e decisioni operative: meno dispersione, più controllo, più tracciabilità."
                 : "A digital agent designed to support teams, processes and operational decisions: less fragmentation, more control, more traceability."}
@@ -181,12 +182,12 @@ export default function Aziende() {
             </div>
 
             <div className="mt-10 flex flex-col sm:flex-row gap-4">
-  <Button size="lg" className="text-lg px-8 py-6" asChild>
-    <Link to="/contatti">
-      {isIt ? "Parla con noi" : "Talk to us"}
-    </Link>
-  </Button>
-</div>         
+              <Button size="lg" className="text-lg px-8 py-6" asChild>
+                <Link to="/contatti">
+                  {isIt ? "Parla con noi" : "Talk to us"}
+                </Link>
+              </Button>
+            </div>
           </motion.div>
         </div>
       </section>
