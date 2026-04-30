@@ -36,7 +36,7 @@ export default function Home() {
               </span>
             </h1>
 
-            <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto leading-relaxed mb-8">
               {t.home.description}
             </p>
 
@@ -50,6 +50,12 @@ export default function Home() {
 
               <Button size="lg" variant="outline" className="text-lg px-8 py-6" asChild>
                 <Link to="/contatti">{t.common.talk}</Link>
+              </Button>
+
+              <Button size="lg" variant="outline" className="text-lg px-8 py-6" asChild>
+                <Link to="/aziende">
+                  {lang === "it" ? "Soluzioni per aziende" : "Business Solutions"}
+                </Link>
               </Button>
             </div>
           </motion.div>
