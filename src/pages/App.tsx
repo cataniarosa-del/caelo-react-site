@@ -29,21 +29,23 @@ function App() {
             <Sonner />
 
             <BrowserRouter>
-              <Routes>
-                <Route path={ROUTE_PATHS.HOME} element={<Home />} />
-                <Route path={ROUTE_PATHS.FEATURES} element={<Features />} />
-                <Route path={ROUTE_PATHS.SOLUTIONS} element={<Solutions />} />
-                <Route path={ROUTE_PATHS.ABOUT} element={<About />} />
-                <Route path={ROUTE_PATHS.CONTACT} element={<Contact />} />
+  <Routes>
+    <Route path={ROUTE_PATHS.HOME} element={<Home />} />
+    <Route path={ROUTE_PATHS.FEATURES} element={<Features />} />
+    <Route path={ROUTE_PATHS.SOLUTIONS} element={<Solutions />} />
+    <Route path={ROUTE_PATHS.ABOUT} element={<About />} />
+    <Route path={ROUTE_PATHS.CONTACT} element={<Contact />} />
 
-                <Route path="/aziende" element={<Private />} />
-              </Routes>
-            </BrowserRouter>
+    <Route path="/aziende" element={<Private />} />
+
+    <Route path="*" element={<Home />} />
+  </Routes>
+</BrowserRouter>
           </MotionConfig>
         </TooltipProvider>
       </QueryClientProvider>
     </LanguageProvider>
-  );
+      );
 }
 
 export default App;
