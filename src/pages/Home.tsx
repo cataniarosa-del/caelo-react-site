@@ -40,7 +40,6 @@ export default function Home() {
               {t.home.description}
             </p>
 
-            {/* CTA BUTTONS */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center mt-10">
               <Button size="lg" className="text-lg px-8 py-6 group" asChild>
                 <Link to="/contatti">
@@ -52,19 +51,97 @@ export default function Home() {
               <Button size="lg" variant="outline" className="text-lg px-8 py-6" asChild>
                 <Link to="/contatti">{t.common.talk}</Link>
               </Button>
-
-              {/* NUOVO BOTTONE AZIENDE */}
-              <Button
-                size="lg"
-                variant="secondary"
-                className="text-lg px-8 py-6 font-semibold shadow-lg"
-                asChild
-              >
-                <Link to="/aziende">
-                  {lang === "it" ? "Soluzioni per Aziende" : "Enterprise Solutions"}
-                </Link>
-              </Button>
             </div>
+          </motion.div>
+        </div>
+      </section>
+
+      <section className="py-24 bg-background">
+        <div className="container mx-auto px-4">
+          <motion.div
+            className="text-center mb-16"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={springPresets.gentle}
+          >
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+              {lang === "it" ? "Due percorsi, un’unica logica operativa" : "Two paths, one operational logic"}
+            </h2>
+
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              {lang === "it"
+                ? "Caelo supporta organizzazioni pubbliche e private nella gestione di procedimenti, pratiche e processi complessi, mantenendo controllo umano, tracciabilità e coerenza operativa."
+                : "Caelo supports public and private organizations in managing procedures, cases and complex processes, preserving human control, traceability and operational consistency."}
+            </p>
+          </motion.div>
+
+          <motion.div
+            className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto"
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+          >
+            <motion.div
+              variants={staggerItem}
+              className="bg-card border border-border rounded-3xl p-10 shadow-sm flex flex-col"
+            >
+              <div className="mb-6">
+                <span className="inline-flex rounded-full bg-primary/10 px-4 py-2 text-sm font-medium text-primary">
+                  {lang === "it" ? "Pubblica Amministrazione" : "Public Administration"}
+                </span>
+              </div>
+
+              <h3 className="text-3xl font-bold mb-5">
+                {lang === "it" ? "Caelo per la Pubblica Amministrazione" : "Caelo for Public Administration"}
+              </h3>
+
+              <p className="text-lg text-muted-foreground leading-relaxed mb-8">
+                {lang === "it"
+                  ? "Un supporto operativo per procedimenti amministrativi, pratiche, documenti e operatori, con percorsi guidati, controllo delle fonti e tracciabilità delle attività."
+                  : "Operational support for administrative procedures, cases, documents and operators, with guided paths, source control and activity traceability."}
+              </p>
+
+              <div className="mt-auto">
+                <Button size="lg" className="text-lg px-8 py-6" asChild>
+                  <Link to="/soluzioni">
+                    {lang === "it" ? "Vai alle soluzioni PA" : "View public sector solutions"}
+                    <ArrowRight className="ml-2 w-5 h-5" />
+                  </Link>
+                </Button>
+              </div>
+            </motion.div>
+
+            <motion.div
+              variants={staggerItem}
+              className="bg-card border border-border rounded-3xl p-10 shadow-sm flex flex-col"
+            >
+              <div className="mb-6">
+                <span className="inline-flex rounded-full bg-primary/10 px-4 py-2 text-sm font-medium text-primary">
+                  {lang === "it" ? "Aziende private" : "Private Companies"}
+                </span>
+              </div>
+
+              <h3 className="text-3xl font-bold mb-5">
+                {lang === "it" ? "Caelo per le Aziende" : "Caelo for Companies"}
+              </h3>
+
+              <p className="text-lg text-muted-foreground leading-relaxed mb-8">
+                {lang === "it"
+                  ? "Un agente digitale per governare ticket, reclami, customer care, processi interni, formazione e contenuti guidati, con risposte controllate e flussi verificabili."
+                  : "A digital agent for governing tickets, claims, customer care, internal processes, training and guided content, with controlled answers and verifiable workflows."}
+              </p>
+
+              <div className="mt-auto">
+                <Button size="lg" variant="outline" className="text-lg px-8 py-6" asChild>
+                  <Link to="/aziende">
+                    {lang === "it" ? "Vai alle soluzioni aziende" : "View company solutions"}
+                    <ArrowRight className="ml-2 w-5 h-5" />
+                  </Link>
+                </Button>
+              </div>
+            </motion.div>
           </motion.div>
         </div>
       </section>
