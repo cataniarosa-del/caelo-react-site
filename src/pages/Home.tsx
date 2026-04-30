@@ -41,7 +41,7 @@ export default function Home() {
             </p>
 
             {/* CTA BUTTONS */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mt-10">
               <Button size="lg" className="text-lg px-8 py-6 group" asChild>
                 <Link to="/contatti">
                   {t.common.demo}
@@ -54,13 +54,17 @@ export default function Home() {
               </Button>
 
               {/* NUOVO BOTTONE AZIENDE */}
-             <Link
-  to="/aziende"
-  className="inline-flex items-center justify-center rounded-md bg-white text-black text-lg font-semibold px-8 py-6 shadow-lg"
->
-  {lang === "it" ? "Soluzioni per Aziende" : "Enterprise Solutions"}
-</Link>
-              </div>
+              <Button
+                size="lg"
+                variant="secondary"
+                className="text-lg px-8 py-6 font-semibold shadow-lg"
+                asChild
+              >
+                <Link to="/aziende">
+                  {lang === "it" ? "Soluzioni per Aziende" : "Enterprise Solutions"}
+                </Link>
+              </Button>
+            </div>
           </motion.div>
         </div>
       </section>
