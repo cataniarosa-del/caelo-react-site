@@ -54,10 +54,12 @@ export default function Home() {
               </Button>
 
               {/* NUOVO BOTTONE AZIENDE */}
-              <Button size="lg" variant="secondary" className="text-lg px-8 py-6" asChild>
-                <Link to="/aziende">
-                  {lang === "it" ? "Soluzioni per Aziende" : "Enterprise Solutions"}
-                </Link>
+             <Link
+  to="/aziende"
+  className="inline-flex items-center justify-center rounded-md bg-white text-black text-lg font-semibold px-8 py-6 shadow-lg"
+>
+  {lang === "it" ? "Soluzioni per Aziende" : "Enterprise Solutions"}
+</Link>
               </Button>
             </div>
           </motion.div>
