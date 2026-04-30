@@ -175,18 +175,12 @@ export default function Aziende() {
             </div>
 
             <div className="mt-10 flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="text-lg px-8 py-6" asChild>
-                <Link to="/contatti">
-                  {isIt ? "Parla con noi" : "Talk to us"}
-                </Link>
-              </Button>
-
-              <Button size="lg" variant="outline" className="text-lg px-8 py-6" asChild>
-                <Link to="/soluzioni">
-                  {isIt ? "Vedi le soluzioni" : "View solutions"}
-                </Link>
-              </Button>
-            </div>
+  <Button size="lg" className="text-lg px-8 py-6" asChild>
+    <Link to="/contatti">
+      {isIt ? "Parla con noi" : "Talk to us"}
+    </Link>
+  </Button>
+</div>         
           </motion.div>
         </div>
       </section>
