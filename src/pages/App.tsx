@@ -15,7 +15,6 @@ import Solutions from "@/pages/Solutions";
 import About from "@/pages/About";
 import Contact from "@/pages/Contact";
 import Private from "@/pages/Private";
-
 import { LanguageProvider } from "@/LanguageContext";
 
 const queryClient = new QueryClient();
