@@ -64,13 +64,12 @@ export default function Aziende() {
     <div className="absolute inset-0 bg-black/50" />
   </div>
 
-  <div className="container mx-auto px-4 relative z-10">
-          <motion.div
-            className="max-w-5xl mx-auto text-center"
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={springPresets.gentle}
-          >
+  <motion.div
+  className="max-w-5xl mx-auto text-center rounded-3xl bg-white/80 backdrop-blur-sm border border-white/40 px-6 py-10 md:px-12 shadow-2xl"
+  initial={{ opacity: 0, y: 40 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={springPresets.gentle}
+>
             <div className="inline-flex items-center rounded-full border border-border bg-card px-4 py-2 text-sm text-muted-foreground mb-8">
               {isIt ? "Soluzioni per aziende private" : "Solutions for private companies"}
             </div>
