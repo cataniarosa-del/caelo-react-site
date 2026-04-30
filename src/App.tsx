@@ -14,6 +14,7 @@ import Features from "@/pages/Features";
 import Solutions from "@/pages/Solutions";
 import About from "@/pages/About";
 import Contact from "@/pages/Contact";
+import Aziende from "@/pages/Aziende";
 
 import { LanguageProvider } from "@/LanguageContext";
 
@@ -35,9 +36,11 @@ const App = () => {
                 <Route path={ROUTE_PATHS.SOLUTIONS} element={<Solutions />} />
                 <Route path={ROUTE_PATHS.ABOUT} element={<About />} />
                 <Route path={ROUTE_PATHS.CONTACT} element={<Contact />} />
+
+                {/* Pagina Aziende Private */}
+                <Route path="/aziende" element={<Aziende />} />
               </Routes>
             </BrowserRouter>
-
           </MotionConfig>
         </TooltipProvider>
       </QueryClientProvider>
