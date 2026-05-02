@@ -66,9 +66,9 @@ export default function Home() {
             transition={springPresets.gentle}
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              {lang === "it" ?  
-  ? "Un sistema per governare procedimenti, pratiche e processi complessi" 
-  : "A system to govern procedures, cases and complex operational workflows"}
+              {lang === "it"
+                ? "Un sistema per governare procedimenti, pratiche e processi complessi"
+                : "A system to govern procedures, cases and complex operational workflows"}
             </h2>
 
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
