@@ -66,13 +66,15 @@ export default function Home() {
             transition={springPresets.gentle}
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              {lang === "it" ? "Due percorsi, un’unica logica operativa" : "Two paths, one operational logic"}
+              {lang === "it" ?  
+  ? "Un sistema per governare procedimenti, pratiche e processi complessi" 
+  : "A system to govern procedures, cases and complex operational workflows"}
             </h2>
 
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               {lang === "it"
-                ? "Caelo supporta organizzazioni pubbliche e private nella gestione di procedimenti, pratiche e processi complessi, mantenendo controllo umano, tracciabilità e coerenza operativa."
-                : "Caelo supports public and private organizations in managing procedures, cases and complex processes, preserving human control, traceability and operational consistency."}
+                ? "CAELO governa procedimenti, pratiche e processi regolati, mantenendo controllo umano, tracciabilità, coerenza operativa e integrazione con i sistemi esistenti."
+                : "CAELO governs regulated procedures, cases and operational workflows, preserving human control, traceability, operational consistency and integration with existing systems."}
             </p>
           </motion.div>
 
@@ -94,13 +96,13 @@ export default function Home() {
               </div>
 
               <h3 className="text-3xl font-bold mb-5">
-                {lang === "it" ? "Caelo per la Pubblica Amministrazione" : "Caelo for Public Administration"}
+                {lang === "it" ? "CAELO per la Pubblica Amministrazione" : "CAELO for Public Administration"}
               </h3>
 
               <p className="text-lg text-muted-foreground leading-relaxed mb-8">
                 {lang === "it"
-                  ? "Un supporto operativo per procedimenti amministrativi, pratiche, documenti e operatori, con percorsi guidati, controllo delle fonti e tracciabilità delle attività."
-                  : "Operational support for administrative procedures, cases, documents and operators, with guided paths, source control and activity traceability."}
+                  ? "Un livello di governance procedurale per gestire pratiche, documenti, regole e operatori, garantendo tracciabilità, controllo delle fonti e coerenza lungo l’intero procedimento."
+                  : "A procedural governance layer for managing cases, documents, rules and operators, ensuring traceability, source control and consistency across the entire administrative workflow."}
               </p>
 
               <div className="mt-auto">
@@ -124,13 +126,13 @@ export default function Home() {
               </div>
 
               <h3 className="text-3xl font-bold mb-5">
-                {lang === "it" ? "Caelo per le Aziende" : "Caelo for Companies"}
+                {lang === "it" ? "CAELO per Aziende e Partner" : "CAELO for Companies and Partners"}
               </h3>
 
               <p className="text-lg text-muted-foreground leading-relaxed mb-8">
                 {lang === "it"
-                  ? "Un agente digitale per governare ticket, reclami, customer care, processi interni, formazione e contenuti guidati, con risposte controllate e flussi verificabili."
-                  : "A digital agent for governing tickets, claims, customer care, internal processes, training and guided content, with controlled answers and verifiable workflows."}
+                  ? "Un sistema integrabile per governare ticket, reclami, customer care, processi interni, formazione e contenuti operativi, con risposte controllate e flussi verificabili."
+                  : "An integrable system for governing tickets, claims, customer care, internal processes, training and operational content, with controlled answers and verifiable workflows."}
               </p>
 
               <div className="mt-auto">
@@ -156,13 +158,13 @@ export default function Home() {
             transition={springPresets.gentle}
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              {lang === "it" ? "Funzionalità Principali" : "Key Features"}
+              {lang === "it" ? "Governance, controllo e integrazione" : "Governance, control and integration"}
             </h2>
 
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               {lang === "it"
-                ? "Caelo affianca gli operatori nella gestione dei procedimenti amministrativi, supportando le attività operative, evidenziando criticità e garantendo coerenza, tracciabilità e controllo lungo tutto il processo."
-                : "Caelo supports operators in managing administrative procedures, assisting operational activities, highlighting critical issues and ensuring consistency, traceability and control throughout the process."}
+                ? "CAELO non è un semplice assistente digitale. È un sistema di governance che struttura, controlla e orchestra procedimenti complessi, riducendo errori operativi e rendendo ogni passaggio tracciabile."
+                : "CAELO is not a generic digital assistant. It is a governance system that structures, controls and orchestrates complex procedures, reducing operational errors and making every step traceable."}
             </p>
           </motion.div>
 
@@ -199,13 +201,13 @@ export default function Home() {
             <div className="bg-card/80 backdrop-blur-sm border border-border rounded-3xl p-12 shadow-lg">
               <div className="text-center mb-12">
                 <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                  {lang === "it" ? "Richiedi una Demo Personalizzata" : "Request a Personalized Demo"}
+                  {lang === "it" ? "Parla con noi" : "Talk to us"}
                 </h2>
 
                 <p className="text-xl text-muted-foreground">
                   {lang === "it"
-                    ? "Scopri come Caelo può integrarsi nei tuoi processi, supportare gli operatori e migliorare la gestione delle pratiche amministrative, senza modificare i sistemi esistenti."
-                    : "Discover how Caelo can integrate into your processes, support operators and improve administrative case management without changing existing systems."}
+                    ? "Scopri come CAELO può integrarsi nei processi esistenti, governare flussi regolati e supportare enti, aziende e partner tecnologici senza sostituire le infrastrutture già in uso."
+                    : "Discover how CAELO can integrate into existing processes, govern regulated workflows and support public bodies, companies and technology partners without replacing current infrastructures."}
                 </p>
               </div>
 
@@ -215,36 +217,36 @@ export default function Home() {
                 <div className="flex flex-col items-center">
                   <CheckCircle2 className="w-8 h-8 text-primary mb-3" />
                   <h3 className="font-semibold mb-2">
-                    {lang === "it" ? "Adattabilità Operativa" : "Operational Adaptability"}
+                    {lang === "it" ? "Governance procedurale" : "Procedural Governance"}
                   </h3>
                   <p className="text-sm text-muted-foreground">
                     {lang === "it"
-                      ? "Caelo si integra nei flussi esistenti senza alterare l’organizzazione."
-                      : "Caelo integrates into existing workflows without disrupting the organization."}
+                      ? "CAELO governa il procedimento, non si limita ad assistere l’operatore."
+                      : "CAELO governs the procedure, rather than merely assisting the operator."}
                   </p>
                 </div>
 
                 <div className="flex flex-col items-center">
                   <CheckCircle2 className="w-8 h-8 text-primary mb-3" />
                   <h3 className="font-semibold mb-2">
-                    {lang === "it" ? "Supporto Evolutivo" : "Evolutionary Support"}
+                    {lang === "it" ? "Auditabilità e controllo" : "Auditability and Control"}
                   </h3>
                   <p className="text-sm text-muted-foreground">
                     {lang === "it"
-                      ? "La piattaforma si adatta ai contesti operativi e cresce con le esigenze dell’ente."
-                      : "The platform adapts to operational contexts and grows with the organization’s needs."}
+                      ? "Ogni passaggio è tracciabile, verificabile e coerente con le regole operative."
+                      : "Every step is traceable, verifiable and aligned with operational rules."}
                   </p>
                 </div>
 
                 <div className="flex flex-col items-center">
                   <CheckCircle2 className="w-8 h-8 text-primary mb-3" />
                   <h3 className="font-semibold mb-2">
-                    {lang === "it" ? "Scalabilità Multiente" : "Multi-entity Scalability"}
+                    {lang === "it" ? "Integrazione enterprise" : "Enterprise Integration"}
                   </h3>
                   <p className="text-sm text-muted-foreground">
                     {lang === "it"
-                      ? "Architettura progettata per essere estesa a più enti e contesti amministrativi."
-                      : "Architecture designed to be extended across multiple public bodies and administrative contexts."}
+                      ? "Architettura progettata per integrarsi con sistemi, cloud e piattaforme già esistenti."
+                      : "Architecture designed to integrate with existing systems, cloud environments and enterprise platforms."}
                   </p>
                 </div>
               </div>
