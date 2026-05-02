@@ -15,7 +15,7 @@ const it = {
   home: {
     title: 'Supporto decisionale auditabile per la Pubblica Amministrazione',
     description:
-      'Caelo è una piattaforma basata su intelligenza artificiale progettata per affiancare gli operatori nella gestione dei procedimenti amministrativi, riducendo errori, rilavorazioni e pratiche respinte.',
+      'CAELO è un sistema di governance che struttura, controlla e gestisce i procedimenti amministrativi, garantendo coerenza operativa, tracciabilità e riduzione degli errori.',
   },
   forms: {
     name: 'Nome',
