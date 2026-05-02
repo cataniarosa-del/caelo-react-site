@@ -15,7 +15,7 @@ const it = {
   home: {
     title: 'Supporto decisionale auditabile per la Pubblica Amministrazione',
     description:
-      'Caelo è una piattaforma basata su intelligenza artificiale progettata per affiancare gli operatori nella gestione dei procedimenti amministrativi, riducendo errori, rilavorazioni e pratiche respinte.',
+      'CAELO è un sistema di governance che struttura, controlla e gestisce i procedimenti amministrativi, garantendo coerenza operativa, tracciabilità e riduzione degli errori.',
   },
   forms: {
     name: 'Nome',
@@ -45,7 +45,7 @@ export const translations: Record<Language, typeof it> = {
     home: {
       title: 'Auditable decision support for Public Administration',
       description:
-        'Caelo is an AI-based platform designed to support operators in managing administrative procedures, reducing errors, rework and rejected cases.',
+        'CAELO is a governance system that structures, controls and manages administrative procedures, ensuring operational consistency, traceability and reduction of errors.',
     },
     forms: {
       name: 'Name',
@@ -72,7 +72,7 @@ export const translations: Record<Language, typeof it> = {
     home: {
       title: 'Support décisionnel auditable pour l’administration publique',
       description:
-        'Caelo est une plateforme basée sur l’intelligence artificielle conçue pour accompagner les opérateurs dans la gestion des procédures administratives, en réduisant les erreurs et les reprises.',
+        'CAELO est un système de gouvernance qui structure, contrôle et gère les procédures administratives, en garantissant la cohérence opérationnelle, la traçabilité et la réduction des erreurs.',
     },
     forms: {
       name: 'Prénom',
@@ -99,7 +99,7 @@ export const translations: Record<Language, typeof it> = {
     home: {
       title: 'Prüfbare Entscheidungsunterstützung für die öffentliche Verwaltung',
       description:
-        'Caelo ist eine KI-basierte Plattform zur Unterstützung von Mitarbeitern bei der Verwaltung administrativer Verfahren, zur Reduzierung von Fehlern und Nacharbeit.',
+        'CAELO ist ein Governance-System, das Verwaltungsverfahren strukturiert, kontrolliert und steuert und dabei operative Konsistenz, Nachvollziehbarkeit und Fehlerreduzierung gewährleistet.',
     },
     forms: {
       name: 'Vorname',
@@ -126,7 +126,7 @@ export const translations: Record<Language, typeof it> = {
     home: {
       title: 'Soporte de decisiones auditable para la Administración Pública',
       description:
-        'Caelo es una plataforma basada en inteligencia artificial diseñada para apoyar a los operadores en la gestión de procedimientos administrativos, reduciendo errores y reprocesos.',
+        'CAELO es un sistema de gobernanza que estructura, controla y gestiona los procedimientos administrativos, garantizando coherencia operativa, trazabilidad y reducción de errores.',
     },
     forms: {
       name: 'Nombre',
