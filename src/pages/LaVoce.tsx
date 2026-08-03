@@ -11,6 +11,14 @@ const archiveArticles = [
     path: "/la-voce/quando-amministrazione-colpisce-chi-e-nel-giusto",
   },
   {
+    date: "15 luglio 2026",
+    category: "Agentic AI · Governance dell’autorità",
+    title: "Non basta identificare un agente AI. Bisogna governarne l’autorità",
+    excerpt:
+      "L’identità digitale e il controllo degli accessi non bastano: l’autorità di un agente deve derivare dal procedimento nel quale opera.",
+    path: "/la-voce/non-basta-identificare-un-agente-ai-bisogna-governarne-lautorita",
+  },
+  {
     date: "13 luglio 2026",
     category: "Governance procedurale · Futuro dell’AI",
     title: "Chi governerà i procedimenti governerà il futuro dell’AI",
@@ -157,6 +165,8 @@ export default function LaVoce() {
                   <li>Procedimenti pubblici</li>
                   <li>Glass box procedurale</li>
                   <li>Futuro dell’AI</li>
+                  <li>Agentic AI</li>
+                  <li>Mandato procedurale</li>
                 </ul>
               </section>
             </aside>
