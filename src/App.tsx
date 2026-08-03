@@ -19,6 +19,7 @@ import LaVoce from "@/pages/LaVoce";
 import ArticoloAmministrazione from "@/pages/ArticoloAmministrazione";
 import ArticoloGovernareProcedimenti from "@/pages/ArticoloGovernareProcedimenti";
 import ArticoloAutoritaAgentiAI from "@/pages/ArticoloAutoritaAgentiAI";
+import ArticoloCancelloEuropeo from "@/pages/ArticoloCancelloEuropeo";
 
 import { LanguageProvider } from "@/LanguageContext";
 
@@ -50,6 +51,10 @@ const App = () => {
                 <Route
                   path="/la-voce/non-basta-identificare-un-agente-ai-bisogna-governarne-lautorita"
                   element={<ArticoloAutoritaAgentiAI />}
+                />
+                <Route
+                  path="/la-voce/il-cancello-europeo-nel-giardino-tecnologico-degli-altri"
+                  element={<ArticoloCancelloEuropeo />}
                 />
                 <Route path={ROUTE_PATHS.ABOUT} element={<About />} />
                 <Route path={ROUTE_PATHS.CONTACT} element={<Contact />} />
