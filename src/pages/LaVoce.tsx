@@ -11,6 +11,14 @@ const archiveArticles = [
     path: "/la-voce/quando-amministrazione-colpisce-chi-e-nel-giusto",
   },
   {
+    date: "24 luglio 2026",
+    category: "AI Governance · Controllo umano",
+    title: "Il controllo umano non è un pulsante di emergenza",
+    excerpt:
+      "Il vero rischio dell’Intelligenza Artificiale non è sostituire l’essere umano, ma renderlo irrilevante nel processo decisionale.",
+    path: "/la-voce/il-controllo-umano-non-e-un-pulsante-di-emergenza",
+  },
+  {
     date: "21 luglio 2026",
     category: "Sovranità tecnologica · Pubblica Amministrazione",
     title: "Il cancello europeo nel giardino tecnologico degli altri",
@@ -169,6 +177,8 @@ export default function LaVoce() {
                 <ul className="mt-5 space-y-4 font-serif text-lg">
                   <li>Etica dell’IA</li>
                   <li>Governance procedurale</li>
+                  <li>Controllo umano</li>
+                  <li>Human in the Loop</li>
                   <li>Case popolari</li>
                   <li>Procedimenti pubblici</li>
                   <li>Glass box procedurale</li>
