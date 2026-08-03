@@ -21,6 +21,7 @@ import ArticoloGovernareProcedimenti from "@/pages/ArticoloGovernareProcedimenti
 import ArticoloAutoritaAgentiAI from "@/pages/ArticoloAutoritaAgentiAI";
 import ArticoloCancelloEuropeo from "@/pages/ArticoloCancelloEuropeo";
 import ArticoloControlloUmano from "@/pages/ArticoloControlloUmano";
+import ArticoloTrasparenzaBlackBox from "@/pages/ArticoloTrasparenzaBlackBox";
 
 import { LanguageProvider } from "@/LanguageContext";
 
@@ -44,6 +45,10 @@ const App = () => {
                 <Route
                   path="/la-voce/quando-amministrazione-colpisce-chi-e-nel-giusto"
                   element={<ArticoloAmministrazione />}
+                />
+                <Route
+                  path="/la-voce/linfrastruttura-della-trasparenza-oltre-la-black-box"
+                  element={<ArticoloTrasparenzaBlackBox />}
                 />
                 <Route
                   path="/la-voce/chi-governera-i-procedimenti-governera-il-futuro-dell-ai"
