@@ -11,6 +11,14 @@ const archiveArticles = [
     path: "/la-voce/quando-amministrazione-colpisce-chi-e-nel-giusto",
   },
   {
+    date: "21 luglio 2026",
+    category: "Sovranità tecnologica · Pubblica Amministrazione",
+    title: "Il cancello europeo nel giardino tecnologico degli altri",
+    excerpt:
+      "Regolare l’intelligenza artificiale non basta: servono infrastrutture controllabili, sperimentazioni accessibili e una strada reale verso la Pubblica Amministrazione.",
+    path: "/la-voce/il-cancello-europeo-nel-giardino-tecnologico-degli-altri",
+  },
+  {
     date: "15 luglio 2026",
     category: "Agentic AI · Governance dell’autorità",
     title: "Non basta identificare un agente AI. Bisogna governarne l’autorità",
@@ -167,6 +175,8 @@ export default function LaVoce() {
                   <li>Futuro dell’AI</li>
                   <li>Agentic AI</li>
                   <li>Mandato procedurale</li>
+                  <li>Sovranità tecnologica</li>
+                  <li>Innovazione nella PA</li>
                 </ul>
               </section>
             </aside>
