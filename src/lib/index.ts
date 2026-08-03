@@ -2,10 +2,10 @@ export const ROUTE_PATHS = {
   HOME: '/',
   FEATURES: '/funzionalita',
   SOLUTIONS: '/soluzioni',
+  QUADERNI: '/quaderni',
   ABOUT: '/chi-siamo',
   CONTACT: '/contatti',
 } as const;
-
 export interface Feature {
   id: string;
   title: string;
