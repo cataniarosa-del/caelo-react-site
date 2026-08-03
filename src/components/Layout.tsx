@@ -35,17 +35,21 @@ export function Layout({ children }: LayoutProps) {
     return () => resizeObserver.disconnect();
   }, []);
 
-  const navigationItems = [
-    { path: ROUTE_PATHS.HOME, label: t.nav.home },
-    { path: ROUTE_PATHS.FEATURES, label: t.nav.features },
-    { path: ROUTE_PATHS.SOLUTIONS, label: t.nav.solutions },
-    {
-      path: '/aziende',
-      label: lang === 'it' ? 'Aziende' : 'Companies',
-    },
-    { path: ROUTE_PATHS.ABOUT, label: t.nav.about },
-    { path: ROUTE_PATHS.CONTACT, label: t.nav.contact },
-  ];
+const navigationItems = [
+  { path: ROUTE_PATHS.HOME, label: t.nav.home },
+  { path: ROUTE_PATHS.FEATURES, label: t.nav.features },
+  { path: ROUTE_PATHS.SOLUTIONS, label: t.nav.solutions },
+  {
+    path: '/aziende',
+    label: lang === 'it' ? 'Aziende' : 'Companies',
+  },
+  {
+    path: ROUTE_PATHS.QUADERNI,
+    label: lang === 'it' ? 'Quaderni CAELO' : 'CAELO Papers',
+  },
+  { path: ROUTE_PATHS.ABOUT, label: t.nav.about },
+  { path: ROUTE_PATHS.CONTACT, label: t.nav.contact },
+];
 
   const languageSelector = (
     <select
