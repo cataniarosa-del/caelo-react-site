@@ -11,6 +11,14 @@ const archiveArticles = [
     path: "/la-voce/quando-amministrazione-colpisce-chi-e-nel-giusto",
   },
   {
+    date: "3 agosto 2026",
+    category: "Glass Box · Audit trail procedurale",
+    title: "L’infrastruttura della trasparenza: oltre la black box",
+    excerpt:
+      "Perché nei procedimenti regolati la fiducia non nasce da una risposta plausibile, ma da tracciabilità, auditabilità, regole verificabili e supervisione umana.",
+    path: "/la-voce/linfrastruttura-della-trasparenza-oltre-la-black-box",
+  },
+  {
     date: "24 luglio 2026",
     category: "AI Governance · Controllo umano",
     title: "Il controllo umano non è un pulsante di emergenza",
@@ -182,6 +190,9 @@ export default function LaVoce() {
                   <li>Case popolari</li>
                   <li>Procedimenti pubblici</li>
                   <li>Glass box procedurale</li>
+                  <li>Audit trail procedurale</li>
+                  <li>Auditabilità</li>
+                  <li>Tracciabilità</li>
                   <li>Futuro dell’AI</li>
                   <li>Agentic AI</li>
                   <li>Mandato procedurale</li>
