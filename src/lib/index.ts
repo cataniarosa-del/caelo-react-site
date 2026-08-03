@@ -2,7 +2,7 @@ export const ROUTE_PATHS = {
   HOME: '/',
   FEATURES: '/funzionalita',
   SOLUTIONS: '/soluzioni',
-  QUADERNI: '/quaderni',
+  LA_VOCE: '/la-voce',
   ABOUT: '/chi-siamo',
   CONTACT: '/contatti',
 } as const;
