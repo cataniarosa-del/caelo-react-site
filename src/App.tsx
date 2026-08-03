@@ -16,6 +16,7 @@ import About from "@/pages/About";
 import Contact from "@/pages/Contact";
 import Aziende from "@/pages/Aziende";
 import LaVoce from "@/pages/LaVoce";
+import ArticoloAmministrazione from "@/pages/ArticoloAmministrazione";
 
 import { LanguageProvider } from "@/LanguageContext";
 
@@ -36,6 +37,10 @@ const App = () => {
                 <Route path={ROUTE_PATHS.FEATURES} element={<Features />} />
                 <Route path={ROUTE_PATHS.SOLUTIONS} element={<Solutions />} />
                 <Route path={ROUTE_PATHS.LA_VOCE} element={<LaVoce />} />
+                <Route
+                  path="/la-voce/quando-amministrazione-colpisce-chi-e-nel-giusto"
+                  element={<ArticoloAmministrazione />}
+                />
                 <Route path={ROUTE_PATHS.ABOUT} element={<About />} />
                 <Route path={ROUTE_PATHS.CONTACT} element={<Contact />} />
 
