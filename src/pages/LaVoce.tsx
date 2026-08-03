@@ -1,4 +1,5 @@
 import { Layout } from "@/components/Layout";
+import { Link } from "react-router-dom";
 
 export default function LaVoce() {
   return (
@@ -71,9 +72,12 @@ export default function LaVoce() {
                 </p>
               </div>
 
-              <p className="mt-8 border-t border-black/40 pt-5 text-sm font-semibold uppercase tracking-[0.16em]">
-                Articolo completo in preparazione
-              </p>
+              <Link
+                to="/la-voce/quando-amministrazione-colpisce-chi-e-nel-giusto"
+                className="mt-8 inline-flex border-b-2 border-black pb-1 text-sm font-semibold uppercase tracking-[0.16em] transition-opacity hover:opacity-60"
+              >
+                Leggi l’articolo completo
+              </Link>
             </article>
 
             <aside className="space-y-4">
