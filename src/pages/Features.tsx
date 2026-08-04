@@ -217,14 +217,15 @@ export default function Features() {
           </div>
         </section>
 
-        <section className="py-24 bg-background">
+        <section className="py-16 md:py-20 bg-background">
           <div className="container mx-auto px-4">
             <motion.div initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={springPresets.gentle} className="max-w-6xl mx-auto">
-              <div className="text-center mb-12">
-                <h2 className="text-4xl md:text-5xl font-bold mb-6">{text.glassTitle}</h2>
-                <div className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed space-y-4">
-                  <p>{text.sectionText}</p>
-                  <p>{text.glassIntro}</p>
+              <div className="mb-10 md:mb-12">
+                <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-center mb-8">{text.glassTitle}</h2>
+                <div className="max-w-3xl mx-auto border-l-4 border-primary pl-6 md:pl-8">
+                  <p className="text-lg md:text-xl text-foreground leading-8 md:leading-9">
+                    {text.sectionText} {text.glassIntro}
+                  </p>
                 </div>
               </div>
               <div className="rounded-3xl overflow-hidden border border-border bg-card shadow-sm mb-10">
