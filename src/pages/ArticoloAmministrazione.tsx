@@ -56,7 +56,7 @@ const sections = [
     ]
   },
   {
-    "title": "Il caso di una donna di 86 anni",
+    "title": "Il caso di una donna di 87 anni",
     "paragraphs": [
       "Sono venuta a conoscenza diretta di un caso che mostra quanto possano diventare gravi le conseguenze della cattiva gestione amministrativa.",
       "La vicenda riguarda una donna anziana, assegnataria di un alloggio di edilizia residenziale pubblica di Roma Capitale.",
@@ -66,7 +66,7 @@ const sections = [
       "Il suo rapporto con l’alloggio era registrato, amministrato e alimentato da pagamenti che il Comune aveva regolarmente richiesto e incassato.",
       "Nel 2018 lo stesso Dipartimento Patrimonio e Politiche abitative di Roma Capitale aveva certificato che la donna era:",
       "“utente assegnataria regolare”.",
-      "Il certificato richiamava espressamente la determinazione dirigenziale di assegnazione del 17 dicembre 2001.",
+      "Il certificato richiamava espressamente la determinazione dirigenziale di assegnazione.",
       "Eppure, molti anni dopo, la stessa amministrazione ha costruito nei suoi confronti due percorsi incompatibili.",
       "Da una parte, ha dichiarato la sua decadenza dall’assegnazione dell’alloggio.",
       "Dall’altra, ha respinto una precedente istanza di assegnazione in regolarizzazione, trattandola come un’occupante senza titolo.",
@@ -99,7 +99,7 @@ const sections = [
     "title": "Una persona anziana costretta a rivolgersi ai giudici",
     "paragraphs": [
       "La donna ha dovuto ricorrere alla giustizia.",
-      "Parliamo di una persona di 86 anni, affetta da numerose e gravi patologie, invalida e con capacità di deambulazione ridotta: condizioni personali espressamente rappresentate negli atti del giudizio.",
+      "Parliamo di una persona di 87 anni, affetta da numerose e gravi patologie, invalida e con capacità di deambulazione ridotta: condizioni personali espressamente rappresentate negli atti del giudizio.",
       "Una persona anziana ha dovuto cercare assistenza legale.",
       "Ha dovuto recuperare atti, ricevute e certificazioni.",
       "Ha dovuto ricostruire una vicenda amministrativa durata decenni.",
@@ -307,7 +307,7 @@ const sections = [
       "Impegna gli uffici nella difesa di provvedimenti incoerenti.",
       "Rallenta gli interventi sulle situazioni realmente illegittime.",
       "E, nello stesso tempo, colpisce le persone più fragili, perché sono proprio loro ad avere meno strumenti economici, culturali e fisici per opporsi.",
-      "L’etica amministrativa consiste anche nel non costringere una donna di 86 anni ad arrivare davanti a un giudice per ottenere il riconoscimento di un principio elementare:",
+      "L’etica amministrativa consiste anche nel non costringere una donna di 87 anni ad arrivare davanti a un giudice per ottenere il riconoscimento di un principio elementare:",
       "non può essere contemporaneamente assegnataria regolare e occupante abusiva dello stesso alloggio."
     ]
   },
