@@ -48,14 +48,6 @@ export default function ArticoloTrasparenzaBlackBox() {
               <p className="mt-6 text-sm">Di Claudia Catania · 3 agosto 2026</p>
             </header>
 
-            <figure className="mx-auto mt-10 max-w-6xl">
-              <img
-                src="/images/infrastruttura-trasparenza-black-box.webp"
-                alt="Infografica che confronta la black box con la glass box di CAELO, mostrando acquisizione input, fonti e regole, controlli tracciati, eccezioni, intervento umano e decisione motivata."
-                className="w-full border border-black/20"
-              />
-            </figure>
-
             <div className="mx-auto mt-10 max-w-3xl font-serif text-[19px] leading-8">
               {intro.map((paragraph, index) => (
                 <p
