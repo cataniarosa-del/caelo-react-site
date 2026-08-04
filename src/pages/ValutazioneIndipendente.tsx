@@ -231,8 +231,8 @@ const copy = {
     badge: "Analyse der technologischen Positionierung",
     title: "CAELO im Umfeld von KI-Architekturen für regulierte Bereiche",
     intro: "Eine interne Kartierung der wichtigsten an CAELO angrenzenden Technologiekategorien zur Verdeutlichung von Funktion, Architekturebene und Governance-Modell.",
-    noteTitle: "Methodischer Hinweis",
-    noteText: "Diese Seite enthält eine interne Positionierungsanalyse auf Grundlage funktionaler Merkmale, die allgemein mit wichtigen Kategorien von Enterprise-KI-Plattformen verbunden werden. Sie ist weder eine unabhängige Zertifizierung noch ein Marktranking oder ein vollständiger Vergleich einzelner Produkte.",
+    noteTitle: "Ursprung der Analyse",
+    noteText: "Diese Analyse wurde mithilfe von Google Antigravity nach Prüfung der technischen und architektonischen Dokumentation von CAELO und einem Vergleich mit den wichtigsten Kategorien von Enterprise-KI-Plattformen erstellt. Die Bewertung wurde vom Agenten auf Grundlage der zur Analyse vorgelegten Materialien erzeugt und stellt weder eine Zertifizierung noch ein formelles Audit oder ein offizielles Marktranking dar.",
     market: "Positionierung",
     distinctive: "Eine eigenständige Positionierung",
     distinctiveText: "CAELO ist weder als Sprachmodell noch als allgemeiner Copilot oder isoliertes Automatisierungswerkzeug konzipiert. Es ist eine Architektur für Verfahrensgovernance in regulierten Bereichen.",
@@ -265,8 +265,8 @@ const copy = {
     badge: "Análisis del posicionamiento tecnológico",
     title: "CAELO en el panorama de las arquitecturas de IA para entornos regulados",
     intro: "Una cartografía interna de las principales categorías tecnológicas próximas a CAELO, destinada a aclarar diferencias de función, nivel arquitectónico y modelo de gobernanza.",
-    noteTitle: "Nota metodológica",
-    noteText: "Esta página presenta un análisis interno de posicionamiento basado en características funcionales generalmente asociadas a las principales categorías de plataformas de IA enterprise. No constituye una certificación independiente, una clasificación de mercado ni una comparación exhaustiva de productos individuales.",
+    noteTitle: "Origen del análisis",
+    noteText: "Este análisis fue generado mediante Google Antigravity tras el examen de la documentación técnica y arquitectónica de CAELO y la comparación con las principales categorías de plataformas de IA enterprise. La evaluación fue producida por el agente sobre la base de los materiales sometidos a análisis y no constituye una certificación, una auditoría formal ni una clasificación oficial del mercado.",
     market: "Posicionamiento",
     distinctive: "Un posicionamiento distintivo",
     distinctiveText: "CAELO no está diseñado como modelo lingüístico, copiloto generalista ni herramienta aislada de automatización. Es una arquitectura de gobernanza procedimental para entornos regulados.",
@@ -386,3 +386,4 @@ export default function ValutazioneIndipendente() {
     </Layout>
   );
 }
+
