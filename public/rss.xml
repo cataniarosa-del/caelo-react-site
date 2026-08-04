@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>La Voce di CAELO</title>
+    <link>https://caelo.it/la-voce</link>
+    <description>Analisi, casi concreti e architetture di fiducia per i procedimenti regolati.</description>
+    <language>it-IT</language>
+    <atom:link href="https://caelo.it/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Quando l’amministrazione colpisce chi è nel giusto</title>
+      <link>https://caelo.it/la-voce/quando-amministrazione-colpisce-chi-e-nel-giusto</link>
+      <guid>https://caelo.it/la-voce/quando-amministrazione-colpisce-chi-e-nel-giusto</guid>
+      <pubDate>Tue, 04 Aug 2026 08:00:00 +0200</pubDate>
+      <description>Dalle cartelle pazze delle case popolari all’etica dell’intelligenza artificiale nei procedimenti pubblici.</description>
+    </item>
+    <item>
+      <title>L’infrastruttura della trasparenza: oltre la black box</title>
+      <link>https://caelo.it/la-voce/linfrastruttura-della-trasparenza-oltre-la-black-box</link>
+      <guid>https://caelo.it/la-voce/linfrastruttura-della-trasparenza-oltre-la-black-box</guid>
+      <pubDate>Mon, 03 Aug 2026 08:00:00 +0200</pubDate>
+      <description>Nei procedimenti regolati la fiducia nasce da tracciabilità, auditabilità, regole verificabili e supervisione umana.</description>
+    </item>
+    <item>
+      <title>Chi firma deve poter vedere: dalla Black Box alla Glass Box Procedurale</title>
+      <link>https://caelo.it/la-voce/chi-firma-deve-poter-vedere-dalla-black-box-alla-glass-box-procedurale</link>
+      <guid>https://caelo.it/la-voce/chi-firma-deve-poter-vedere-dalla-black-box-alla-glass-box-procedurale</guid>
+      <pubDate>Sun, 02 Aug 2026 08:00:00 +0200</pubDate>
+      <description>La sicurezza di un dirigente nasce dalla possibilità di governare, verificare e ricostruire ogni passaggio della decisione.</description>
+    </item>
+    <item>
+      <title>Il controllo umano non è un pulsante di emergenza</title>
+      <link>https://caelo.it/la-voce/il-controllo-umano-non-e-un-pulsante-di-emergenza</link>
+      <guid>https://caelo.it/la-voce/il-controllo-umano-non-e-un-pulsante-di-emergenza</guid>
+      <pubDate>Fri, 24 Jul 2026 08:00:00 +0200</pubDate>
+      <description>Il vero rischio dell’intelligenza artificiale è rendere l’essere umano irrilevante nel processo decisionale.</description>
+    </item>
+    <item>
+      <title>Il cancello europeo nel giardino tecnologico degli altri</title>
+      <link>https://caelo.it/la-voce/il-cancello-europeo-nel-giardino-tecnologico-degli-altri</link>
+      <guid>https://caelo.it/la-voce/il-cancello-europeo-nel-giardino-tecnologico-degli-altri</guid>
+      <pubDate>Tue, 21 Jul 2026 08:00:00 +0200</pubDate>
+      <description>Regolare l’intelligenza artificiale non basta: servono infrastrutture controllabili e una strada reale verso la PA.</description>
+    </item>
+    <item>
+      <title>Non basta identificare un agente AI. Bisogna governarne l’autorità</title>
+      <link>https://caelo.it/la-voce/non-basta-identificare-un-agente-ai-bisogna-governarne-lautorita</link>
+      <guid>https://caelo.it/la-voce/non-basta-identificare-un-agente-ai-bisogna-governarne-lautorita</guid>
+      <pubDate>Wed, 15 Jul 2026 08:00:00 +0200</pubDate>
+      <description>L’autorità di un agente deve derivare dal procedimento nel quale opera.</description>
+    </item>
+    <item>
+      <title>Chi governerà i procedimenti governerà il futuro dell’AI</title>
+      <link>https://caelo.it/la-voce/chi-governera-i-procedimenti-governera-il-futuro-dell-ai</link>
+      <guid>https://caelo.it/la-voce/chi-governera-i-procedimenti-governera-il-futuro-dell-ai</guid>
+      <pubDate>Mon, 13 Jul 2026 08:00:00 +0200</pubDate>
+      <description>Il vantaggio competitivo nascerà dalla capacità di governare i procedimenti nei quali l’intelligenza artificiale opera.</description>
+    </item>
+  </channel>
+</rss>
