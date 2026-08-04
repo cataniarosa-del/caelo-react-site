@@ -22,6 +22,7 @@ import ArticoloAutoritaAgentiAI from "@/pages/ArticoloAutoritaAgentiAI";
 import ArticoloCancelloEuropeo from "@/pages/ArticoloCancelloEuropeo";
 import ArticoloControlloUmano from "@/pages/ArticoloControlloUmano";
 import ArticoloTrasparenzaBlackBox from "@/pages/ArticoloTrasparenzaBlackBox";
+import ArticoloChiFirmaDeveVedere from "@/pages/ArticoloChiFirmaDeveVedere";
 
 import { LanguageProvider } from "@/LanguageContext";
 
@@ -49,6 +50,10 @@ const App = () => {
                 <Route
                   path="/la-voce/linfrastruttura-della-trasparenza-oltre-la-black-box"
                   element={<ArticoloTrasparenzaBlackBox />}
+                />
+                <Route
+                  path="/la-voce/chi-firma-deve-poter-vedere-dalla-black-box-alla-glass-box-procedurale"
+                  element={<ArticoloChiFirmaDeveVedere />}
                 />
                 <Route
                   path="/la-voce/chi-governera-i-procedimenti-governera-il-futuro-dell-ai"
