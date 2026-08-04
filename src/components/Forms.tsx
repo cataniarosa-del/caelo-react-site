@@ -47,7 +47,7 @@ const formTexts = {
     demoSubject: "Richiesta Demo CAELO",
     demoEmailTitle: "Richiesta Demo CAELO",
     demoOpening: "Si aprirà il tuo client di posta per inviare la richiesta.",
-    freeDemo: "Richiedi demo gratuita",
+    freeDemo: "Avvia un confronto",
   },
   en: {
     contactTitle: "Contact us",
@@ -84,7 +84,7 @@ const formTexts = {
     demoSubject: "CAELO Demo Request",
     demoEmailTitle: "CAELO Demo Request",
     demoOpening: "Your email client will open to send the request.",
-    freeDemo: "Request free demo",
+    freeDemo: "Start a conversation",
   },
   fr: {
     contactTitle: "Contactez-nous",
@@ -121,7 +121,7 @@ const formTexts = {
     demoSubject: "Demande de démo CAELO",
     demoEmailTitle: "Demande de démo CAELO",
     demoOpening: "Votre client de messagerie va s’ouvrir pour envoyer la demande.",
-    freeDemo: "Demander une démo gratuite",
+    freeDemo: "Engager un échange",
   },
   de: {
     contactTitle: "Kontakt",
@@ -158,7 +158,7 @@ const formTexts = {
     demoSubject: "CAELO Demo-Anfrage",
     demoEmailTitle: "CAELO Demo-Anfrage",
     demoOpening: "Ihr E-Mail-Programm wird geöffnet, um die Anfrage zu senden.",
-    freeDemo: "Kostenlose Demo anfordern",
+    freeDemo: "Gespräch beginnen",
   },
   es: {
     contactTitle: "Contáctanos",
@@ -195,7 +195,7 @@ const formTexts = {
     demoSubject: "Solicitud de demo CAELO",
     demoEmailTitle: "Solicitud de demo CAELO",
     demoOpening: "Se abrirá tu cliente de correo para enviar la solicitud.",
-    freeDemo: "Solicitar demo gratuita",
+    freeDemo: "Iniciar una conversación",
   },
 };
 
@@ -533,3 +533,5 @@ ${formData.interessePrincipale}
     </motion.div>
   );
 }
+
+
