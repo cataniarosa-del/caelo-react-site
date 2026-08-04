@@ -217,28 +217,15 @@ export default function Features() {
           </div>
         </section>
 
-        <section className="py-24 bg-muted/30">
-          <div className="container mx-auto px-4">
-            <motion.div initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={springPresets.gentle} className="max-w-3xl mx-auto text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-bold mb-6">{text.sectionTitle}</h2>
-              <p className="text-lg text-muted-foreground">{text.sectionText}</p>
-            </motion.div>
-            <motion.div variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true }} className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {features.map((feature, index) => (
-                <motion.div key={feature.id} variants={staggerItem}>
-                  <FeatureCard feature={feature} index={index} />
-                </motion.div>
-              ))}
-            </motion.div>
-          </div>
-        </section>
-
         <section className="py-24 bg-background">
           <div className="container mx-auto px-4">
             <motion.div initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={springPresets.gentle} className="max-w-6xl mx-auto">
               <div className="text-center mb-12">
                 <h2 className="text-4xl md:text-5xl font-bold mb-6">{text.glassTitle}</h2>
-                <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">{text.glassIntro}</p>
+                <div className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed space-y-4">
+                  <p>{text.sectionText}</p>
+                  <p>{text.glassIntro}</p>
+                </div>
               </div>
               <div className="rounded-3xl overflow-hidden border border-border bg-card shadow-sm mb-10">
                 <img src="/glassbox.png" alt={text.glassTitle} className="w-full h-auto object-contain" />
@@ -256,6 +243,18 @@ export default function Features() {
               <div className="mt-10 rounded-3xl border border-border bg-muted/30 p-8">
                 <p className="text-lg leading-relaxed text-foreground">{text.glassResult}</p>
               </div>
+            </motion.div>
+          </div>
+        </section>
+
+        <section className="py-24 bg-muted/30">
+          <div className="container mx-auto px-4">
+            <motion.div variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true }} className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {features.map((feature, index) => (
+                <motion.div key={feature.id} variants={staggerItem}>
+                  <FeatureCard feature={feature} index={index} />
+                </motion.div>
+              ))}
             </motion.div>
           </div>
         </section>
