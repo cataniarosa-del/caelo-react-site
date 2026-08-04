@@ -47,6 +47,16 @@ const verticals = [
     procedural: "Completa e validata su casi di test",
     software: "Non ancora avviata",
   },
+  {
+    slug: "societario",
+    category: "Diritto societario",
+    title: "CAELO Societario",
+    subtitle: "Governance e ricostruzione del fascicolo societario",
+    status: "Verticale in fase di studio e progettazione",
+    description: "Applicazione futura della governance procedurale CAELO all’attività istruttoria e documentale del professionista societario, mantenendo sempre l’avvocato al centro della decisione.",
+    procedural: "In fase di studio e progettazione",
+    software: "Non ancora avviata",
+  },
 ];
 
 export default function Solutions() {
@@ -87,8 +97,14 @@ export default function Solutions() {
           <motion.div variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true }} className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             {verticals.map((vertical) => (
               <motion.article key={vertical.slug} variants={staggerItem} className="rounded-3xl border border-border bg-card p-8 md:p-10 shadow-sm flex flex-col">
-                <span className="inline-flex self-start rounded-full bg-primary/10 px-4 py-2 text-sm font-medium text-primary mb-6">{vertical.category}</span>
-                <h3 className="text-3xl font-bold mb-5">{vertical.title}</h3>
+                <span className="inline-flex self-start rounded-full bg-primary/10 px-4 py-2 text-sm font-medium text-primary mb-4">{vertical.category}</span>
+                {vertical.status && (
+                  <span className="inline-flex self-start rounded-full border border-primary/30 bg-primary/5 px-4 py-2 text-xs font-bold uppercase tracking-[0.12em] text-primary mb-5">
+                    {vertical.status}
+                  </span>
+                )}
+                <h3 className="text-3xl font-bold mb-3">{vertical.title}</h3>
+                {vertical.subtitle && <p className="text-lg font-semibold mb-5">{vertical.subtitle}</p>}
                 <p className="text-lg text-muted-foreground leading-relaxed mb-8">{vertical.description}</p>
 
                 <div className="grid gap-4 mb-8">
@@ -105,7 +121,7 @@ export default function Solutions() {
                 <div className="mt-auto">
                   <Button size="lg" variant={vertical.slug === "passweb" ? "default" : "outline"} className="text-base px-6 py-5" asChild>
                     <Link to={`/soluzioni/${vertical.slug}`}>
-                      {isIt ? "Scopri il verticale" : "Explore the vertical"}
+                      {vertical.slug === "societario" ? "Approfondisci l’area di studio" : isIt ? "Scopri il verticale" : "Explore the vertical"}
                       <ArrowRight className="ml-2 w-5 h-5" />
                     </Link>
                   </Button>
