@@ -40,6 +40,22 @@ const sections = [
     ]
   },
   {
+    "title": "Quando l’opacità dei conteggi arriva in tribunale",
+    "paragraphs": [
+      "Il problema delle cosiddette “cartelle pazze” non è rimasto confinato alle proteste degli inquilini. È arrivato anche davanti al giudice.",
+      "Con la sentenza n. 54105 del 23 novembre 2021, il Tribunale ordinario di Roma, Sezione VI civile, ha accolto il ricorso di un inquilino delle case popolari contro Roma Capitale, condannando l’amministrazione anche al pagamento delle spese di giudizio.",
+      "Nel caso esaminato, gli importi richiesti tramite Aequa Roma non consentivano di ricostruire in modo chiaro la formazione del credito. Le somme erano indicate per annualità senza una distinzione sufficientemente verificabile tra canoni, oneri accessori e conguagli.",
+      "Il cittadino, quindi, non era posto nelle condizioni di comprendere quali somme fossero effettivamente dovute, a quali annualità si riferissero, quali voci fossero già prescritte e quali calcoli avessero determinato l’importo finale.",
+      "Il giudice ha riconosciuto la necessità di riesaminare la posizione debitoria, tenendo conto anche della prescrizione delle partite più risalenti.",
+      "Questo precedente dimostra che il problema non è soltanto l’entità della somma richiesta. Il problema è l’impossibilità di verificare il percorso contabile e amministrativo attraverso il quale quella somma è stata costruita.",
+      "Un’amministrazione non può presentare al cittadino un importo finale e pretendere che venga accettato come un dato incontestabile. Deve rendere visibili le annualità, le singole componenti, i criteri di calcolo, gli eventuali atti interruttivi della prescrizione e le evidenze che sostengono ogni voce.",
+      "In altre parole, anche una richiesta di pagamento può funzionare come una Black Box.",
+      "Il cittadino vede l’importo finale, ma non riesce a ricostruire ciò che è avvenuto all’interno.",
+      "Ed è proprio qui che il caso delle cartelle pazze incontra il tema centrale di CAELO: non basta produrre un risultato amministrativo; occorre rendere verificabile il procedimento che lo ha generato.",
+      "Quando il percorso non è ricostruibile, l’amministrazione chiede al cittadino di fidarsi del risultato. Ma in un procedimento pubblico la fiducia non può sostituire la tracciabilità."
+    ]
+  },
+  {
     "title": "Il caso di una donna di 86 anni",
     "paragraphs": [
       "Sono venuta a conoscenza diretta di un caso che mostra quanto possano diventare gravi le conseguenze della cattiva gestione amministrativa.",
