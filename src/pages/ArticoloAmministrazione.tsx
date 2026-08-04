@@ -121,7 +121,17 @@ const sections = [
       "Il giudice ha quindi ricordato all’amministrazione il dovere di clare loqui: parlare e decidere chiaramente, adottando esiti procedimentali coerenti tra loro e aderenti a un’unica realtà fattuale.",
       "Il ricorso è stato accolto.",
       "Il provvedimento è stato annullato.",
-      "Ma per arrivare a questo risultato è stato necessario un giudice."
+      "Ma per arrivare a questo risultato è stato necessario un giudice.",
+      "Nel frattempo, per quasi due anni, una donna di 87 anni ha visto incrinarsi progressivamente la certezza della propria casa. Ogni comunicazione dell’amministrazione, ogni determina, ogni atto recapitato al suo domicilio non era un semplice documento burocratico: era un macigno.",
+      "Prima la decadenza dall’assegnazione. Poi il rigetto della regolarizzazione. Poi la rappresentazione della stessa persona come occupante senza titolo, nonostante esistessero una determina di assegnazione, un certificato che la qualificava come assegnataria regolare e venticinque anni di canoni pagati.",
+      "Ogni nuova busta significava paura. La paura di perdere la casa nella quale aveva costruito la propria vita. La paura che un altro atto potesse cancellare anni di pagamenti, documenti e riconoscimenti amministrativi. La paura di essere trattata come abusiva proprio dall’amministrazione che per decenni l’aveva riconosciuta come assegnataria.",
+      "Per una persona anziana, la casa non è soltanto un bene patrimoniale. È sicurezza, memoria, continuità, protezione. Vederne messo in discussione il diritto attraverso atti incoerenti significa vivere nell’angoscia quotidiana, senza sapere quale comunicazione arriverà dopo e quali conseguenze potrà produrre.",
+      "Il ricorso al giudice non è stato quindi soltanto un passaggio processuale. È stato l’unico modo per interrompere una sequenza di atti che, uno dopo l’altro, stavano facendo crollare la certezza più elementare: poter continuare a vivere nella propria casa.",
+      "A tutto questo si è aggiunto il peso economico del contenzioso. Una persona che vive in un alloggio popolare, proprio per la propria condizione reddituale, normalmente non dispone delle risorse necessarie per sostenere due anni di spese legali.",
+      "Eppure quella donna ha dovuto affrontarle. Ha dovuto sottrarre denaro alle esigenze quotidiane, rinunciare ad altro e compiere sacrifici enormi per pagare l’assistenza necessaria a difendere un diritto che l’amministrazione avrebbe dovuto riconoscere consultando i propri stessi atti.",
+      "Non ha sostenuto quelle spese per ottenere un vantaggio o una concessione. Le ha sostenute per dimostrare di non essere abusiva, per difendere la propria casa e per costringere l’amministrazione a ricondurre a coerenza documenti e provvedimenti che essa stessa aveva prodotto.",
+      "Questo è uno degli aspetti più ingiusti della vicenda: l’amministrazione genera la contraddizione, ma è la persona fragile a dover sostenere il costo economico della sua correzione.",
+      "Il giudice ha annullato il provvedimento. Ma nessuna sentenza può restituire integralmente due anni vissuti nella paura, né cancellare i sacrifici economici affrontati per difendere la certezza della propria casa."
     ]
   },
   {
