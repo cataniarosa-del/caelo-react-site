@@ -1,29 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-  <url>
-    <loc>https://caelo.it/</loc>
-    <priority>1.0</priority>
-  </url>
-
-  <url>
-    <loc>https://caelo.it/funzionalita</loc>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://caelo.it/soluzioni</loc>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://caelo.it/chi-siamo</loc>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://caelo.it/contatti</loc>
-    <priority>0.8</priority>
-  </url>
-
+  <url><loc>https://caelo.it/</loc><priority>1.0</priority></url>
+  <url><loc>https://caelo.it/funzionalita</loc><priority>0.8</priority></url>
+  <url><loc>https://caelo.it/soluzioni</loc><priority>0.8</priority></url>
+  <url><loc>https://caelo.it/aziende</loc><priority>0.8</priority></url>
+  <url><loc>https://caelo.it/chi-siamo</loc><priority>0.8</priority></url>
+  <url><loc>https://caelo.it/contatti</loc><priority>0.8</priority></url>
+  <url><loc>https://caelo.it/la-voce</loc><lastmod>2026-08-04</lastmod><priority>0.9</priority></url>
+  <url><loc>https://caelo.it/la-voce/quando-amministrazione-colpisce-chi-e-nel-giusto</loc><lastmod>2026-08-04</lastmod><priority>0.8</priority></url>
+  <url><loc>https://caelo.it/la-voce/linfrastruttura-della-trasparenza-oltre-la-black-box</loc><lastmod>2026-08-03</lastmod><priority>0.8</priority></url>
+  <url><loc>https://caelo.it/la-voce/chi-firma-deve-poter-vedere-dalla-black-box-alla-glass-box-procedurale</loc><lastmod>2026-08-02</lastmod><priority>0.8</priority></url>
+  <url><loc>https://caelo.it/la-voce/il-controllo-umano-non-e-un-pulsante-di-emergenza</loc><lastmod>2026-07-24</lastmod><priority>0.8</priority></url>
+  <url><loc>https://caelo.it/la-voce/il-cancello-europeo-nel-giardino-tecnologico-degli-altri</loc><lastmod>2026-07-21</lastmod><priority>0.8</priority></url>
+  <url><loc>https://caelo.it/la-voce/non-basta-identificare-un-agente-ai-bisogna-governarne-lautorita</loc><lastmod>2026-07-15</lastmod><priority>0.8</priority></url>
+  <url><loc>https://caelo.it/la-voce/chi-governera-i-procedimenti-governera-il-futuro-dell-ai</loc><lastmod>2026-07-13</lastmod><priority>0.8</priority></url>
 </urlset>
