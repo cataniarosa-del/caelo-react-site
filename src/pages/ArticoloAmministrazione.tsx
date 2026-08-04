@@ -378,7 +378,7 @@ export default function ArticoloAmministrazione() {
               <p className="text-xs font-semibold uppercase tracking-[0.24em]">
                 Etica dell’IA · Procedimenti pubblici
               </p>
-              <h1 className="mx-auto mt-5 max-w-5xl font-serif text-5xl font-semibold leading-[0.98] md:text-7xl">
+              <h1 className="mx-auto mt-5 max-w-5xl font-serif text-4xl font-semibold leading-[0.98] md:text-7xl">
                 Quando l’amministrazione colpisce chi è nel giusto
               </h1>
               <p className="mx-auto mt-6 max-w-4xl font-serif text-2xl italic leading-snug text-black/70">
