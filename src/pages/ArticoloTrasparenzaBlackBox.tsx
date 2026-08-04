@@ -2,52 +2,117 @@ import { Layout } from "@/components/Layout";
 import { Link } from "react-router-dom";
 import { Linkedin } from "lucide-react";
 
-const heroImage = "data:image/jpeg;base64,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...";
-const intro = ["Negli ultimi anni, l'avvento dei modelli linguistici (LLM) e il problema della \"scatola nera\" hanno generato una naturale diffidenza verso l'Intelligenza Artificiale.", "Di fronte a risposte imprecise o allucinazioni imprevedibili, la reazione immediata di molte organizzazioni è stata la paura.", "Oggi il rischio principale è il pregiudizio di categoria: la fretta di catalogare qualsiasi innovazione basata su AI nello stesso binario della prima generazione generativa, rendendo difficile distinguere i prodotti tradizionali da architetture completamente nuove.", "Ogni giorno, nelle organizzazioni complesse e nella Pubblica Amministrazione, decisioni e procedimenti critici subiscono rallentamenti, sospensioni o continue rilavorazioni.", "La tentazione iniziale è stata quella di affidarsi all'AI generativa per velocizzare il lavoro. Eppure, quando si passa dai test di laboratorio ai procedimenti operativi regolati, emerge una forte resistenza da parte di dirigenti e funzionari.", "Perché è così difficile fidarsi dell'AI quando c'è di mezzo una responsabilità amministrativa, contabile o giuridica?"];
-const criticalPoints = [{"title": "Mancanza di un mandato procedurale", "text": "Serve sapere chi può fare cosa, quando e con quale responsabilità. L'AI generativa tradizionale non possiede un mandato procedurale: genera un testo plausibile, ma non conosce i propri limiti di autorità, quali credenziali richieda il passaggio successivo e chi risponda legalmente dell'atto."}, {"title": "La governance del procedimento e l'automazione", "text": "Automatizzare un processo senza averne governato le regole, i vincoli deterministici, le eccezioni e le fonti ufficiali significa soltanto velocizzare il caos e moltiplicare i rischi di errore o allucinazione."}, {"title": "Assenza di auditabilità e tracciabilità", "text": "Un operatore o un dirigente non può assumersi la responsabilità di una decisione se il sistema funziona come una scatola nera e non lascia un registro chiaro e verificabile delle regole e dei controlli applicati."}];
-const closing = ["Solo dopo aver chiarito questa necessità fondamentale diventa evidente quale debba essere il ruolo della tecnologia.", "È precisamente da questo cambio di paradigma che nasce CAELO: non come l'ennesimo assistente conversazionale o generatore di testi, ma come risposta architetturalmente diversa a un problema di governance.", "CAELO interviene prima dell'automazione per ricostruire e governare il procedimento sul caso concreto, garantendo tracciabilità, rispetto dei vincoli e controllo umano nei punti decisionali.", "I procedimenti non si sbloccano chiedendo all'AI di sostituirsi al giudizio umano, ma fornendo alle organizzazioni un'infrastruttura in cui fiducia, responsabilità e regole rimangono al centro.", "#AIGovernance #IntelligenzaArtificiale #GovernanceProcedurale #PubblicaAmministrazione #ResponsibleAI #HumanInTheLoop #Auditabilità #ComplianceByDesign #DigitalTransformation #CAELO #GlassBox"];
+const intro = ['Negli ultimi anni, l\'avvento dei modelli linguistici (LLM) e il problema della "scatola nera" hanno generato una naturale diffidenza verso l\'Intelligenza Artificiale.', 'Di fronte a risposte imprecise o allucinazioni imprevedibili, la reazione immediata di molte organizzazioni è stata la paura.', 'Oggi il rischio principale è il pregiudizio di categoria: la fretta di catalogare qualsiasi innovazione basata su AI nello stesso binario della prima generazione generativa, rendendo difficile distinguere i prodotti tradizionali da architetture completamente nuove.', 'Ogni giorno, nelle organizzazioni complesse e nella Pubblica Amministrazione, decisioni e procedimenti critici subiscono rallentamenti, sospensioni o continue rilavorazioni.', "La tentazione iniziale è stata quella di affidarsi all'AI generativa per velocizzare il lavoro. Eppure, quando si passa dai test di laboratorio ai procedimenti operativi regolati, emerge una forte resistenza da parte di dirigenti e funzionari.", "Perché è così difficile fidarsi dell'AI quando c'è di mezzo una responsabilità amministrativa, contabile o giuridica?"];
+const criticalPoints = [{'title': 'Mancanza di un mandato procedurale', 'text': "Serve sapere chi può fare cosa, quando e con quale responsabilità. L'AI generativa tradizionale non possiede un mandato procedurale: genera un testo plausibile, ma non conosce i propri limiti di autorità, quali credenziali richieda il passaggio successivo e chi risponda legalmente dell'atto."}, {'title': "La governance del procedimento viene prima dell'automazione", 'text': 'Automatizzare un processo senza averne governato le regole, i vincoli deterministici, le eccezioni e le fonti ufficiali significa soltanto velocizzare il caos e moltiplicare i rischi di errore o allucinazione.'}, {'title': 'Assenza di auditabilità e tracciabilità', 'text': 'Un operatore o un dirigente non può assumersi la responsabilità di una decisione se il sistema funziona come una scatola nera e non lascia un registro chiaro e verificabile delle regole e dei controlli applicati.'}];
+const closing = ['Solo dopo aver chiarito questa necessità fondamentale diventa evidente quale debba essere il ruolo della tecnologia.', "È precisamente da questo cambio di paradigma che nasce CAELO: non come l'ennesimo assistente conversazionale o generatore di testi, ma come risposta architetturalmente diversa a un problema di governance.", "CAELO interviene prima dell'automazione per ricostruire e governare il procedimento sul caso concreto, garantendo tracciabilità, rispetto dei vincoli e controllo umano nei punti decisionali.", "I procedimenti non si sbloccano chiedendo all'AI di sostituirsi al giudizio umano, ma fornendo alle organizzazioni un'infrastruttura in cui fiducia, responsabilità e regole rimangono al centro.", '#AIGovernance #IntelligenzaArtificiale #GovernanceProcedurale #PubblicaAmministrazione #ResponsibleAI #HumanInTheLoop #Auditabilità #ComplianceByDesign #DigitalTransformation #CAELO #GlassBox'];
 
 export default function ArticoloTrasparenzaBlackBox() {
   const shareOnLinkedIn = () => {
-    const url = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(window.location.href)}`;
-    window.open(url, "_blank", "noopener,noreferrer,width=760,height=720");
+    const linkedInUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(window.location.href)}`;
+    window.open(linkedInUrl, "_blank", "noopener,noreferrer,width=760,height=720");
   };
+
   return (
     <Layout>
       <div className="min-h-screen bg-[#f2eee4] text-[#171714]">
         <main className="mx-auto max-w-[1180px] px-4 py-8 md:px-8 md:py-12">
           <div className="flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-center">
-            <Link to="/la-voce" className="inline-flex border-b border-black pb-1 text-xs font-semibold uppercase tracking-[0.18em]">← La Voce di CAELO</Link>
-            <button type="button" onClick={shareOnLinkedIn} className="inline-flex items-center gap-2 border border-black bg-[#faf7ef] px-4 py-2 text-sm font-semibold transition-colors hover:bg-black hover:text-[#faf7ef]">
-              <Linkedin className="h-4 w-4" aria-hidden="true" /> Condividi su LinkedIn
+            <Link
+              to="/la-voce"
+              className="inline-flex border-b border-black pb-1 text-xs font-semibold uppercase tracking-[0.18em]"
+            >
+              ← La Voce di CAELO
+            </Link>
+
+            <button
+              type="button"
+              onClick={shareOnLinkedIn}
+              className="inline-flex items-center gap-2 border border-black bg-[#faf7ef] px-4 py-2 text-sm font-semibold transition-colors hover:bg-black hover:text-[#faf7ef]"
+            >
+              <Linkedin className="h-4 w-4" aria-hidden="true" />
+              Condividi su LinkedIn
             </button>
           </div>
+
           <article className="mt-6 border border-black/70 bg-[#faf7ef] px-5 py-8 md:px-14 md:py-14">
             <header className="border-b border-black/50 pb-8 text-center">
-              <p className="text-xs font-semibold uppercase tracking-[0.24em]">Glass Box · Audit trail procedurale</p>
-              <h1 className="mx-auto mt-5 max-w-5xl font-serif text-5xl font-semibold leading-[0.98] md:text-7xl">L'infrastruttura della trasparenza: oltre la black box</h1>
-              <p className="mx-auto mt-6 max-w-4xl font-serif text-2xl italic leading-snug text-black/70">Perché nei procedimenti regolati la fiducia non nasce da una risposta plausibile, ma da tracciabilità, auditabilità, regole verificabili e supervisione umana.</p>
+              <p className="text-xs font-semibold uppercase tracking-[0.24em]">
+                Glass Box · Audit trail procedurale
+              </p>
+              <h1 className="mx-auto mt-5 max-w-5xl font-serif text-5xl font-semibold leading-[0.98] md:text-7xl">
+                L'infrastruttura della trasparenza: oltre la black box
+              </h1>
+              <p className="mx-auto mt-6 max-w-4xl font-serif text-2xl italic leading-snug text-black/70">
+                Perché nei procedimenti regolati la fiducia non nasce da una risposta plausibile, ma da tracciabilità, auditabilità, regole verificabili e supervisione umana.
+              </p>
               <p className="mt-6 text-sm">Di Claudia Catania · 3 agosto 2026</p>
             </header>
+
             <figure className="mx-auto mt-10 max-w-6xl">
-              <img src={heroImage} alt="Confronto tra black box e glass box procedurale di CAELO" className="w-full border border-black/20" />
+              <img
+                src="/images/infrastruttura-trasparenza-black-box.webp"
+                alt="Infografica che confronta la black box con la glass box di CAELO, mostrando acquisizione input, fonti e regole, controlli tracciati, eccezioni, intervento umano e decisione motivata."
+                className="w-full border border-black/20"
+              />
             </figure>
+
             <div className="mx-auto mt-10 max-w-3xl font-serif text-[19px] leading-8">
-              {intro.map((paragraph,index)=><p key={paragraph} className={index===0?"first-letter:float-left first-letter:mr-2 first-letter:text-7xl first-letter:leading-[0.8]":"mt-5"}>{paragraph}</p>)}
+              {intro.map((paragraph, index) => (
+                <p
+                  key={paragraph}
+                  className={index === 0
+                    ? "first-letter:float-left first-letter:mr-2 first-letter:text-7xl first-letter:leading-[0.8]"
+                    : "mt-5"}
+                >
+                  {paragraph}
+                </p>
+              ))}
+
               <section className="mt-12 border-t border-black/50 pt-6">
-                <h2 className="font-serif text-3xl font-semibold leading-tight md:text-4xl">La radice della sfiducia</h2>
-                <p className="mt-5">Il problema non è soltanto la qualità o la precisione formale delle risposte. Nei contesti ad alta complessità e regolamentazione, la sfiducia nasce da una lacuna ben più profonda.</p>
-                <div className="mt-6 space-y-6">{criticalPoints.map((point)=><div key={point.title}><h3 className="font-serif text-2xl font-semibold">{point.title}</h3><p className="mt-2">{point.text}</p></div>)}</div>
+                <h2 className="font-serif text-3xl font-semibold leading-tight md:text-4xl">
+                  La radice della sfiducia
+                </h2>
+                <p className="mt-5">
+                  Il problema non è soltanto la qualità o la precisione formale delle risposte.
+                  Nei contesti ad alta complessità e regolamentazione, la sfiducia nasce da una lacuna ben più profonda.
+                </p>
+                <div className="mt-6 space-y-6">
+                  {criticalPoints.map((point) => (
+                    <div key={point.title}>
+                      <h3 className="font-serif text-2xl font-semibold">{point.title}</h3>
+                      <p className="mt-2">{point.text}</p>
+                    </div>
+                  ))}
+                </div>
               </section>
+
               <section className="mt-12 border-t border-black/50 pt-6">
-                <h2 className="font-serif text-3xl font-semibold leading-tight md:text-4xl">Il cambio di paradigma</h2>
-                {closing.map((paragraph)=><p key={paragraph} className="mt-5">{paragraph}</p>)}
+                <h2 className="font-serif text-3xl font-semibold leading-tight md:text-4xl">
+                  Il cambio di paradigma
+                </h2>
+                {closing.map((paragraph) => (
+                  <p key={paragraph} className="mt-5">{paragraph}</p>
+                ))}
               </section>
             </div>
+
             <footer className="mt-12 border-t border-black/50 pt-7">
               <div className="flex flex-col justify-between gap-6 sm:flex-row sm:items-end">
-                <div><p className="font-serif text-xl font-semibold">Claudia Catania</p><p className="mt-2 max-w-2xl text-sm leading-6 text-black/70">Co-Founder di CAELO. Governance procedurale, auditabilità, tracciabilità e controllo umano.</p></div>
-                <button type="button" onClick={shareOnLinkedIn} className="inline-flex shrink-0 items-center justify-center gap-2 border border-black px-4 py-2 text-sm font-semibold transition-colors hover:bg-black hover:text-[#faf7ef]"><Linkedin className="h-4 w-4" aria-hidden="true" /> Pubblica su LinkedIn</button>
+                <div>
+                  <p className="font-serif text-xl font-semibold">Claudia Catania</p>
+                  <p className="mt-2 max-w-2xl text-sm leading-6 text-black/70">
+                    Co-Founder di CAELO. Si occupa di governance procedurale, auditabilità,
+                    tracciabilità, controllo umano e architetture AI per procedimenti regolati.
+                  </p>
+                </div>
+                <button
+                  type="button"
+                  onClick={shareOnLinkedIn}
+                  className="inline-flex shrink-0 items-center justify-center gap-2 border border-black px-4 py-2 text-sm font-semibold transition-colors hover:bg-black hover:text-[#faf7ef]"
+                >
+                  <Linkedin className="h-4 w-4" aria-hidden="true" />
+                  Pubblica su LinkedIn
+                </button>
               </div>
             </footer>
           </article>
