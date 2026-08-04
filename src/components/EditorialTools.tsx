@@ -4,6 +4,7 @@ import {
   Check,
   Copy,
   Facebook,
+  Languages,
   Linkedin,
   Mail,
   MessageCircle,
@@ -108,6 +109,46 @@ export function EditorialSeo() {
   return null;
 }
 
+export function TranslateArticle({ path }: { path: string }) {
+  const articleUrl = `${SITE_URL}${path}`;
+  const languages = [
+    { code: "en", label: "English" },
+    { code: "fr", label: "Français" },
+    { code: "de", label: "Deutsch" },
+    { code: "es", label: "Español" },
+  ];
+
+  const openTranslation = (language: string) => {
+    const translatedUrl = `https://translate.google.com/translate?sl=it&tl=${language}&u=${encodeURIComponent(articleUrl)}`;
+    window.open(translatedUrl, "_blank", "noopener,noreferrer");
+  };
+
+  return (
+    <section className="border border-black/60 bg-[#faf7ef] p-5 md:flex md:items-center md:justify-between md:gap-6" aria-label="Traduci l’articolo">
+      <div>
+        <p className="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.18em]">
+          <Languages className="h-4 w-4" /> Traduci l’articolo
+        </p>
+        <p className="mt-2 text-sm leading-6 text-black/60">
+          Leggi una traduzione automatica dell’articolo nella lingua scelta.
+        </p>
+      </div>
+      <div className="mt-4 flex flex-wrap gap-2 md:mt-0">
+        {languages.map((language) => (
+          <button
+            key={language.code}
+            type="button"
+            onClick={() => openTranslation(language.code)}
+            className="border border-black/40 px-3 py-2 text-xs font-semibold uppercase tracking-[0.1em] transition hover:bg-black hover:text-[#faf7ef]"
+          >
+            {language.label}
+          </button>
+        ))}
+      </div>
+    </section>
+  );
+}
+
 export function ShareArticle({ title, path }: { title: string; path: string }) {
   const [copied, setCopied] = useState(false);
   const url = `${SITE_URL}${path}`;
@@ -158,6 +199,7 @@ export function EditorialArticleFooter() {
   return (
     <div className="bg-[#f2eee4] px-4 pb-12 text-[#171714] md:px-8">
       <div className="mx-auto max-w-[1180px] space-y-6">
+        <TranslateArticle path={article.path} />
         <ShareArticle title={article.title} path={article.path} />
 
         <section className="border border-black/60 bg-[#faf7ef] p-6 md:p-8">
