@@ -10,6 +10,21 @@ import { Button } from "@/components/ui/button";
 import { springPresets, staggerContainer, staggerItem } from "@/lib/motion";
 import { useLanguage } from "@/LanguageContext";
 
+const assessmentScores = [
+  ["Innovazione", "8,0"],
+  ["Maturità tecnica", "7,5"],
+  ["Qualità del design", "8,5"],
+  ["Scalabilità", "7,0"],
+  ["Preparazione enterprise", "7,0"],
+  ["Governance", "9,5"],
+  ["Auditabilità", "9,0"],
+  ["Sicurezza concettuale", "9,0"],
+  ["Potenziale commerciale", "7,5"],
+  ["Difendibilità tecnologica", "8,5"],
+  ["Vantaggio competitivo", "8,0"],
+  ["Valore strategico", "8,5"],
+];
+
 export default function Home() {
   const { t, lang } = useLanguage();
   const features = getFeatures(lang);
@@ -24,34 +39,15 @@ export default function Home() {
         </div>
 
         <div className="container mx-auto px-4 relative z-10">
-          <motion.div
-            className="max-w-5xl mx-auto text-center"
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={springPresets.gentle}
-          >
+          <motion.div className="max-w-5xl mx-auto text-center" initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={springPresets.gentle}>
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-6 text-white">
               CAELO
-              <span className="block text-white mt-2 text-2xl md:text-3xl">
-                {t.home.title}
-              </span>
+              <span className="block text-white mt-2 text-2xl md:text-3xl">{t.home.title}</span>
             </h1>
-
-            <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto leading-relaxed">
-              {t.home.description}
-            </p>
-
+            <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto leading-relaxed">{t.home.description}</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mt-10">
-              <Button size="lg" className="text-lg px-8 py-6 group" asChild>
-                <Link to="/contatti">
-                  {t.common.demo}
-                  <ArrowRight className="ml-2 w-5 h-5" />
-                </Link>
-              </Button>
-
-              <Button size="lg" variant="outline" className="text-lg px-8 py-6" asChild>
-                <Link to="/contatti">{t.common.talk}</Link>
-              </Button>
+              <Button size="lg" className="text-lg px-8 py-6 group" asChild><Link to="/contatti">{t.common.demo}<ArrowRight className="ml-2 w-5 h-5" /></Link></Button>
+              <Button size="lg" variant="outline" className="text-lg px-8 py-6" asChild><Link to="/contatti">{t.common.talk}</Link></Button>
             </div>
           </motion.div>
         </div>
@@ -60,12 +56,8 @@ export default function Home() {
       <section className="py-24 bg-background">
         <div className="container mx-auto px-4">
           <motion.div className="text-center mb-16" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={springPresets.gentle}>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              {isIt ? "Un sistema per governare procedimenti, pratiche e processi complessi" : "A system to govern procedures, cases and complex operational workflows"}
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              {isIt ? "CAELO governa procedimenti, pratiche e processi regolati, mantenendo controllo umano, tracciabilità, coerenza operativa e integrazione con i sistemi esistenti." : "CAELO governs regulated procedures, cases and operational workflows, preserving human control, traceability, operational consistency and integration with existing systems."}
-            </p>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">{isIt ? "Un sistema per governare procedimenti, pratiche e processi complessi" : "A system to govern procedures, cases and complex operational workflows"}</h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">{isIt ? "CAELO governa procedimenti, pratiche e processi regolati, mantenendo controllo umano, tracciabilità, coerenza operativa e integrazione con i sistemi esistenti." : "CAELO governs regulated procedures, cases and operational workflows, preserving human control, traceability, operational consistency and integration with existing systems."}</p>
           </motion.div>
 
           <motion.div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto" variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true }}>
@@ -120,13 +112,17 @@ export default function Home() {
               <div>
                 <span className="inline-flex rounded-full bg-primary/10 px-4 py-2 text-sm font-medium text-primary mb-5">{isIt ? "Valutazione comparativa indipendente" : "Independent comparative assessment"}</span>
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">{isIt ? "Una valutazione indipendente dell’architettura CAELO" : "An independent assessment of the CAELO architecture"}</h2>
-                <p className="text-lg text-muted-foreground leading-relaxed max-w-4xl">{isIt ? "CAELO e il Mother Engine sono stati confrontati con le principali piattaforme internazionali di AI orchestration, governance, knowledge management, legal AI e process intelligence. La valutazione riconosce una posizione distintiva nell’ambito della Governed Procedural AI." : "CAELO and the Mother Engine were compared with leading international platforms in AI orchestration, governance, knowledge management, legal AI and process intelligence."}</p>
+                <p className="text-lg text-muted-foreground leading-relaxed max-w-4xl">{isIt ? "CAELO e il Mother Engine sono stati confrontati con le principali piattaforme internazionali. Il sistema è stato definito un prodotto raro per l’assenza di equivalenti capaci di combinare intelligenza procedurale, governance, evidenze e controllo umano in un’unica architettura." : "CAELO and the Mother Engine were compared with leading international platforms."}</p>
               </div>
               <Button size="lg" className="text-lg px-8 py-6 whitespace-nowrap" asChild><Link to="/valutazione-indipendente">{isIt ? "Leggi la valutazione" : "Read the assessment"}<ArrowRight className="ml-2 w-5 h-5" /></Link></Button>
             </div>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-10">
-              {[["9,5 / 10", isIt ? "Governance" : "Governance"], ["9,0 / 10", isIt ? "Auditabilità" : "Auditability"], ["8,5 / 10", isIt ? "Difendibilità" : "Defensibility"], ["18–36 mesi", isIt ? "Difficoltà di replica" : "Estimated replication time"]].map(([value, label]) => (
-                <div key={label} className="rounded-2xl bg-muted/40 p-6"><div className="text-3xl font-bold text-primary mb-2">{value}</div><div className="text-sm text-muted-foreground">{label}</div></div>
+
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-10">
+              {assessmentScores.map(([label, value]) => (
+                <div key={label} className="rounded-2xl border border-border bg-muted/30 p-5 flex items-center justify-between gap-4">
+                  <div className="text-sm font-medium leading-snug">{label}</div>
+                  <div className="text-2xl font-bold text-primary whitespace-nowrap">{value}</div>
+                </div>
               ))}
             </div>
           </motion.div>
@@ -139,7 +135,6 @@ export default function Home() {
             <h2 className="text-4xl md:text-5xl font-bold mb-6">{isIt ? "Governance, controllo e integrazione" : "Governance, control and integration"}</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">{isIt ? "CAELO non è un semplice assistente digitale. È un sistema di governance che struttura, controlla e orchestra procedimenti complessi, riducendo errori operativi e rendendo ogni passaggio tracciabile." : "CAELO is not a generic digital assistant. It is a governance system that structures, controls and orchestrates complex procedures, reducing operational errors and making every step traceable."}</p>
           </motion.div>
-
           <motion.div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8" variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true }}>
             {features.slice(0, 6).map((feature, index) => <motion.div key={feature.id} variants={staggerItem}><FeatureCard feature={feature} index={index} /></motion.div>)}
           </motion.div>
@@ -151,7 +146,6 @@ export default function Home() {
           <img src={IMAGES.DIGITAL_ADMIN_1} alt="Sfondo CTA" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/90 to-background" />
         </div>
-
         <div className="container mx-auto px-4 relative z-10">
           <motion.div className="max-w-4xl mx-auto" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={springPresets.gentle}>
             <div className="bg-card/80 backdrop-blur-sm border border-border rounded-3xl p-12 shadow-lg">
@@ -159,9 +153,7 @@ export default function Home() {
                 <h2 className="text-4xl md:text-5xl font-bold mb-6">{isIt ? "Parla con noi" : "Talk to us"}</h2>
                 <p className="text-xl text-muted-foreground">{isIt ? "Scopri come CAELO può integrarsi nei processi esistenti, governare flussi regolati e supportare enti, aziende e partner tecnologici senza sostituire le infrastrutture già in uso." : "Discover how CAELO can integrate into existing processes, govern regulated workflows and support public bodies, companies and technology partners without replacing current infrastructures."}</p>
               </div>
-
               <DemoRequestForm />
-
               <div className="mt-12 grid md:grid-cols-3 gap-8 text-center">
                 {[[isIt ? "Governance procedurale" : "Procedural Governance", isIt ? "CAELO governa il procedimento, non si limita ad assistere l’operatore." : "CAELO governs the procedure, rather than merely assisting the operator."], [isIt ? "Auditabilità e controllo" : "Auditability and Control", isIt ? "Ogni passaggio è tracciabile, verificabile e coerente con le regole operative." : "Every step is traceable, verifiable and aligned with operational rules."], [isIt ? "Integrazione enterprise" : "Enterprise Integration", isIt ? "Architettura progettata per integrarsi con sistemi, cloud e piattaforme già esistenti." : "Architecture designed to integrate with existing systems, cloud environments and enterprise platforms."]].map(([title, description]) => (
                   <div key={title} className="flex flex-col items-center"><CheckCircle2 className="w-8 h-8 text-primary mb-3" /><h3 className="font-semibold mb-2">{title}</h3><p className="text-sm text-muted-foreground">{description}</p></div>
