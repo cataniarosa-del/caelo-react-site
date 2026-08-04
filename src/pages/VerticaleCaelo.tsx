@@ -64,7 +64,7 @@ const verticals = {
     proceduralStatus: "Architettura procedurale in fase di studio e progettazione",
     softwareStatus: "Implementazione software non ancora avviata",
     lead: "Applicazione futura della governance procedurale CAELO al lavoro legale societario, con il professionista sempre al centro della decisione.",
-    description: "Un fascicolo societario non è soltanto un insieme di documenti. È una rete di soggetti, partecipazioni, poteri, deliberazioni, obblighi, comunicazioni e decisioni che devono essere ricostruiti nel tempo. CAELO Societario è un verticale in fase di studio, progettato per organizzare e governare questa complessità attraverso una ricostruzione documentata, tracciabile e verificabile del fascicolo. Il sistema è concepito per collegare ogni fatto al documento di origine, ricostruire l’assetto societario e la sua evoluzione, individuare documenti mancanti, evidenziare incongruenze e sottoporre le questioni rilevanti alla valutazione del professionista.",
+    description: "Un fascicolo societario non è soltanto un insieme di documenti. È una rete di soggetti, partecipazioni, poteri, deliberazioni, obblighi, comunicazioni e decisioni che devono essere ricostruiti nel tempo. CAELO Societario è progettato per ricostruire la governance, la storia documentale e l’eventuale sviluppo contenzioso di una società a partire dai documenti del fascicolo. Il sistema organizzerà soci, partecipazioni, cariche, procure, poteri, statuti, verbali, deliberazioni, obblighi, comunicazioni e contestazioni, collegando ogni informazione alla relativa fonte documentale. Nei casi di conflitto potrà ricostruire gli attori coinvolti, le rispettive posizioni, i fatti contestati, le comunicazioni intercorse e i documenti favorevoli o contrari a ciascuna ricostruzione, sottoponendo le questioni rilevanti alla valutazione del professionista.",
     functionsTitle: "Funzioni oggetto di studio e progettazione",
     functions: [
       "Ricostruzione cronologica della vita societaria",
@@ -72,6 +72,7 @@ const verticals = {
       "Ricostruzione di cariche, deleghe, procure e poteri",
       "Individuazione della versione statutaria applicabile",
       "Collegamento tra convocazioni, verbali, delibere e atti esecutivi",
+      "Ricostruzione degli attori, delle posizioni e dei fatti alla base di un potenziale contenzioso",
       "Confronto tra documenti e posizioni contrapposte",
       "Rilevazione di incongruenze e documenti mancanti",
       "Organizzazione delle questioni da sottoporre all’avvocato",
@@ -88,7 +89,7 @@ const verticals = {
       "Dalla ricostruzione alla decisione professionale.",
       "Senza perdere la fonte.",
     ],
-    note: "CAELO Societario è attualmente un verticale in fase di studio e progettazione. Funzioni, perimetro applicativo e modalità di implementazione saranno definiti attraverso il confronto con professionisti del diritto societario.",
+    note: "CAELO Societario è progettato per trasformare un fascicolo societario, anche complesso e disordinato, in un dossier strutturato, cronologico e verificabile. Il verticale collegherà soggetti, partecipazioni, cariche, poteri, statuti, verbali, deliberazioni, obblighi e contestazioni ai documenti di origine; nei casi di conflitto ricostruirà gli attori coinvolti, le rispettive posizioni e la sequenza dei fatti, evidenziando incongruenze, documenti mancanti e questioni da sottoporre all’avvocato. Il risultato sarà una ricostruzione governata della società e dell’eventuale origine del contenzioso, senza perdere il collegamento con le fonti.",
     value: "CAELO governa il fascicolo. L’avvocato governa la decisione legale.",
   },
 } as const;
