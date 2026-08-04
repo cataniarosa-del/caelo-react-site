@@ -60,6 +60,7 @@ const sections = [
     paragraphs: [
       "Un errore occasionale può accadere. Ma quando gli atti della stessa amministrazione descrivono due realtà incompatibili e la contraddizione non viene intercettata prima del provvedimento, il problema non riguarda più soltanto la singola svista.",
       "Riguarda la qualità dell’istruttoria, la frammentazione delle informazioni, la comunicazione tra uffici, l’assenza di controlli, la responsabilità e la governance del procedimento.",
+      "Quando un’amministrazione invia per due anni consecutivi atti incoerenti, senza che la contraddizione venga fermata e senza che emerga una responsabilità effettiva, il problema non è più soltanto organizzativo. Si crea un sistema nel quale il costo dell’errore ricade sul cittadino, mentre chi produce o lascia proseguire quegli atti può non subirne conseguenze concrete. È questa assenza di accountability che rende l’errore ripetibile.",
       "L’amministrazione conserva gli atti, riscuote i canoni e produce i provvedimenti. Ma è il cittadino a dover individuare la contraddizione, dimostrarla e sostenerne il costo.",
       "Questa è un’ingiustizia amministrativa, non una semplice inefficienza."
     ]
