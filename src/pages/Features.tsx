@@ -202,7 +202,7 @@ export default function Features() {
   return (
     <Layout>
       <div className="relative">
-        <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden">
+        <section className="relative min-h-[48vh] flex items-center justify-center overflow-hidden">
           <div className="absolute inset-0 z-0">
             <img src="/3.jpg" alt="CAELO" className="w-full h-full object-cover opacity-70" />
             <div className="absolute inset-0 bg-black/30" />

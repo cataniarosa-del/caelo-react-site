@@ -9,9 +9,9 @@ const verticals = {
   passweb: {
     label: "Previdenza e posizione assicurativa",
     title: "CAELO PassWeb",
-    proceduralStatus: "Architettura procedurale completa e validata",
-    softwareStatus: "Implementazione software completata e validata",
-    lead: "Il primo verticale completo di CAELO, utilizzato come stress test su uno dei procedimenti amministrativi più complessi, documentali e ad alta responsabilità operativa.",
+    proceduralStatus: "Architettura procedurale completa e sottoposta a verifica interna",
+    softwareStatus: "Implementazione software completata e sottoposta a test interni",
+    lead: "Il primo verticale completo di CAELO, utilizzato come stress test interno su uno dei procedimenti amministrativi più complessi, documentali e ad alta responsabilità operativa.",
     description: "CAELO PassWeb supporta la gestione delle pratiche relative alla posizione assicurativa, coordinando comunicazioni, documenti, anomalie contributive, verifiche e passaggi procedurali. Il sistema non sostituisce l’operatore: struttura il lavoro, rende visibili i punti critici e mantiene tracciabile il percorso seguito.",
     functions: ["Interpretazione strutturata delle comunicazioni", "Supporto alla ricostruzione della posizione assicurativa", "Individuazione delle anomalie contributive", "Orientamento nei passaggi procedurali", "Controllo umano e tracciabilità della lavorazione"],
     value: "Il verticale dimostra la capacità di CAELO di governare procedure complesse, multi-fonte e fortemente regolamentate, mantenendo coerenza operativa, responsabilità umana e auditabilità.",
@@ -39,7 +39,7 @@ const verticals = {
   mepa: {
     label: "Procurement pubblico",
     title: "CAELO Appalti sotto soglia / MePA",
-    proceduralStatus: "Architettura procedurale completa e validata su casi di test",
+    proceduralStatus: "Architettura procedurale completa e verificata internamente attraverso casi di test",
     softwareStatus: "Implementazione software non ancora avviata",
     lead: "Un verticale per governare affidamenti sotto soglia e procedure di acquisto attraverso regole, controlli, documenti, eccezioni e responsabilità chiaramente collocate.",
     description: "Il modulo struttura il percorso operativo dell’affidamento, dalla qualificazione dell’esigenza fino ai controlli e alla documentazione dell’esito. Coordina fonti, soglie, attori, condizioni, passaggi autorizzativi e casi eccezionali, senza sostituire la responsabilità del soggetto competente.",

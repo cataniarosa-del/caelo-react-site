@@ -2,6 +2,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { EditorialArticleFooter, EditorialSeo } from "@/components/EditorialTools";
+import { ScrollToTop } from "@/components/ScrollToTop";
 
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -41,6 +42,7 @@ const App = () => {
             <Sonner />
 
             <BrowserRouter>
+              <ScrollToTop />
               <EditorialSeo />
               <Routes>
                 <Route path={ROUTE_PATHS.HOME} element={<Home />} />

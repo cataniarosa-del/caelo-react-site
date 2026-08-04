@@ -104,11 +104,11 @@ export default function About() {
             </motion.article>
 
             <motion.article initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={springPresets.gentle} className="rounded-[2rem] border border-border bg-card p-8 md:p-10 shadow-sm">
-              <div className="text-sm font-semibold text-primary uppercase tracking-[0.16em] mb-4">Co-Founder & Chief System Architect</div>
+              <div className="text-sm font-semibold text-primary uppercase tracking-[0.16em] mb-4">Founder & Chief System Architect</div>
               <h3 className="text-3xl md:text-4xl font-bold mb-2">Rosa Catania</h3>
-              <p className="text-xl font-semibold mb-7">AI & System Architect</p>
+              <p className="text-xl font-semibold mb-7">Chief System Architect</p>
               <div className="space-y-5 text-muted-foreground leading-relaxed mb-8">
-                <p>Rosa Catania è co-fondatrice e Chief System Architect di CAELO.</p>
+                <p>Rosa Catania è fondatrice e Chief System Architect di CAELO.</p>
                 <p>Trasforma l’architettura procedurale in una piattaforma software scalabile, modulare e integrabile. È responsabile della progettazione tecnica del sistema, del Mother Engine e della traduzione dei modelli procedurali in componenti capaci di governare regole, stati, controlli, evidenze e interventi umani.</p>
                 <p>Il suo lavoro definisce come il sistema realizza tecnicamente il modello procedurale, garantendo coerenza architetturale, modularità dei verticali, sicurezza, interoperabilità, scalabilità e affidabilità dell’esecuzione.</p>
               </div>

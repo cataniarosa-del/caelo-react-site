@@ -11,9 +11,9 @@ const verticals = [
     slug: "passweb",
     category: "Previdenza e posizione assicurativa",
     title: "CAELO PassWeb",
-    description: "Il primo verticale completo di CAELO, utilizzato come stress test su un procedimento amministrativo complesso, documentale e ad alta responsabilità operativa.",
-    procedural: "Completa e validata",
-    software: "Completata e validata",
+    description: "Il primo verticale completo di CAELO, utilizzato come stress test interno su un procedimento amministrativo complesso, documentale e ad alta responsabilità operativa.",
+    procedural: "Completa e sottoposta a verifica interna",
+    software: "Completata e sottoposta a test interni",
   },
   {
     slug: "previdenza-spagna",
@@ -44,7 +44,7 @@ const verticals = [
     category: "Procurement pubblico",
     title: "CAELO Appalti sotto soglia / MePA",
     description: "Un verticale per governare affidamenti, soglie, condizioni, documenti, passaggi autorizzativi, eccezioni e responsabilità.",
-    procedural: "Completa e validata su casi di test",
+    procedural: "Completa e verificata internamente attraverso casi di test",
     software: "Non ancora avviata",
   },
   {
@@ -65,7 +65,7 @@ export default function Solutions() {
 
   return (
     <Layout>
-      <section className="relative min-h-[62vh] flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-[48vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img src="/2.jpg" alt="Soluzioni CAELO" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-black/45" />
