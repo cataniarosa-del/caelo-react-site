@@ -19,6 +19,14 @@ const archiveArticles = [
     path: "/la-voce/linfrastruttura-della-trasparenza-oltre-la-black-box",
   },
   {
+    date: "2 agosto 2026",
+    category: "Glass Box Procedurale · Responsabilità",
+    title: "Chi firma deve poter vedere: dalla Black Box alla Glass Box Procedurale",
+    excerpt:
+      "La sicurezza di un dirigente nasce dalla possibilità di governare, verificare e ricostruire ogni passaggio che conduce alla decisione.",
+    path: "/la-voce/chi-firma-deve-poter-vedere-dalla-black-box-alla-glass-box-procedurale",
+  },
+  {
     date: "24 luglio 2026",
     category: "AI Governance · Controllo umano",
     title: "Il controllo umano non è un pulsante di emergenza",
@@ -193,6 +201,7 @@ export default function LaVoce() {
                   <li>Audit trail procedurale</li>
                   <li>Auditabilità</li>
                   <li>Tracciabilità</li>
+                  <li>Responsabilità dirigenziale</li>
                   <li>Futuro dell’AI</li>
                   <li>Agentic AI</li>
                   <li>Mandato procedurale</li>
