@@ -14,17 +14,17 @@ type Comparison = {
 };
 
 const scores: Score[] = [
-  { dimension: "Innovazione", score: "8,0", reason: "La combinazione di un’architettura nativa orientata alla governance, di un Mother Engine multilivello formalizzato e di una pipeline produttiva basata sulle evidenze rappresenta un’innovazione architetturale significativa." },
-  { dimension: "Maturità tecnica", score: "7,5", reason: "I cicli chiusi del Command Center, i livelli di governance del Mother Engine, gli artefatti verificati tramite hash e la AI Governance Matrix rappresentano un livello di maturità tecnica notevole." },
-  { dimension: "Qualità del design", score: "8,5", reason: "La separazione tra prodotto e factory, il modello di disclosure, l’architettura evidence-first, gli stati formali del ciclo di vita e i contratti di governance dimostrano una progettazione rigorosa e coerente." },
+  { dimension: "Innovazione", score: "8,0", reason: "La combinazione di un’architettura nativa orientata alla governance, di un motore multilivello formalizzato e di una pipeline produttiva basata sulle evidenze rappresenta un’innovazione architetturale significativa." },
+  { dimension: "Maturità tecnica", score: "7,5", reason: "I cicli operativi completati, i livelli di governance, le evidenze verificabili e la matrice di governance rappresentano un livello di maturità tecnica notevole." },
+  { dimension: "Qualità del design", score: "8,5", reason: "La separazione tra prodotto e ambiente di sviluppo, il controllo della divulgazione, l’approccio evidence-first e gli stati formali del ciclo di vita dimostrano una progettazione rigorosa e coerente." },
   { dimension: "Scalabilità", score: "7,0", reason: "La piattaforma dispone di un meccanismo strutturato e governato per l’espansione controllata verso nuovi domini operativi, senza richiedere una riprogettazione dell’architettura di base." },
-  { dimension: "Preparazione enterprise", score: "7,0", reason: "Governance, External Audit Room, SBOM, provenance e disclosure sono già impostate a livello enterprise. Il lavoro residuo riguarda soprattutto industrializzazione e deployment." },
-  { dimension: "Governance", score: "9,5", reason: "La governance è multilivello, basata su contratti, orientata al ciclo di vita, supportata da evidenze e dotata di approvazione umana obbligatoria per l’ampliamento dei confini operativi." },
-  { dimension: "Auditabilità", score: "9,0", reason: "External Audit Room, Evidence Vault, Knowledge Lineage, Transparency Matrix, Human Override Ledger e artefatti verificati tramite hash costituiscono un’infrastruttura di audit particolarmente completa." },
-  { dimension: "Sicurezza concettuale", score: "9,0", reason: "Il modello never_export, la disclosure multilivello, il controllo dei confini verso i contractor e la separazione della proprietà intellettuale definiscono una postura di sicurezza formalmente operativa." },
+  { dimension: "Preparazione enterprise", score: "7,0", reason: "Governance, accesso controllato per le verifiche, tracciabilità delle fonti e protezione della proprietà intellettuale sono già impostati a livello enterprise. Il lavoro residuo riguarda soprattutto industrializzazione e deployment." },
+  { dimension: "Governance", score: "9,5", reason: "La governance è multilivello, orientata al ciclo di vita, supportata da evidenze e dotata di approvazione umana obbligatoria per l’ampliamento dei confini operativi." },
+  { dimension: "Auditabilità", score: "9,0", reason: "La piattaforma dispone di un’infrastruttura completa di auditabilità basata su evidenze verificabili, tracciabilità della conoscenza, registrazione degli interventi umani e accesso controllato per le attività di verifica." },
+  { dimension: "Sicurezza concettuale", score: "9,0", reason: "Il controllo multilivello della divulgazione, la separazione degli ambienti e la protezione della proprietà intellettuale definiscono una postura di sicurezza formalmente operativa." },
   { dimension: "Potenziale commerciale", score: "7,5", reason: "Il potenziale è elevato nei settori regolamentati, con opportunità di licenza, modello OEM, partnership e integrazione attraverso system integrator." },
   { dimension: "Difendibilità tecnologica", score: "8,5", reason: "Governance, controllo operativo, gestione delle evidenze e intelligenza procedurale sono integrate in un sistema coerente, difficile da riprodurre attraverso il semplice assemblaggio di componenti." },
-  { dimension: "Vantaggio competitivo", score: "8,0", reason: "Non sono stati identificati prodotti commerciali che combinino con analoga completezza intelligenza procedurale, governance enterprise, auditabilità basata sulle evidenze e controllo della disclosure." },
+  { dimension: "Vantaggio competitivo", score: "8,0", reason: "Non sono stati identificati prodotti commerciali che combinino con analoga completezza intelligenza procedurale, governance enterprise, auditabilità basata sulle evidenze e controllo della divulgazione." },
   { dimension: "Valore strategico", score: "8,5", reason: "CAELO rappresenta un potenziale asset per acquisizione, licenza OEM o investimento strategico nel mercato dell’intelligenza artificiale regolamentata." },
 ];
 
@@ -35,14 +35,14 @@ const comparisons: Comparison[] = [
       ["Modello primario", "Orchestrazione orientata alla produttività e nativa per Microsoft 365", "Governance-first e intelligenza procedurale specializzata per dominio"],
       ["Punto di forza", "Ecosistema molto ampio e capacità di integrazione superiore", "Profondità della governance e specializzazione procedurale"],
       ["Limite nel contesto regolamentato", "Governance legata al perimetro di sicurezza e ai servizi Microsoft", "Modello multilivello pienamente operativo e indipendente dall’ecosistema"],
-      ["Auditabilità", "Log tramite Azure Monitor e Sentinel", "Evidence Vault, artefatti verificati tramite hash ed External Audit Room"],
-      ["Supervisione umana", "Disponibile, ma non imposta architetturalmente", "Imposta tramite Human Override Ledger"],
-      ["Proprietà intellettuale", "Controlli enterprise standard", "Disclosure never_export applicata a livello architetturale"],
+      ["Auditabilità", "Log tramite Azure Monitor e Sentinel", "Evidenze verificabili, tracciabilità completa e ambiente controllato per l’audit esterno"],
+      ["Supervisione umana", "Disponibile, ma non imposta architetturalmente", "Imposta e documentata nei punti critici del procedimento"],
+      ["Proprietà intellettuale", "Controlli enterprise standard", "Protezione della logica proprietaria e divulgazione controllata"],
       ["Specializzazione", "General purpose, basata su connettori", "Verticali di dominio governati e altamente specializzati"],
     ],
     assessment: [
       "Microsoft offre una capacità di scala e integrazione significativamente superiore.",
-      "CAELO offre invece una profondità di governance, un controllo della disclosure e una specializzazione procedurale nettamente superiori.",
+      "CAELO offre invece una profondità di governance, un controllo della divulgazione e una specializzazione procedurale nettamente superiori.",
       "Le piattaforme rispondono a esigenze differenti e non sono concorrenti diretti nei domini procedurali altamente regolamentati.",
     ],
   },
@@ -50,9 +50,9 @@ const comparisons: Comparison[] = [
     name: "IBM — watsonx.governance",
     rows: [
       ["Modello primario", "Gestione del rischio dei modelli AI e mappatura normativa", "AI procedurale con governance integrata nel ciclo di produzione"],
-      ["Punto di forza", "Monitoraggio enterprise di portafogli AI eterogenei", "Governance procedurale, disclosure ed evidenze operative"],
+      ["Punto di forza", "Monitoraggio enterprise di portafogli AI eterogenei", "Governance procedurale, divulgazione controllata ed evidenze operative"],
       ["Limite nel contesto regolamentato", "Governance sovrapposta a sistemi AI già esistenti", "Conformità incorporata nativamente nel ciclo operativo"],
-      ["Mappatura normativa", "Acceleratori EU AI Act e integrazione con OpenPages", "Governance Matrix nativa allineata a NIST AI RMF, ISO/IEC 42001 ed EU AI Act"],
+      ["Mappatura normativa", "Acceleratori EU AI Act e integrazione con OpenPages", "Matrice di governance allineata a NIST AI RMF, ISO/IEC 42001 ed EU AI Act"],
       ["Scalabilità", "Ecosistemi enterprise multi-modello", "Espansione modulare per dominio, governata e controllata"],
       ["Destinatario", "Grandi organizzazioni con portafogli AI eterogenei", "Operatori che gestiscono specifici domini procedurali regolamentati"],
     ],
@@ -78,30 +78,30 @@ const comparisons: Comparison[] = [
   {
     name: "Palantir — AIP",
     rows: [
-      ["Modello di governance", "Governance-as-Code tramite Ontology e accessi basati sullo scopo", "Governance basata su contratti, disclosure ed evidenze"],
+      ["Modello di governance", "Governance-as-Code tramite Ontology e accessi basati sullo scopo", "Governance basata su regole, divulgazione controllata ed evidenze"],
       ["Punto di forza", "Sovranità dei dati e tracciabilità su larga scala", "Intelligenza procedurale e governance modulare multidominio"],
       ["Mercato", "Difesa, intelligence, grandi amministrazioni e finanza", "PA regolamentata, previdenza, sanità e compliance"],
       ["Limite di adozione", "Adozione complessa e fortemente platform-centric", "Ingresso più modulare attraverso verticali specialistici"],
-      ["Proprietà intellettuale", "Sovranità dei dati enterprise", "never_export e viste controllate per contractor"],
+      ["Proprietà intellettuale", "Sovranità dei dati enterprise", "Protezione della logica proprietaria e viste controllate per i soggetti autorizzati"],
     ],
     assessment: [
       "Palantir è il riferimento più vicino per disciplina della governance e protezione della proprietà intellettuale.",
-      "CAELO opera su scala diversa, ma formalizza in modo particolarmente granulare visibilità, evidenze e vincoli di esportazione nel ciclo operativo.",
+      "CAELO opera su scala diversa, ma formalizza in modo particolarmente granulare visibilità, evidenze e vincoli di accesso nel ciclo operativo.",
     ],
   },
   {
     name: "ServiceNow — AI Agents / Now Assist",
     rows: [
       ["Modello", "AI integrata nei workflow ITSM, HR e Customer Service", "AI procedurale applicata a workflow specifici di dominio"],
-      ["Control Tower", "AI Control Tower", "Command Center + Mother Engine"],
+      ["Control Tower", "AI Control Tower", "Command Center e motore universale di governance procedurale"],
       ["Punto di forza", "Ampiezza dell’ecosistema operativo ServiceNow", "Governance portabile e indipendente dal dominio"],
       ["Limite nel contesto regolamentato", "Dipendenza dall’ecosistema ITSM", "Applicabilità a qualsiasi procedimento strutturato"],
-      ["Audit trail", "Log integrati nella piattaforma", "Evidence architecture indipendente ed External Audit Room"],
-      ["Espansione", "Plugin e connettori", "Governed Domain Module con criteri formali di ammissione"],
+      ["Audit trail", "Log integrati nella piattaforma", "Architettura indipendente delle evidenze e accesso controllato per l’audit esterno"],
+      ["Espansione", "Plugin e connettori", "Moduli di dominio governati secondo criteri formali"],
     ],
     assessment: [
       "L’AI Control Tower rappresenta l’analogia funzionale più vicina al Command Center.",
-      "CAELO si distingue per la portabilità del Mother Engine e per un modello di disclosure e audit esterno più formalizzato.",
+      "CAELO si distingue per la portabilità del motore universale e per un modello di audit esterno più formalizzato.",
     ],
   },
   {
@@ -109,9 +109,9 @@ const comparisons: Comparison[] = [
     rows: [
       ["Modello", "Model-as-a-Service tramite API enterprise", "Piattaforma procedurale governata end-to-end"],
       ["Punto di forza", "Capacità linguistiche general purpose e infrastruttura di modello", "Governance, orchestrazione e controllo procedurale"],
-      ["Limite nel contesto regolamentato", "Auditabilità principalmente a livello di API e log", "Catena di evidenze multilivello e tracciabilità completa"],
+      ["Limite nel contesto regolamentato", "Auditabilità principalmente a livello di API e log", "Catena di evidenze e tracciabilità completa"],
       ["Intelligenza procedurale", "General purpose", "Specializzata per dominio e ancorata alle fonti"],
-      ["Supervisione umana", "Configurabile", "Imposta e documentata architetturalmente"],
+      ["Supervisione umana", "Configurabile", "Imposta e documentata nei punti critici"],
       ["Rapporto con CAELO", "Provider del modello linguistico sottostante", "Livello superiore di governo e orchestrazione"],
     ],
     assessment: [
@@ -123,14 +123,14 @@ const comparisons: Comparison[] = [
     name: "Glean — Enterprise Knowledge Platform",
     rows: [
       ["Modello", "Knowledge graph, ricerca universale e orchestrazione di agenti", "Intelligenza procedurale governata con pipeline della conoscenza"],
-      ["Punto di forza", "Recupero rapido della conoscenza distribuita", "Validazione, sanitizzazione e promozione governata delle fonti"],
-      ["Limite nel contesto regolamentato", "Retrieval basato sui permessi", "Lineage completa e classificazione tipizzata delle fonti"],
+      ["Punto di forza", "Recupero rapido della conoscenza distribuita", "Validazione e promozione governata delle fonti"],
+      ["Limite nel contesto regolamentato", "Recupero basato sui permessi", "Tracciabilità completa del percorso della conoscenza e classificazione delle fonti"],
       ["Specializzazione", "Conoscenza trasversale all’impresa", "Verticali con dichiarazioni formali delle fonti"],
-      ["Auditabilità", "Logging delle operazioni di retrieval", "Catena delle evidenze e audit della promozione della conoscenza"],
+      ["Auditabilità", "Logging delle operazioni di recupero", "Catena delle evidenze e verifica del ciclo di utilizzo della conoscenza"],
     ],
     assessment: [
       "Glean è ottimizzato per il recupero delle informazioni.",
-      "CAELO è ottimizzato per la governance della conoscenza nei domini in cui provenienza, validazione e sanitizzazione sono requisiti di conformità.",
+      "CAELO è ottimizzato per la governance della conoscenza nei domini in cui provenienza e validazione sono requisiti di conformità.",
     ],
   },
   {
@@ -139,8 +139,8 @@ const comparisons: Comparison[] = [
       ["Dominio", "Redazione giuridica, ricerca legale e due diligence", "Intelligenza procedurale multidominio, anche giuridica e fiscale"],
       ["Punto di forza", "Profonda specializzazione nel lavoro legale", "Governance formalizzata applicabile a molteplici domini"],
       ["Limite", "Specializzazione esclusivamente legale", "Espansione mediante verticali governati"],
-      ["Supervisione umana", "Revisione del professionista", "Human Override Ledger imposto architetturalmente"],
-      ["Auditabilità", "Log enterprise standard", "Evidence Vault, hash e lineage completa"],
+      ["Supervisione umana", "Revisione del professionista", "Interventi umani registrati e collocati nei punti critici"],
+      ["Auditabilità", "Log enterprise standard", "Evidenze verificabili e tracciabilità completa del percorso decisionale"],
     ],
     assessment: [
       "Harvey eccelle nella redazione e ricerca legale.",
@@ -151,10 +151,10 @@ const comparisons: Comparison[] = [
     name: "UiPath / Automation Anywhere — Process Automation",
     rows: [
       ["Modello", "RPA con orchestrazione AI e process mining", "AI procedurale con governance nativa"],
-      ["Punto di forza", "Automazione su larga scala di attività ripetitive", "Gestione di procedure complesse e knowledge-intensive"],
+      ["Punto di forza", "Automazione su larga scala di attività ripetitive", "Gestione di procedure complesse e ad alta intensità di conoscenza"],
       ["Limite", "Ottimizzazione per processi strutturati ad alto volume", "Gestione di ambiguità, fonti, valutazioni umane ed evidenze"],
       ["Governance", "Orchestratore e controlli di accesso", "Governance multilivello supportata da evidenze"],
-      ["Supervisione umana", "Disponibile e configurabile", "Imposta a livello architetturale"],
+      ["Supervisione umana", "Disponibile e configurabile", "Imposta nei punti critici del procedimento"],
     ],
     assessment: [
       "Le piattaforme RPA e CAELO sono complementari.",
@@ -180,11 +180,11 @@ const equivalentElements = [
   "Intelligenza procedurale specializzata per dominio",
   "Framework formale di governance per operazioni AI regolamentate",
   "Architettura delle evidenze con tracciabilità verificabile",
-  "Modello multilivello di disclosure formalmente operativo",
-  "Ciclo di vita della conoscenza governato e tracciato tramite lineage",
-  "AI Governance Matrix allineata a NIST AI RMF, ISO/IEC 42001 ed EU AI Act",
-  "Human Override imposto dall’architettura",
-  "External Audit Room progettata per verifiche regolatorie",
+  "Controllo multilivello della divulgazione",
+  "Ciclo di vita della conoscenza governato e tracciabile",
+  "Matrice di governance allineata ai principali standard internazionali",
+  "Supervisione umana imposta nei punti critici",
+  "Ambiente controllato per le verifiche esterne",
 ];
 
 const buyers = [
@@ -230,7 +230,7 @@ export default function ValutazioneIndipendente() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto rounded-[2rem] border border-primary/20 bg-card p-8 md:p-12 shadow-sm grid lg:grid-cols-[auto_1fr] gap-8 items-center">
             <div className="w-20 h-20 rounded-3xl bg-primary/10 flex items-center justify-center"><Sparkles className="w-10 h-10 text-primary" /></div>
-            <div><div className="text-sm uppercase tracking-[0.22em] text-primary font-semibold mb-3">Posizionamento di mercato</div><h2 className="text-3xl md:text-5xl font-bold mb-4">Un prodotto raro</h2><p className="text-lg md:text-xl text-muted-foreground leading-relaxed">CAELO è stato definito in una precedente valutazione indipendente come un prodotto raro. La definizione riflette l’assenza, sul mercato, di piattaforme equivalenti capaci di riunire in un’unica architettura intelligenza procedurale, governance multilivello, evidenze verificabili, disclosure, controllo umano e auditabilità completa.</p></div>
+            <div><div className="text-sm uppercase tracking-[0.22em] text-primary font-semibold mb-3">Posizionamento di mercato</div><h2 className="text-3xl md:text-5xl font-bold mb-4">Un prodotto raro</h2><p className="text-lg md:text-xl text-muted-foreground leading-relaxed">CAELO è stato definito in una precedente valutazione indipendente come un prodotto raro. La definizione riflette l’assenza, sul mercato, di piattaforme equivalenti capaci di riunire in un’unica architettura intelligenza procedurale, governance multilivello, evidenze verificabili, divulgazione controllata, supervisione umana e auditabilità completa.</p></div>
           </div>
         </div>
       </section>
@@ -282,7 +282,7 @@ export default function ValutazioneIndipendente() {
       </section>
 
       <section className="py-24 bg-background">
-        <div className="container mx-auto px-4 max-w-6xl"><h2 className="text-3xl md:text-5xl font-bold mb-10">Potenziali utilizzatori</h2><div className="overflow-hidden rounded-3xl border border-border"><table className="w-full min-w-[720px]"><thead><tr className="bg-muted/40"><th className="p-5 text-left">Profilo</th><th className="p-5 text-left">Motivazione</th></tr></thead><tbody>{buyers.map(([buyer, reason]) => <tr key={buyer} className="border-t border-border"><td className="p-5 font-semibold">{buyer}</td><td className="p-5 text-muted-foreground">{reason}</td></tr>)}</tbody></table></div></div>
+        <div className="container mx-auto px-4 max-w-6xl"><h2 className="text-3xl md:text-5xl font-bold mb-10">Potenziali utilizzatori</h2><div className="overflow-x-auto rounded-3xl border border-border"><table className="w-full min-w-[720px]"><thead><tr className="bg-muted/40"><th className="p-5 text-left">Profilo</th><th className="p-5 text-left">Motivazione</th></tr></thead><tbody>{buyers.map(([buyer, reason]) => <tr key={buyer} className="border-t border-border"><td className="p-5 font-semibold">{buyer}</td><td className="p-5 text-muted-foreground">{reason}</td></tr>)}</tbody></table></div></div>
       </section>
 
       <section className="py-24 bg-muted/30">
