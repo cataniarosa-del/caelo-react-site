@@ -27,7 +27,7 @@ const copy = {
     identity: {
       badge: "Identità della piattaforma",
       title: "Che cos’è CAELO",
-      lead: "Una piattaforma di intelligenza procedurale governata per ambienti complessi e regolamentati.",
+      lead: "Un’infrastruttura di governance procedurale per ambienti complessi e regolamentati.",
       body: "CAELO struttura il procedimento prima che l’intelligenza artificiale vi operi. Collega fonti, regole, ruoli, stati, controlli, eccezioni ed evidenze, mantenendo la responsabilità decisionale sotto supervisione umana.",
       notTitle: "Non è",
       notText: "Un chatbot, un motore di ricerca, un copilota generico o un agente autonomo.",
@@ -435,4 +435,5 @@ export default function Home() {
     </Layout>
   );
 }
+
 
