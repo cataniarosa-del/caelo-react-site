@@ -1,5 +1,5 @@
 import { Layout } from "@/components/Layout";
-import { ContactForm, DemoRequestForm } from "@/components/Forms";
+import { DemoRequestForm } from "@/components/Forms";
 import { Mail, Phone, MapPin } from "lucide-react";
 import { motion } from "framer-motion";
 import { useLanguage } from "@/LanguageContext";
@@ -13,88 +13,88 @@ import {
 const contactTexts = {
   it: {
     title: "Contattaci",
-    subtitle: "Siamo a disposizione per richieste istituzionali, informazioni sul progetto CAELO e richieste di demo della piattaforma.",
-    demoNote: "Caelo supporta la gestione delle pratiche amministrative riducendo errori, rilavorazioni e pratiche respinte da parte di INPS, alleggerendo il carico operativo sugli uffici.",
-    demoTitle: "Richiedi una Demo",
+    subtitle: "Confrontiamoci su un procedimento, un caso d’uso, un verticale specialistico o un’ipotesi di integrazione con i sistemi della tua organizzazione.",
+    demoNote: "Descrivi il procedimento, il contesto operativo o il problema che vuoi governare. Valuteremo fonti, regole, attori, vincoli e requisiti di integrazione.",
+    demoTitle: "Avvia un confronto",
     messageTitle: "Invia un Messaggio",
-    writeUs: "Scrivici per informazioni",
+    writeUs: "Scrivici per progetti, partnership e richieste istituzionali",
     phone: "Telefono",
-    callUs: "Chiamaci direttamente",
+    callUs: "Contatto diretto per un primo confronto",
     office: "Sede",
     officeRef: "Riferimento operativo",
     location: "Roma, Italia",
-    ctaTitle: "Hai bisogno di una demo o di un contatto diretto? Per richieste di demo è possibile inviare una mail oppure contattare direttamente il team.",
-    ctaText: "È possibile richiedere una dimostrazione della piattaforma CAELO oppure contattare direttamente il riferimento per informazioni istituzionali e operative.",
-    demoSupport: "Supporto Demo",
-    directCall: "Chiamata Diretta",
+    ctaTitle: "Preferisci un contatto diretto?",
+    ctaText: "Puoi scriverci via email oppure contattarci direttamente per presentare il contesto, il procedimento o l’ipotesi di collaborazione.",
+    demoSupport: "Scrivi al team",
+    directCall: "Contatto WhatsApp",
   },
   en: {
     title: "Contact us",
-    subtitle: "We are available for institutional requests, information about the CAELO project and platform demo requests.",
-    demoNote: "Caelo supports administrative case management by reducing errors, rework and rejected cases, easing the operational workload for offices.",
-    demoTitle: "Request a Demo",
+    subtitle: "Let us discuss a procedure, use case, specialist vertical or integration opportunity within your organisation’s systems.",
+    demoNote: "Describe the procedure, operating context or problem you need to govern. We will assess sources, rules, actors, constraints and integration requirements.",
+    demoTitle: "Start a conversation",
     messageTitle: "Send a Message",
-    writeUs: "Write to us for information",
+    writeUs: "Write to us about projects, partnerships and institutional requests",
     phone: "Phone",
-    callUs: "Call us directly",
+    callUs: "Direct contact for an initial discussion",
     office: "Office",
     officeRef: "Operational reference",
     location: "Rome, Italy",
-    ctaTitle: "Need a demo or direct contact? You can send an email or contact the team directly.",
-    ctaText: "You can request a demonstration of the CAELO platform or contact the reference person directly for institutional and operational information.",
-    demoSupport: "Demo Support",
-    directCall: "Direct Call",
+    ctaTitle: "Would you prefer direct contact?",
+    ctaText: "You can email us or contact us directly to present the context, procedure or collaboration opportunity.",
+    demoSupport: "Write to the team",
+    directCall: "WhatsApp contact",
   },
   fr: {
     title: "Contactez-nous",
-    subtitle: "Nous sommes disponibles pour les demandes institutionnelles, les informations sur le projet CAELO et les demandes de démo.",
-    demoNote: "Caelo accompagne la gestion des dossiers administratifs en réduisant les erreurs, les reprises et les dossiers rejetés, allégeant ainsi la charge opérationnelle des bureaux.",
-    demoTitle: "Demander une démo",
+    subtitle: "Échangeons sur une procédure, un cas d’usage, une verticale spécialisée ou une hypothèse d’intégration avec les systèmes de votre organisation.",
+    demoNote: "Décrivez la procédure, le contexte opérationnel ou le problème à gouverner. Nous évaluerons les sources, règles, acteurs, contraintes et exigences d’intégration.",
+    demoTitle: "Engager un échange",
     messageTitle: "Envoyer un message",
-    writeUs: "Écrivez-nous pour plus d’informations",
+    writeUs: "Écrivez-nous pour des projets, partenariats et demandes institutionnelles",
     phone: "Téléphone",
-    callUs: "Appelez-nous directement",
+    callUs: "Contact direct pour un premier échange",
     office: "Siège",
     officeRef: "Référence opérationnelle",
     location: "Rome, Italie",
-    ctaTitle: "Besoin d’une démo ou d’un contact direct ? Vous pouvez envoyer un e-mail ou contacter directement l’équipe.",
-    ctaText: "Vous pouvez demander une démonstration de la plateforme CAELO ou contacter directement le référent pour des informations institutionnelles et opérationnelles.",
-    demoSupport: "Support démo",
-    directCall: "Appel direct",
+    ctaTitle: "Préférez-vous un contact direct ?",
+    ctaText: "Vous pouvez nous écrire ou nous contacter directement pour présenter le contexte, la procédure ou l’hypothèse de collaboration.",
+    demoSupport: "Écrire à l’équipe",
+    directCall: "Contact WhatsApp",
   },
   de: {
     title: "Kontakt",
-    subtitle: "Wir stehen für institutionelle Anfragen, Informationen zum CAELO-Projekt und Demo-Anfragen zur Verfügung.",
-    demoNote: "Caelo unterstützt die Verwaltung administrativer Vorgänge, reduziert Fehler, Nacharbeit und abgelehnte Fälle und entlastet so die operativen Büros.",
-    demoTitle: "Demo anfordern",
+    subtitle: "Lassen Sie uns über ein Verfahren, einen Anwendungsfall, eine spezialisierte Vertikale oder eine Integrationsmöglichkeit in Ihre Systeme sprechen.",
+    demoNote: "Beschreiben Sie das Verfahren, den operativen Kontext oder das zu steuernde Problem. Wir bewerten Quellen, Regeln, Akteure, Einschränkungen und Integrationsanforderungen.",
+    demoTitle: "Gespräch beginnen",
     messageTitle: "Nachricht senden",
-    writeUs: "Schreiben Sie uns für Informationen",
+    writeUs: "Schreiben Sie uns zu Projekten, Partnerschaften und institutionellen Anfragen",
     phone: "Telefon",
-    callUs: "Rufen Sie uns direkt an",
+    callUs: "Direkter Kontakt für ein erstes Gespräch",
     office: "Sitz",
     officeRef: "Operative Referenz",
     location: "Rom, Italien",
-    ctaTitle: "Benötigen Sie eine Demo oder direkten Kontakt? Sie können eine E-Mail senden oder das Team direkt kontaktieren.",
-    ctaText: "Sie können eine Demonstration der CAELO-Plattform anfordern oder die zuständige Kontaktperson direkt für institutionelle und operative Informationen kontaktieren.",
-    demoSupport: "Demo-Support",
-    directCall: "Direktanruf",
+    ctaTitle: "Bevorzugen Sie einen direkten Kontakt?",
+    ctaText: "Sie können uns schreiben oder direkt kontaktieren, um den Kontext, das Verfahren oder eine mögliche Zusammenarbeit vorzustellen.",
+    demoSupport: "An das Team schreiben",
+    directCall: "WhatsApp-Kontakt",
   },
   es: {
     title: "Contáctanos",
-    subtitle: "Estamos disponibles para solicitudes institucionales, información sobre el proyecto CAELO y solicitudes de demo de la plataforma.",
-    demoNote: "Caelo apoya la gestión de expedientes administrativos reduciendo errores, reprocesos y expedientes rechazados, aligerando la carga operativa de las oficinas.",
-    demoTitle: "Solicitar demo",
+    subtitle: "Conversemos sobre un procedimiento, un caso de uso, una vertical especializada o una posible integración con los sistemas de tu organización.",
+    demoNote: "Describe el procedimiento, el contexto operativo o el problema que necesitas gobernar. Evaluaremos fuentes, reglas, actores, restricciones y requisitos de integración.",
+    demoTitle: "Iniciar una conversación",
     messageTitle: "Enviar un mensaje",
-    writeUs: "Escríbenos para más información",
+    writeUs: "Escríbenos sobre proyectos, alianzas y solicitudes institucionales",
     phone: "Teléfono",
-    callUs: "Llámanos directamente",
+    callUs: "Contacto directo para una primera conversación",
     office: "Sede",
     officeRef: "Referencia operativa",
     location: "Roma, Italia",
-    ctaTitle: "¿Necesitas una demo o un contacto directo? Puedes enviar un email o contactar directamente con el equipo.",
-    ctaText: "Puedes solicitar una demostración de la plataforma CAELO o contactar directamente con el referente para información institucional y operativa.",
-    demoSupport: "Soporte demo",
-    directCall: "Llamada directa",
+    ctaTitle: "¿Prefieres un contacto directo?",
+    ctaText: "Puedes escribirnos o contactarnos directamente para presentar el contexto, el procedimiento o la posible colaboración.",
+    demoSupport: "Escribir al equipo",
+    directCall: "Contacto por WhatsApp",
   },
 };
 
@@ -123,7 +123,7 @@ export default function Contact() {
                 </p>
               </motion.div>
 
-              <div className="grid md:grid-cols-2 gap-12 mb-16">
+              <div className="max-w-4xl mx-auto mb-16">
                 <motion.div variants={fadeInUp} initial="initial" animate="animate" transition={{ ...springPresets.gentle, delay: 0.1 }}>
                   <div className="bg-card/80 backdrop-blur-sm rounded-3xl p-8 border border-border shadow-lg">
                     <div className="border-l-4 border-primary pl-5 mb-6">
@@ -139,16 +139,6 @@ export default function Contact() {
                     <DemoRequestForm />
                   </div>
                 </motion.div>
-
-                <motion.div variants={fadeInUp} initial="initial" animate="animate" transition={{ ...springPresets.gentle, delay: 0.2 }}>
-                  <div className="bg-card/80 backdrop-blur-sm rounded-3xl p-8 border border-border shadow-lg">
-                    <h2 className="text-3xl font-semibold mb-8">
-                      {text.messageTitle}
-                    </h2>
-
-                    <ContactForm variant="compact" />
-                  </div>
-                </motion.div>
               </div>
 
               <motion.div variants={staggerContainer} initial="hidden" animate="visible" className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -158,7 +148,7 @@ export default function Contact() {
                   </div>
                   <h3 className="text-lg font-semibold mb-2">Email</h3>
                   <p className="text-muted-foreground mb-2">{text.writeUs}</p>
-                  <a href="mailto:info@caelo.it,ccatania.cpi@gmail.com" className="text-primary hover:text-accent transition-colors">
+                  <a href="mailto:info@caelo.it?cc=ccatania.cpi@gmail.com" className="text-primary hover:text-accent transition-colors">
                     info@caelo.it
                   </a>
                 </motion.div>
@@ -199,7 +189,7 @@ export default function Contact() {
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <a
-                    href="mailto:info@caelo.it?cc=ccatania.cpi@gmail.com&subject=Richiesta%20Demo%20CAELO"
+                    href="mailto:info@caelo.it?cc=ccatania.cpi@gmail.com&subject=Richiesta%20di%20confronto%20su%20CAELO"
                     className="inline-flex items-center justify-center px-8 py-4 rounded-2xl bg-primary text-primary-foreground font-semibold hover:scale-[1.02] active:scale-[0.97] transition-all duration-200 shadow-lg"
                   >
                     <Mail className="w-5 h-5 mr-2" />
