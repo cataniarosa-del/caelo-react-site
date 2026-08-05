@@ -27,6 +27,9 @@ import ArticoloCancelloEuropeo from "@/pages/ArticoloCancelloEuropeo";
 import ArticoloControlloUmano from "@/pages/ArticoloControlloUmano";
 import ArticoloTrasparenzaBlackBox from "@/pages/ArticoloTrasparenzaBlackBox";
 import ArticoloChiFirmaDeveVedere from "@/pages/ArticoloChiFirmaDeveVedere";
+import AdminLogin from "@/pages/AdminLogin";
+import AdminEditorial from "@/pages/AdminEditorial";
+import { ProtectedAdminRoute } from "@/components/admin/ProtectedAdminRoute";
 
 import { LanguageProvider } from "@/LanguageContext";
 
@@ -58,6 +61,15 @@ const App = () => {
                 <Route path="/la-voce/non-basta-identificare-un-agente-ai-bisogna-governarne-lautorita" element={<ArticoloAutoritaAgentiAI />} />
                 <Route path="/la-voce/il-cancello-europeo-nel-giardino-tecnologico-degli-altri" element={<ArticoloCancelloEuropeo />} />
                 <Route path="/la-voce/il-controllo-umano-non-e-un-pulsante-di-emergenza" element={<ArticoloControlloUmano />} />
+                <Route path="/admin/login" element={<AdminLogin />} />
+                <Route
+                  path="/admin"
+                  element={
+                    <ProtectedAdminRoute>
+                      <AdminEditorial />
+                    </ProtectedAdminRoute>
+                  }
+                />
                 <Route path={ROUTE_PATHS.ABOUT} element={<About />} />
                 <Route path={ROUTE_PATHS.CONTACT} element={<Contact />} />
                 <Route path="/aziende" element={<Aziende />} />
