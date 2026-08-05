@@ -27,6 +27,7 @@ import ArticoloCancelloEuropeo from "@/pages/ArticoloCancelloEuropeo";
 import ArticoloControlloUmano from "@/pages/ArticoloControlloUmano";
 import ArticoloTrasparenzaBlackBox from "@/pages/ArticoloTrasparenzaBlackBox";
 import ArticoloChiFirmaDeveVedere from "@/pages/ArticoloChiFirmaDeveVedere";
+import ArticoloProvaProcedurale from "@/pages/ArticoloProvaProcedurale";
 import AdminLogin from "@/pages/AdminLogin";
 import AdminEditorial from "@/pages/AdminEditorial";
 import { ProtectedAdminRoute } from "@/components/admin/ProtectedAdminRoute";
@@ -54,6 +55,7 @@ const App = () => {
                 <Route path="/soluzioni/:slug" element={<VerticaleCaelo />} />
                 <Route path={ROUTE_PATHS.LA_VOCE} element={<LaVoce />} />
                 <Route path="/valutazione-indipendente" element={<ValutazioneIndipendente />} />
+                <Route path="/la-voce/dal-documento-alla-prova-il-giorno-dopo-l-ai-act" element={<ArticoloProvaProcedurale />} />
                 <Route path="/la-voce/quando-amministrazione-colpisce-chi-e-nel-giusto" element={<ArticoloAmministrazione />} />
                 <Route path="/la-voce/linfrastruttura-della-trasparenza-oltre-la-black-box" element={<ArticoloTrasparenzaBlackBox />} />
                 <Route path="/la-voce/chi-firma-deve-poter-vedere-dalla-black-box-alla-glass-box-procedurale" element={<ArticoloChiFirmaDeveVedere />} />

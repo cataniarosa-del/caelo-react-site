@@ -34,7 +34,7 @@ export default function LaVoce() {
             <div className="space-y-4">
               <article className="border border-black/70 bg-[#faf7ef] p-5 md:p-10">
                 <p className="text-xs font-semibold uppercase tracking-[0.22em]">
-                  Editoriale in evidenza · Etica dell’IA
+                  Editoriale in evidenza · AI Governance
                 </p>
                 <h2 className="mt-5 max-w-6xl font-serif text-5xl font-semibold leading-[0.96] md:text-7xl xl:text-8xl">
                   {featured.title}
@@ -45,7 +45,7 @@ export default function LaVoce() {
                   <span className="h-px flex-1 bg-black/50" />
                 </div>
                 <p className="max-w-5xl font-serif text-2xl italic leading-snug text-black/75 md:text-3xl">
-                  Dalle “cartelle pazze” delle case popolari all’etica dell’intelligenza artificiale nei procedimenti pubblici
+                  La conformità non sarà più soltanto una raccolta di policy, registri e valutazioni: occorre dimostrare come ogni decisione assistita dall’AI sia stata formata, controllata e assunta.
                 </p>
                 <p className="mt-6 text-sm">Di Claudia Catania · {featured.date}</p>
 
@@ -55,13 +55,13 @@ export default function LaVoce() {
 
                 <div className="mt-7 columns-1 gap-8 font-serif text-[17px] leading-7 md:columns-2 xl:columns-3">
                   <p className="first-letter:float-left first-letter:mr-2 first-letter:font-serif first-letter:text-7xl first-letter:leading-[0.8]">
-                    Nel patrimonio abitativo di Roma esiste un problema reale. Esistono occupazioni abusive, morosità e alloggi sottratti a chi ne avrebbe diritto. Ma esiste anche un sistema che può colpire cittadini fragili, anziani e famiglie che sono pienamente nel giusto.
+                    Il 2 agosto 2026 non è stato il giorno in cui l’Europa ha concluso il proprio lavoro sull’intelligenza artificiale. È stato il giorno in cui è diventato più difficile separare le dichiarazioni dalle pratiche.
                   </p>
                   <p className="mt-4">
-                    Il problema non è scegliere tra contrasto agli abusi e protezione delle persone. Il problema è costruire un’amministrazione capace di distinguere e di ricondurre ogni atto a una sola realtà amministrativa coerente.
+                    Il vero passaggio non è dalla non conformità alla conformità. È dalla compliance documentale alla prova procedurale.
                   </p>
                   <p className="mt-4">
-                    Con l’ingresso dell’intelligenza artificiale nei procedimenti pubblici, il rischio è che errori già presenti vengano moltiplicati. Non serve una macchina che scriva più velocemente: serve una struttura che impedisca al procedimento di avanzare quando emergono contraddizioni.
+                    Una decisione non coincide con l’output del modello: nasce dall’incontro tra regole, competenze, dati, controlli e responsabilità. La vera black box, in molti casi, non è il modello. È l’organizzazione.
                   </p>
                 </div>
 
@@ -108,8 +108,8 @@ export default function LaVoce() {
             <aside className="space-y-4">
               <section className="border border-black/70 bg-[#faf7ef] p-6">
                 <h2 className="border-b border-black/60 pb-3 font-serif text-2xl font-semibold">In evidenza</h2>
-                <p className="mt-5 font-serif text-xl leading-snug">L’etica è ciò che il sistema impedisce.</p>
-                <p className="mt-3 text-sm text-black/60">4 agosto 2026</p>
+                <p className="mt-5 font-serif text-xl leading-snug">Dalla compliance documentale alla prova procedurale.</p>
+                <p className="mt-3 text-sm text-black/60">5 agosto 2026</p>
               </section>
 
               <FollowCaelo />

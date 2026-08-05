@@ -10,6 +10,15 @@ export type EditorialArticle = {
 
 export const editorialArticles: EditorialArticle[] = [
   {
+    date: "5 agosto 2026",
+    isoDate: "2026-08-05",
+    category: "AI Governance · Procedural Governance",
+    title: "Dal documento alla prova: il giorno dopo l’AI Act",
+    excerpt: "La conformità non sarà più soltanto una raccolta di policy, registri e valutazioni: occorre dimostrare come ogni decisione assistita dall’AI sia stata formata, controllata e assunta.",
+    path: "/la-voce/dal-documento-alla-prova-il-giorno-dopo-l-ai-act",
+    topics: ["AI Act", "Prova procedurale", "Procedural Governance", "Auditabilità"],
+  },
+  {
     date: "4 agosto 2026",
     isoDate: "2026-08-04",
     category: "Etica dell’IA · Procedimenti pubblici",
