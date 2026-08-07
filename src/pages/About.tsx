@@ -1,6 +1,6 @@
 import { Layout } from "@/components/Layout";
 import { motion } from "framer-motion";
-import { ArrowRight, CheckCircle2, Scale, Cpu, ShieldCheck, Workflow } from "lucide-react";
+import { ArrowRight, CheckCircle2, Scale, Cpu, ShieldCheck, Workflow, Linkedin } from "lucide-react";
 import { springPresets, staggerContainer, staggerItem } from "@/lib/motion";
 import { useLanguage } from "@/LanguageContext";
 import { Link } from "react-router-dom";
@@ -18,8 +18,8 @@ const copy = {
     foundersLabel: "Le fondatrici",
     foundersTitle: "Due competenze, un’unica architettura di governo",
     keySkills: "Competenze chiave",
-    claudiaRole: "Co-Founder & Legal-Procedural Methodology Architect",
-    claudiaSubtitle: "Relaciones institucionales & Gobernanza de la IA",
+    claudiaRole: "CEO & Co-Founder",
+    claudiaSubtitle: "Relazioni istituzionali & Governance dell’IA",
     claudiaBio: [
       "Claudia Catania è co-fondatrice di CAELO ed è l’ideatrice della metodologia giuridico-procedurale sulla quale è costruita la piattaforma.",
       "Trasforma norme, procedimenti amministrativi, prassi operative e conoscenza specialistica in architetture procedurali governabili, definendo fonti, regole, ruoli, stati, controlli, eccezioni, passaggi decisionali e punti di supervisione umana.",
@@ -63,8 +63,8 @@ const copy = {
     foundersLabel: "The founders",
     foundersTitle: "Two disciplines, one governance architecture",
     keySkills: "Core competencies",
-    claudiaRole: "Co-Founder & Legal-Procedural Methodology Architect",
-    claudiaSubtitle: "Relaciones institucionales & Gobernanza de la IA",
+    claudiaRole: "CEO & Co-Founder",
+    claudiaSubtitle: "Institutional Relations & AI Governance",
     claudiaBio: [
       "Claudia Catania is Co-Founder of CAELO and the creator of the legal-procedural methodology on which the platform is built.",
       "She transforms regulations, administrative procedures, operational practices and specialist knowledge into governable procedural architectures by defining sources, rules, roles, states, controls, exceptions, decision steps and points of human supervision.",
@@ -108,8 +108,8 @@ const copy = {
     foundersLabel: "Les fondatrices",
     foundersTitle: "Deux compétences, une seule architecture de gouvernance",
     keySkills: "Compétences clés",
-    claudiaRole: "Co-Founder & Legal-Procedural Methodology Architect",
-    claudiaSubtitle: "Relaciones institucionales & Gobernanza de la IA",
+    claudiaRole: "CEO & Co-Founder",
+    claudiaSubtitle: "Relations institutionnelles & Gouvernance de l’IA",
     claudiaBio: [
       "Claudia Catania est cofondatrice de CAELO ainsi que la conceptrice de la méthodologie juridico-procédurale sur laquelle repose la plateforme.",
       "Elle transforme les normes, les procédures administratives, les pratiques opérationnelles et les connaissances spécialisées en architectures procédurales gouvernables, en définissant les sources, règles, rôles, états, contrôles, exceptions, étapes décisionnelles et points de supervision humaine.",
@@ -153,8 +153,8 @@ const copy = {
     foundersLabel: "Die Gründerinnen",
     foundersTitle: "Zwei Kompetenzen, eine Governance-Architektur",
     keySkills: "Kernkompetenzen",
-    claudiaRole: "Co-Founder & Legal-Procedural Methodology Architect",
-    claudiaSubtitle: "Relaciones institucionales & Gobernanza de la IA",
+    claudiaRole: "CEO & Co-Founder",
+    claudiaSubtitle: "Institutionelle Beziehungen & KI-Governance",
     claudiaBio: [
       "Claudia Catania ist Mitgründerin von CAELO sowie Entwicklerin der rechtsverfahrensbezogenen Methodik, auf der die Plattform beruht.",
       "Sie überführt Vorschriften, Verwaltungsverfahren, operative Praktiken und Fachwissen in steuerbare Verfahrensarchitekturen und definiert Quellen, Regeln, Rollen, Zustände, Kontrollen, Ausnahmen, Entscheidungsschritte und Punkte menschlicher Aufsicht.",
@@ -198,7 +198,7 @@ const copy = {
     foundersLabel: "Las fundadoras",
     foundersTitle: "Dos competencias, una única arquitectura de gobernanza",
     keySkills: "Competencias clave",
-    claudiaRole: "Co-Founder & Legal-Procedural Methodology Architect",
+    claudiaRole: "CEO & Co-Founder",
     claudiaSubtitle: "Relaciones institucionales & Gobernanza de la IA",
     claudiaBio: [
       "Claudia Catania es cofundadora de CAELO y creadora de la metodología jurídico-procedimental sobre la que se construye la plataforma.",
@@ -276,7 +276,17 @@ export default function About() {
             <motion.article initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={springPresets.gentle} className="rounded-[2rem] border border-border bg-card p-8 md:p-10 shadow-sm">
               <div className="text-sm font-semibold text-primary uppercase tracking-[0.16em] mb-4">{t.claudiaRole}</div>
               <h3 className="text-3xl md:text-4xl font-bold mb-2">Claudia Catania</h3>
-              <p className="text-xl font-semibold mb-7">{t.claudiaSubtitle}</p>
+              <p className="text-xl font-semibold mb-4">{t.claudiaSubtitle}</p>
+              <a
+                href="https://www.linkedin.com/in/claudia-catania-044a8b366/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mb-7 inline-flex items-center gap-2 rounded-lg border border-primary/30 bg-primary/5 px-4 py-2 text-sm font-semibold text-primary transition-colors hover:bg-primary hover:text-primary-foreground"
+                aria-label="Profilo LinkedIn di Claudia Catania"
+              >
+                <Linkedin className="h-4 w-4" aria-hidden="true" />
+                LinkedIn
+              </a>
               <div className="space-y-5 text-muted-foreground leading-relaxed mb-8">{t.claudiaBio.map((p) => <p key={p}>{p}</p>)}</div>
               <h4 className="font-bold mb-4">{t.keySkills}</h4>
               <div className="grid sm:grid-cols-2 gap-3">{t.claudiaSkills.map((item) => <div key={item} className="flex gap-2 text-sm leading-relaxed"><CheckCircle2 className="w-4 h-4 text-primary mt-1 shrink-0" />{item}</div>)}</div>
@@ -332,3 +342,4 @@ export default function About() {
     </Layout>
   );
 }
+
