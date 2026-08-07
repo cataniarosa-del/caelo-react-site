@@ -45,7 +45,7 @@ export default function LaVoce() {
                   <span className="h-px flex-1 bg-black/50" />
                 </div>
                 <p className="max-w-5xl font-serif text-2xl italic leading-snug text-black/75 md:text-3xl">
-                  La conformità non sarà più soltanto una raccolta di policy, registri e valutazioni: occorre dimostrare come ogni decisione assistita dall’AI sia stata formata, controllata e assunta.
+                  Dal QI e dai benchmark cognitivi al passaggio decisivo: quando l’IA comincia ad agire, la questione non è solo quanto sia intelligente, ma quanto il suo impiego sia governabile.
                 </p>
                 <p className="mt-6 text-sm">Di Claudia Catania · {featured.date}</p>
 
@@ -55,13 +55,13 @@ export default function LaVoce() {
 
                 <div className="mt-7 columns-1 gap-8 font-serif text-[17px] leading-7 md:columns-2 xl:columns-3">
                   <p className="first-letter:float-left first-letter:mr-2 first-letter:font-serif first-letter:text-7xl first-letter:leading-[0.8]">
-                    Il 2 agosto 2026 non è stato il giorno in cui l’Europa ha concluso il proprio lavoro sull’intelligenza artificiale. È stato il giorno in cui è diventato più difficile separare le dichiarazioni dalle pratiche.
+                    Per decenni abbiamo cercato di misurare l’intelligenza umana attraverso test standardizzati. Con l’arrivo dei grandi modelli di IA, una domanda è diventata quasi inevitabile: qual è il QI di un’intelligenza artificiale?
                   </p>
                   <p className="mt-4">
-                    Il vero passaggio non è dalla non conformità alla conformità. È dalla compliance documentale alla prova procedurale.
+                    Un singolo numero, però, non descrive adeguatamente un sistema artificiale. La ricerca sta costruendo profili multidimensionali che distinguono reasoning, generalizzazione, conoscenza, affidabilità ed efficienza.
                   </p>
                   <p className="mt-4">
-                    Una decisione non coincide con l’output del modello: nasce dall’incontro tra regole, competenze, dati, controlli e responsabilità. La vera black box, in molti casi, non è il modello. È l’organizzazione.
+                    Quando l’intelligenza smette di limitarsi a rispondere e comincia ad agire, la domanda cambia: non soltanto quanto è intelligente, ma quanto il suo impiego è governabile.
                   </p>
                 </div>
 
@@ -96,11 +96,11 @@ export default function LaVoce() {
                     Il problema descritto riguarda anche la tua organizzazione?
                   </h2>
                   <p className="mt-4 font-serif text-lg leading-7 text-white/75">
-                    Scopri come CAELO governa procedure, regole, ruoli, controlli ed eccezioni nei processi regolati.
+                    Scopri come CAELO affronta la governance dell’impiego dell’intelligenza artificiale nei procedimenti regolati.
                   </p>
                 </div>
                 <Link to="/funzionalita" className="mt-6 inline-flex shrink-0 border border-white px-5 py-3 text-sm font-semibold uppercase tracking-[0.14em] transition hover:bg-white hover:text-black md:mt-0">
-                  Scopri l’architettura
+                  Scopri CAELO
                 </Link>
               </section>
             </div>
@@ -108,8 +108,8 @@ export default function LaVoce() {
             <aside className="space-y-4">
               <section className="border border-black/70 bg-[#faf7ef] p-6">
                 <h2 className="border-b border-black/60 pb-3 font-serif text-2xl font-semibold">In evidenza</h2>
-                <p className="mt-5 font-serif text-xl leading-snug">Dalla compliance documentale alla prova procedurale.</p>
-                <p className="mt-3 text-sm text-black/60">5 agosto 2026</p>
+                <p className="mt-5 font-serif text-xl leading-snug">Dal quoziente intellettivo alla governance dell’azione.</p>
+                <p className="mt-3 text-sm text-black/60">7 agosto 2026</p>
               </section>
 
               <FollowCaelo />

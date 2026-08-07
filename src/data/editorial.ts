@@ -10,6 +10,15 @@ export type EditorialArticle = {
 
 export const editorialArticles: EditorialArticle[] = [
   {
+    date: "7 agosto 2026",
+    isoDate: "2026-08-07",
+    category: "AI Governance · Intelligenza artificiale",
+    title: "Quanto è intelligente l’IA? Dal quoziente intellettivo alla governance dell’azione",
+    excerpt: "Dal QI e dai benchmark cognitivi al passaggio decisivo: quando l’IA comincia ad agire, la questione non è solo quanto sia intelligente, ma quanto il suo impiego sia governabile.",
+    path: "/la-voce/quanto-e-intelligente-l-ia-dal-qi-alla-governance-dell-azione",
+    topics: ["QI dell’IA", "AI Governance", "Agentic AI", "Governance procedurale", "Glass Box AI"],
+  },
+  {
     date: "5 agosto 2026",
     isoDate: "2026-08-05",
     category: "AI Governance · Procedural Governance",
